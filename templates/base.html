@@ -1,111 +1,766 @@
 <!doctype html>
-<html lang="fr">
+<html lang="fr" class="h-full">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{% block title %}Football Intelligence{% endblock %}</title>
+    <title>{% block title %}Football Intelligence — Plateforme Prédictive{% endblock %}</title>
+
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['"Plus Jakarta Sans"', 'system-ui', '-apple-system', 'sans-serif'],
+            },
+            colors: {
+              brand: {
+                50: '#ecfdf5',
+                100: '#d1fae5',
+                200: '#a7f3d0',
+                300: '#6ee7b7',
+                400: '#34d399',
+                500: '#10b981',
+                600: '#059669',
+                700: '#047857',
+                800: '#065f46',
+                900: '#064e3b',
+              },
+              pitch: {
+                900: '#0a1120',
+                950: '#060a12',
+              }
+            },
+            boxShadow: {
+              'glow-sm': '0 0 15px -3px rgba(16, 185, 129, 0.25)',
+              'glow-md': '0 0 25px -5px rgba(16, 185, 129, 0.35)',
+            }
+          }
+        }
+      }
+    </script>
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+      /* Smooth transitions for dropdowns & interactive elements */
+      .dropdown-menu {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-6px) scale(0.98);
+        transition: all 0.15s cubic-bezier(0.16, 1, 0.3, 1);
+      }
+      .dropdown-menu.active {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0) scale(1);
+      }
+      /* Custom scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #0f172a;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #334155;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #475569;
+      }
+    </style>
+
+    {% block extra_head %}{% endblock %}
   </head>
-  <body class="bg-slate-50 min-h-screen flex flex-col text-slate-800">
-    <nav class="bg-slate-900 text-white shadow">
-      <div
-        class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between"
-      >
-        <a href="{% url 'core:home' %}" class="text-lg font-bold"
-          >⚽ Football Intelligence</a
-        >
-        <div class="flex items-center gap-4 text-sm">
-          <a href="{% url 'core:home' %}" class="hover:text-emerald-400"
-            >Accueil</a
-          >
-          <a href="{% url 'matches:predict' %}" class="hover:text-emerald-400"
-            >Prédire</a
-          >
-          <a
-            href="{% url 'matches:teams_list' %}"
-            class="hover:text-emerald-400"
-            >Équipes</a
-          >
-          <a href="{% url 'matches:standings' %}" class="hover:text-emerald-400"
-            >Classement</a
-          >
-          <a href="{% url 'matches:compare' %}" class="hover:text-emerald-400"
-            >Comparer</a
-          >
-          <a href="{% url 'matches:history' %}" class="hover:text-emerald-400"
-            >Historique</a
-          >
-          <a href="{% url 'players:list' %}" class="hover:text-emerald-400"
-            >Joueurs</a
-          >
-          <a
-            href="{% url 'players:match_stars' %}"
-            class="hover:text-emerald-400"
-            >Stars</a
-          >
-          <span class="text-slate-500">|</span>
-          <a
-            href="{% url 'season:best_player' %}"
-            class="hover:text-emerald-400"
-            >Meilleur joueur</a
-          >
-          <a href="{% url 'season:best_young' %}" class="hover:text-emerald-400"
-            >Jeune</a
-          >
-          <a href="{% url 'season:best_xi' %}" class="hover:text-emerald-400"
-            >Équipe type</a
-          >
-          <a
-            href="{% url 'core:model_performance' %}"
-            class="hover:text-emerald-400"
-            >Modèle</a
-          >
-          {% if user.is_authenticated %}
-          <span class="text-slate-500">|</span>
-          <span class="text-slate-300">{{ user.username }}</span>
-          <form
-            method="post"
-            action="{% url 'accounts:logout' %}"
-            class="inline"
-          >
-            {% csrf_token %}
-            <button type="submit" class="hover:text-red-400">
-              Déconnexion
+  <body class="bg-slate-50 text-slate-800 font-sans antialiased min-h-screen flex flex-col selection:bg-brand-500 selection:text-white">
+
+    <!-- Top Executive Header -->
+    <header class="sticky top-0 z-50 bg-slate-950/95 backdrop-blur-md border-b border-slate-800/80 shadow-md">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+          
+          <!-- Brand / Logo -->
+          <div class="flex items-center gap-6">
+            <a href="{% url 'core:home' %}" class="flex items-center gap-3 group focus:outline-none focus:ring-2 focus:ring-brand-500 rounded-lg p-1">
+              <div class="relative w-9 h-9 rounded-xl bg-gradient-to-br from-emerald-400 via-teal-500 to-slate-900 p-[1.5px] shadow-glow-sm group-hover:shadow-glow-md transition-shadow">
+                <div class="w-full h-full bg-slate-950 rounded-[10px] flex items-center justify-center">
+                  <i data-lucide="activity" class="w-5 h-5 text-emerald-400 stroke-[2.2]"></i>
+                </div>
+              </div>
+              <div class="flex flex-col">
+                <div class="flex items-center gap-1.5 leading-none">
+                  <span class="text-white font-extrabold tracking-wider text-base">FOOTBALL</span>
+                  <span class="text-emerald-400 font-bold tracking-tight text-base">INTELLIGENCE</span>
+                </div>
+                <span class="text-[10px] font-semibold text-slate-400 tracking-widest uppercase mt-0.5 flex items-center gap-1">
+                  Predictive Labs <span class="inline-block w-1 h-1 rounded-full bg-emerald-400"></span> Premier League
+                </span>
+              </div>
+            </a>
+          </div>
+
+          <!-- Desktop Navigation Bar -->
+          <nav class="hidden lg:flex items-center gap-1 text-sm font-medium">
+            <!-- Home -->
+            <a
+              href="{% url 'core:home' %}"
+              class="px-3 py-2 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800/70 transition flex items-center gap-2"
+            >
+              <i data-lucide="layout-dashboard" class="w-4 h-4 text-slate-400"></i>
+              <span>Accueil</span>
+            </a>
+
+            <!-- Dropdown: Matchs & Pronos -->
+            <div class="relative dropdown-container">
+              <button
+                type="button"
+                class="dropdown-trigger px-3 py-2 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800/70 transition flex items-center gap-1.5 focus:outline-none"
+                aria-expanded="false"
+              >
+                <i data-lucide="calendar" class="w-4 h-4 text-slate-400"></i>
+                <span>Matchs & Stats</span>
+                <i data-lucide="chevron-down" class="w-3.5 h-3.5 text-slate-400 transition-transform"></i>
+              </button>
+              <div class="dropdown-menu absolute left-0 mt-2 w-56 rounded-xl bg-slate-900/95 border border-slate-800 shadow-xl py-2 z-50 backdrop-blur-md">
+                <a href="{% url 'matches:predict' %}" class="flex items-center gap-2.5 px-4 py-2 text-xs text-slate-300 hover:text-white hover:bg-slate-800/80 transition">
+                  <i data-lucide="sparkles" class="w-4 h-4 text-emerald-400"></i>
+                  <div>
+                    <div class="font-semibold text-slate-200">Prédire un match</div>
+                    <div class="text-[11px] text-slate-400">Modèle ML prédictif</div>
+                  </div>
+                </a>
+                <a href="{% url 'matches:standings' %}" class="flex items-center gap-2.5 px-4 py-2 text-xs text-slate-300 hover:text-white hover:bg-slate-800/80 transition">
+                  <i data-lucide="trophy" class="w-4 h-4 text-amber-400"></i>
+                  <div>
+                    <div class="font-semibold text-slate-200">Classement</div>
+                    <div class="text-[11px] text-slate-400">Tableau Premier League</div>
+                  </div>
+                </a>
+                <a href="{% url 'matches:teams_list' %}" class="flex items-center gap-2.5 px-4 py-2 text-xs text-slate-300 hover:text-white hover:bg-slate-800/80 transition">
+                  <i data-lucide="shield" class="w-4 h-4 text-sky-400"></i>
+                  <div>
+                    <div class="font-semibold text-slate-200">Équipes</div>
+                    <div class="text-[11px] text-slate-400">Profils et métriques</div>
+                  </div>
+                </a>
+                <a href="{% url 'matches:compare' %}" class="flex items-center gap-2.5 px-4 py-2 text-xs text-slate-300 hover:text-white hover:bg-slate-800/80 transition">
+                  <i data-lucide="arrow-left-right" class="w-4 h-4 text-purple-400"></i>
+                  <div>
+                    <div class="font-semibold text-slate-200">Comparer équipes</div>
+                    <div class="text-[11px] text-slate-400">Confrontation directe</div>
+                  </div>
+                </a>
+                <div class="border-t border-slate-800 my-1"></div>
+                <a href="{% url 'matches:history' %}" class="flex items-center gap-2.5 px-4 py-2 text-xs text-slate-300 hover:text-white hover:bg-slate-800/80 transition">
+                  <i data-lucide="history" class="w-4 h-4 text-slate-400"></i>
+                  <span class="font-medium">Historique prédictions</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Dropdown: Joueurs -->
+            <div class="relative dropdown-container">
+              <button
+                type="button"
+                class="dropdown-trigger px-3 py-2 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800/70 transition flex items-center gap-1.5 focus:outline-none"
+                aria-expanded="false"
+              >
+                <i data-lucide="users" class="w-4 h-4 text-slate-400"></i>
+                <span>Joueurs</span>
+                <i data-lucide="chevron-down" class="w-3.5 h-3.5 text-slate-400 transition-transform"></i>
+              </button>
+              <div class="dropdown-menu absolute left-0 mt-2 w-56 rounded-xl bg-slate-900/95 border border-slate-800 shadow-xl py-2 z-50 backdrop-blur-md">
+                <a href="{% url 'players:list' %}" class="flex items-center gap-2.5 px-4 py-2 text-xs text-slate-300 hover:text-white hover:bg-slate-800/80 transition">
+                  <i data-lucide="users" class="w-4 h-4 text-emerald-400"></i>
+                  <div>
+                    <div class="font-semibold text-slate-200">Base des joueurs</div>
+                    <div class="text-[11px] text-slate-400">Stats et fiches individuelles</div>
+                  </div>
+                </a>
+                <a href="{% url 'players:match_stars' %}" class="flex items-center gap-2.5 px-4 py-2 text-xs text-slate-300 hover:text-white hover:bg-slate-800/80 transition">
+                  <i data-lucide="star" class="w-4 h-4 text-amber-400"></i>
+                  <div>
+                    <div class="font-semibold text-slate-200">Stars du match</div>
+                    <div class="text-[11px] text-slate-400">Joueurs décisifs</div>
+                  </div>
+                </a>
+                <a href="{% url 'players:compare' %}" class="flex items-center gap-2.5 px-4 py-2 text-xs text-slate-300 hover:text-white hover:bg-slate-800/80 transition">
+                  <i data-lucide="git-compare" class="w-4 h-4 text-sky-400"></i>
+                  <div>
+                    <div class="font-semibold text-slate-200">Face-à-face</div>
+                    <div class="text-[11px] text-slate-400">Comparateur tête-à-tête</div>
+                  </div>
+                </a>
+                <a href="{% url 'players:at_risk' %}" class="flex items-center gap-2.5 px-4 py-2 text-xs text-slate-300 hover:text-white hover:bg-slate-800/80 transition">
+                  <i data-lucide="alert-triangle" class="w-4 h-4 text-rose-400"></i>
+                  <div>
+                    <div class="font-semibold text-slate-200">Joueurs sous tension</div>
+                    <div class="text-[11px] text-slate-400">Risque de suspension/cartons</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <!-- Dropdown: Projections Saison 2026/27 -->
+            <div class="relative dropdown-container">
+              <button
+                type="button"
+                class="dropdown-trigger px-3 py-2 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800/70 transition flex items-center gap-1.5 focus:outline-none"
+                aria-expanded="false"
+              >
+                <i data-lucide="trending-up" class="w-4 h-4 text-slate-400"></i>
+                <span>Saison 26/27</span>
+                <span class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-semibold bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">
+                  ML
+                </span>
+                <i data-lucide="chevron-down" class="w-3.5 h-3.5 text-slate-400 transition-transform"></i>
+              </button>
+              <div class="dropdown-menu absolute left-0 mt-2 w-60 rounded-xl bg-slate-900/95 border border-slate-800 shadow-xl py-2 z-50 backdrop-blur-md">
+                <a href="{% url 'season:best_player' %}" class="flex items-center gap-2.5 px-4 py-2 text-xs text-slate-300 hover:text-white hover:bg-slate-800/80 transition">
+                  <i data-lucide="award" class="w-4 h-4 text-amber-400"></i>
+                  <div>
+                    <div class="font-semibold text-slate-200">Meilleur Joueur</div>
+                    <div class="text-[11px] text-slate-400">Projection MVP saisonnière</div>
+                  </div>
+                </a>
+                <a href="{% url 'season:best_young' %}" class="flex items-center gap-2.5 px-4 py-2 text-xs text-slate-300 hover:text-white hover:bg-slate-800/80 transition">
+                  <i data-lucide="zap" class="w-4 h-4 text-teal-400"></i>
+                  <div>
+                    <div class="font-semibold text-slate-200">Meilleur Jeune (U21)</div>
+                    <div class="text-[11px] text-slate-400">Révélation de l'année</div>
+                  </div>
+                </a>
+                <a href="{% url 'season:best_xi' %}" class="flex items-center gap-2.5 px-4 py-2 text-xs text-slate-300 hover:text-white hover:bg-slate-800/80 transition">
+                  <i data-lucide="grid-3x3" class="w-4 h-4 text-emerald-400"></i>
+                  <div>
+                    <div class="font-semibold text-slate-200">Équipe Type (XI)</div>
+                    <div class="text-[11px] text-slate-400">Optimisation PuLP FPL 100M</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <!-- Model Performance -->
+            <a
+              href="{% url 'core:model_performance' %}"
+              class="px-3 py-2 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800/70 transition flex items-center gap-2"
+            >
+              <i data-lucide="cpu" class="w-4 h-4 text-slate-400"></i>
+              <span>Modèle IA</span>
+            </a>
+          </nav>
+
+          <!-- Right Action & Profile Area -->
+          <div class="hidden lg:flex items-center gap-3">
+            <!-- Status Badge -->
+            <div class="hidden xl:flex items-center gap-2 px-2.5 py-1 rounded-full bg-slate-900 border border-slate-800 text-[11px] text-slate-400">
+              <span class="relative flex h-2 w-2">
+                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+              </span>
+              <span>Modèle v2.4 Actif</span>
+            </div>
+
+            {% if user.is_authenticated %}
+            <!-- Authenticated User Menu -->
+            <div class="relative dropdown-container">
+              <button
+                type="button"
+                class="dropdown-trigger flex items-center gap-2.5 pl-2 pr-3 py-1.5 rounded-full bg-slate-900 border border-slate-800 hover:border-slate-700 text-slate-200 text-sm transition focus:outline-none"
+                aria-expanded="false"
+              >
+                <div class="w-7 h-7 rounded-full bg-gradient-to-tr from-emerald-600 to-teal-400 flex items-center justify-center text-white font-bold text-xs uppercase shadow-sm">
+                  {{ user.username|slice:":1" }}
+                </div>
+                <span class="font-medium text-xs max-w-[100px] truncate">{{ user.username }}</span>
+                <i data-lucide="chevron-down" class="w-3.5 h-3.5 text-slate-400 transition-transform"></i>
+              </button>
+              <div class="dropdown-menu absolute right-0 mt-2 w-52 rounded-xl bg-slate-900/95 border border-slate-800 shadow-xl py-2 z-50 backdrop-blur-md">
+                <div class="px-4 py-2 border-b border-slate-800">
+                  <div class="text-[11px] uppercase tracking-wider text-slate-400">Connecté en tant que</div>
+                  <div class="text-xs font-bold text-slate-200 truncate mt-0.5">{{ user.username }}</div>
+                </div>
+                <a href="{% url 'matches:history' %}" class="flex items-center gap-2.5 px-4 py-2 text-xs text-slate-300 hover:text-white hover:bg-slate-800/80 transition">
+                  <i data-lucide="history" class="w-4 h-4 text-emerald-400"></i>
+                  <span>Mes prédictions</span>
+                </a>
+                {% if user.is_staff %}
+                <a href="/admin/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2.5 px-4 py-2 text-xs text-slate-300 hover:text-white hover:bg-slate-800/80 transition">
+                  <i data-lucide="settings" class="w-4 h-4 text-slate-400"></i>
+                  <span>Administration Django</span>
+                </a>
+                {% endif %}
+                <div class="border-t border-slate-800 my-1"></div>
+                <form method="post" action="{% url 'accounts:logout' %}" class="w-full">
+                  {% csrf_token %}
+                  <button type="submit" class="w-full text-left flex items-center gap-2.5 px-4 py-2 text-xs text-rose-400 hover:text-rose-300 hover:bg-rose-500/10 transition">
+                    <i data-lucide="log-out" class="w-4 h-4"></i>
+                    <span>Déconnexion</span>
+                  </button>
+                </form>
+              </div>
+            </div>
+            {% else %}
+            <!-- Guest Controls -->
+            <a
+              href="{% url 'accounts:login' %}"
+              class="px-3 py-1.5 rounded-lg text-xs font-semibold text-slate-300 hover:text-white hover:bg-slate-800 transition flex items-center gap-1.5"
+            >
+              <i data-lucide="log-in" class="w-3.5 h-3.5"></i>
+              <span>Connexion</span>
+            </a>
+            <a
+              href="{% url 'accounts:register' %}"
+              class="px-3.5 py-1.5 rounded-lg text-xs font-bold text-white bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600 shadow-glow-sm hover:shadow-glow-md transition flex items-center gap-1.5"
+            >
+              <i data-lucide="user-plus" class="w-3.5 h-3.5"></i>
+              <span>S'inscrire</span>
+            </a>
+            {% endif %}
+          </div>
+
+          <!-- Mobile Hamburger Button -->
+          <div class="flex lg:hidden items-center gap-2">
+            <button
+              id="mobile-menu-btn"
+              type="button"
+              class="p-2 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800 focus:outline-none"
+              aria-label="Menu principal"
+              aria-expanded="false"
+            >
+              <i data-lucide="menu" id="menu-icon-open" class="w-6 h-6"></i>
+              <i data-lucide="x" id="menu-icon-close" class="w-6 h-6 hidden"></i>
             </button>
-          </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Navigation Drawer -->
+      <div id="mobile-menu" class="hidden lg:hidden border-t border-slate-800 bg-slate-950/98 px-4 pt-3 pb-6 space-y-3">
+        <a href="{% url 'core:home' %}" class="flex items-center gap-3 px-3 py-2 rounded-lg text-slate-200 hover:bg-slate-800 text-sm">
+          <i data-lucide="layout-dashboard" class="w-4 h-4 text-emerald-400"></i>
+          <span>Accueil</span>
+        </a>
+
+        <!-- Mobile Matchs Group -->
+        <div class="pt-2 pb-1 border-t border-slate-800/80">
+          <div class="px-3 text-[11px] font-semibold tracking-wider uppercase text-slate-400 mb-1">Matchs & Analyse</div>
+          <div class="space-y-1">
+            <a href="{% url 'matches:predict' %}" class="flex items-center gap-3 px-3 py-1.5 rounded-lg text-slate-300 hover:bg-slate-800 text-xs">
+              <i data-lucide="sparkles" class="w-4 h-4 text-emerald-400"></i>
+              <span>Prédire un match</span>
+            </a>
+            <a href="{% url 'matches:standings' %}" class="flex items-center gap-3 px-3 py-1.5 rounded-lg text-slate-300 hover:bg-slate-800 text-xs">
+              <i data-lucide="trophy" class="w-4 h-4 text-amber-400"></i>
+              <span>Classement Premier League</span>
+            </a>
+            <a href="{% url 'matches:teams_list' %}" class="flex items-center gap-3 px-3 py-1.5 rounded-lg text-slate-300 hover:bg-slate-800 text-xs">
+              <i data-lucide="shield" class="w-4 h-4 text-sky-400"></i>
+              <span>Équipes & Clubs</span>
+            </a>
+            <a href="{% url 'matches:compare' %}" class="flex items-center gap-3 px-3 py-1.5 rounded-lg text-slate-300 hover:bg-slate-800 text-xs">
+              <i data-lucide="arrow-left-right" class="w-4 h-4 text-purple-400"></i>
+              <span>Comparer deux équipes</span>
+            </a>
+            <a href="{% url 'matches:history' %}" class="flex items-center gap-3 px-3 py-1.5 rounded-lg text-slate-300 hover:bg-slate-800 text-xs">
+              <i data-lucide="history" class="w-4 h-4 text-slate-400"></i>
+              <span>Historique des prédictions</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Mobile Joueurs Group -->
+        <div class="pt-2 pb-1 border-t border-slate-800/80">
+          <div class="px-3 text-[11px] font-semibold tracking-wider uppercase text-slate-400 mb-1">Joueurs & Performance</div>
+          <div class="space-y-1">
+            <a href="{% url 'players:list' %}" class="flex items-center gap-3 px-3 py-1.5 rounded-lg text-slate-300 hover:bg-slate-800 text-xs">
+              <i data-lucide="users" class="w-4 h-4 text-emerald-400"></i>
+              <span>Base des joueurs</span>
+            </a>
+            <a href="{% url 'players:match_stars' %}" class="flex items-center gap-3 px-3 py-1.5 rounded-lg text-slate-300 hover:bg-slate-800 text-xs">
+              <i data-lucide="star" class="w-4 h-4 text-amber-400"></i>
+              <span>Stars du match</span>
+            </a>
+            <a href="{% url 'players:compare' %}" class="flex items-center gap-3 px-3 py-1.5 rounded-lg text-slate-300 hover:bg-slate-800 text-xs">
+              <i data-lucide="git-compare" class="w-4 h-4 text-sky-400"></i>
+              <span>Face-à-face joueurs</span>
+            </a>
+            <a href="{% url 'players:at_risk' %}" class="flex items-center gap-3 px-3 py-1.5 rounded-lg text-slate-300 hover:bg-slate-800 text-xs">
+              <i data-lucide="alert-triangle" class="w-4 h-4 text-rose-400"></i>
+              <span>Joueurs sous tension</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Mobile Saison Group -->
+        <div class="pt-2 pb-1 border-t border-slate-800/80">
+          <div class="px-3 text-[11px] font-semibold tracking-wider uppercase text-slate-400 mb-1 flex items-center justify-between">
+            <span>Saison 2026/27</span>
+            <span class="text-[9px] px-1.5 py-0.2 bg-emerald-500/20 text-emerald-300 rounded font-bold">ML PuLP</span>
+          </div>
+          <div class="space-y-1">
+            <a href="{% url 'season:best_player' %}" class="flex items-center gap-3 px-3 py-1.5 rounded-lg text-slate-300 hover:bg-slate-800 text-xs">
+              <i data-lucide="award" class="w-4 h-4 text-amber-400"></i>
+              <span>Meilleur Joueur</span>
+            </a>
+            <a href="{% url 'season:best_young' %}" class="flex items-center gap-3 px-3 py-1.5 rounded-lg text-slate-300 hover:bg-slate-800 text-xs">
+              <i data-lucide="zap" class="w-4 h-4 text-teal-400"></i>
+              <span>Meilleur Jeune (U21)</span>
+            </a>
+            <a href="{% url 'season:best_xi' %}" class="flex items-center gap-3 px-3 py-1.5 rounded-lg text-slate-300 hover:bg-slate-800 text-xs">
+              <i data-lucide="grid-3x3" class="w-4 h-4 text-emerald-400"></i>
+              <span>Équipe Type FPL (XI)</span>
+            </a>
+            <a href="{% url 'core:model_performance' %}" class="flex items-center gap-3 px-3 py-1.5 rounded-lg text-slate-300 hover:bg-slate-800 text-xs">
+              <i data-lucide="cpu" class="w-4 h-4 text-slate-400"></i>
+              <span>Performance du modèle IA</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Mobile Auth / Profile -->
+        <div class="pt-3 border-t border-slate-800">
+          {% if user.is_authenticated %}
+          <div class="px-3 py-2 bg-slate-900 rounded-lg flex items-center justify-between mb-2">
+            <div class="flex items-center gap-2">
+              <div class="w-6 h-6 rounded-full bg-emerald-600 flex items-center justify-center text-white text-xs font-bold">
+                {{ user.username|slice:":1"|upper }}
+              </div>
+              <span class="text-xs font-medium text-slate-200">{{ user.username }}</span>
+            </div>
+            <form method="post" action="{% url 'accounts:logout' %}">
+              {% csrf_token %}
+              <button type="submit" class="text-xs text-rose-400 hover:text-rose-300 flex items-center gap-1">
+                <i data-lucide="log-out" class="w-3.5 h-3.5"></i>
+                <span>Déconnexion</span>
+              </button>
+            </form>
+          </div>
           {% else %}
-          <a href="{% url 'accounts:login' %}" class="hover:text-emerald-400"
-            >Connexion</a
-          >
-          <a
-            href="{% url 'accounts:register' %}"
-            class="bg-emerald-500 hover:bg-emerald-600 px-3 py-1 rounded"
-            >S'inscrire</a
-          >
+          <div class="grid grid-cols-2 gap-2 pt-1">
+            <a
+              href="{% url 'accounts:login' %}"
+              class="w-full text-center py-2 px-3 rounded-lg text-xs font-semibold text-slate-200 bg-slate-900 border border-slate-800 hover:bg-slate-800 transition"
+            >
+              Connexion
+            </a>
+            <a
+              href="{% url 'accounts:register' %}"
+              class="w-full text-center py-2 px-3 rounded-lg text-xs font-bold text-white bg-emerald-600 hover:bg-emerald-500 transition shadow-sm"
+            >
+              S'inscrire
+            </a>
+          </div>
           {% endif %}
         </div>
       </div>
-    </nav>
+    </header>
 
+    <!-- Flash Messages / Toast Alerts -->
     {% if messages %}
-    <div class="max-w-6xl mx-auto px-4 pt-4 w-full">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 w-full space-y-2">
       {% for message in messages %}
       <div
-        class="p-3 rounded mb-2 text-sm {% if message.tags == 'success' %}bg-emerald-100 text-emerald-900 {% elif message.tags == 'error' %}bg-red-100 text-red-900 {% else %}bg-blue-100 text-blue-900{% endif %}"
+        class="flash-alert flex items-start gap-3 p-4 rounded-xl border shadow-sm text-sm transition-all duration-200 {% if message.tags == 'success' %}bg-emerald-50/90 border-emerald-200 text-emerald-900{% elif message.tags == 'error' %}bg-rose-50/90 border-rose-200 text-rose-900{% elif message.tags == 'warning' %}bg-amber-50/90 border-amber-200 text-amber-900{% else %}bg-sky-50/90 border-sky-200 text-sky-900{% endif %}"
+        role="alert"
       >
-        {{ message }}
+        <div class="mt-0.5 shrink-0">
+          {% if message.tags == 'success' %}
+          <i data-lucide="check-circle-2" class="w-5 h-5 text-emerald-600"></i>
+          {% elif message.tags == 'error' %}
+          <i data-lucide="alert-circle" class="w-5 h-5 text-rose-600"></i>
+          {% elif message.tags == 'warning' %}
+          <i data-lucide="alert-triangle" class="w-5 h-5 text-amber-600"></i>
+          {% else %}
+          <i data-lucide="info" class="w-5 h-5 text-sky-600"></i>
+          {% endif %}
+        </div>
+        <div class="flex-1 font-medium leading-relaxed">
+          {{ message }}
+        </div>
+        <button
+          type="button"
+          class="shrink-0 p-1 text-slate-400 hover:text-slate-600 rounded-lg hover:bg-black/5 transition"
+          onclick="this.closest('.flash-alert').remove()"
+          aria-label="Fermer"
+        >
+          <i data-lucide="x" class="w-4 h-4"></i>
+        </button>
       </div>
       {% endfor %}
     </div>
     {% endif %}
 
-    <main class="flex-1 max-w-6xl mx-auto px-4 py-8 w-full">
+    <!-- Main Content Area -->
+    <main class="flex-1 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 w-full">
       {% block content %}{% endblock %}
     </main>
 
-    <footer class="bg-slate-100 text-center py-4 text-xs text-slate-500">
-      Football Intelligence Platform — Projet académique · Les prédictions sont
-      probabilistes et ne constituent en aucun cas une incitation aux paris.
+    <!-- Modern Classy Footer -->
+    <footer class="bg-slate-950 text-slate-400 border-t border-slate-800/80 mt-auto">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+          
+          <!-- Column 1: Brand & Overview (Spans 2 cols on lg) -->
+          <div class="lg:col-span-2 space-y-4">
+            <div class="flex items-center gap-3">
+              <div class="w-8 h-8 rounded-lg bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center">
+                <i data-lucide="activity" class="w-4 h-4 text-emerald-400"></i>
+              </div>
+              <div class="leading-none">
+                <span class="text-white font-extrabold tracking-wider text-sm">FOOTBALL</span>
+                <span class="text-emerald-400 font-bold tracking-tight text-sm"> INTELLIGENCE</span>
+              </div>
+            </div>
+            <p class="text-xs text-slate-400 leading-relaxed max-w-sm">
+              Plateforme décisionnelle et prédictive dédiée à la Premier League.
+              Modélisation probabiliste par gradient boosting et optimisation d'effectif sous contraintes.
+            </p>
+            <div class="flex items-center gap-2 pt-2">
+              <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800 text-[11px] text-slate-300">
+                <i data-lucide="shield-check" class="w-3.5 h-3.5 text-emerald-400"></i>
+                Projet Académique & Recherche
+              </span>
+            </div>
+          </div>
+
+          <!-- Column 2: Matchs & Pronostics -->
+          <div class="space-y-3">
+            <h4 class="text-xs font-bold text-slate-200 uppercase tracking-wider flex items-center gap-1.5">
+              <i data-lucide="calendar" class="w-3.5 h-3.5 text-slate-400"></i>
+              Matchs
+            </h4>
+            <ul class="space-y-2 text-xs">
+              <li>
+                <a href="{% url 'matches:predict' %}" class="hover:text-emerald-400 transition flex items-center gap-1.5">
+                  <i data-lucide="chevron-right" class="w-3 h-3 text-slate-600"></i>
+                  Prédire un match
+                </a>
+              </li>
+              <li>
+                <a href="{% url 'matches:standings' %}" class="hover:text-emerald-400 transition flex items-center gap-1.5">
+                  <i data-lucide="chevron-right" class="w-3 h-3 text-slate-600"></i>
+                  Classement
+                </a>
+              </li>
+              <li>
+                <a href="{% url 'matches:teams_list' %}" class="hover:text-emerald-400 transition flex items-center gap-1.5">
+                  <i data-lucide="chevron-right" class="w-3 h-3 text-slate-600"></i>
+                  Clubs & Équipes
+                </a>
+              </li>
+              <li>
+                <a href="{% url 'matches:compare' %}" class="hover:text-emerald-400 transition flex items-center gap-1.5">
+                  <i data-lucide="chevron-right" class="w-3 h-3 text-slate-600"></i>
+                  Comparateur H2H
+                </a>
+              </li>
+              <li>
+                <a href="{% url 'matches:history' %}" class="hover:text-emerald-400 transition flex items-center gap-1.5">
+                  <i data-lucide="chevron-right" class="w-3 h-3 text-slate-600"></i>
+                  Historique prédictions
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Column 3: Joueurs & Saison -->
+          <div class="space-y-3">
+            <h4 class="text-xs font-bold text-slate-200 uppercase tracking-wider flex items-center gap-1.5">
+              <i data-lucide="award" class="w-3.5 h-3.5 text-slate-400"></i>
+              Saison & Joueurs
+            </h4>
+            <ul class="space-y-2 text-xs">
+              <li>
+                <a href="{% url 'players:list' %}" class="hover:text-emerald-400 transition flex items-center gap-1.5">
+                  <i data-lucide="chevron-right" class="w-3 h-3 text-slate-600"></i>
+                  Effectifs & Joueurs
+                </a>
+              </li>
+              <li>
+                <a href="{% url 'players:match_stars' %}" class="hover:text-emerald-400 transition flex items-center gap-1.5">
+                  <i data-lucide="chevron-right" class="w-3 h-3 text-slate-600"></i>
+                  Stars du Match
+                </a>
+              </li>
+              <li>
+                <a href="{% url 'season:best_player' %}" class="hover:text-emerald-400 transition flex items-center gap-1.5">
+                  <i data-lucide="chevron-right" class="w-3 h-3 text-slate-600"></i>
+                  Meilleur Joueur 26/27
+                </a>
+              </li>
+              <li>
+                <a href="{% url 'season:best_young' %}" class="hover:text-emerald-400 transition flex items-center gap-1.5">
+                  <i data-lucide="chevron-right" class="w-3 h-3 text-slate-600"></i>
+                  Meilleur Jeune (U21)
+                </a>
+              </li>
+              <li>
+                <a href="{% url 'season:best_xi' %}" class="hover:text-emerald-400 transition flex items-center gap-1.5">
+                  <i data-lucide="chevron-right" class="w-3 h-3 text-slate-600"></i>
+                  Onze Idéal FPL
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Column 4: IA & Spécifications -->
+          <div class="space-y-3">
+            <h4 class="text-xs font-bold text-slate-200 uppercase tracking-wider flex items-center gap-1.5">
+              <i data-lucide="cpu" class="w-3.5 h-3.5 text-slate-400"></i>
+              Système IA
+            </h4>
+            <div class="space-y-2 text-xs text-slate-400">
+              <div class="p-2.5 rounded-lg bg-slate-900 border border-slate-800 space-y-1.5">
+                <div class="flex items-center justify-between text-[11px]">
+                  <span class="text-slate-400">Moteur prédictif :</span>
+                  <span class="text-emerald-400 font-semibold">XGBoost / LightGBM</span>
+                </div>
+                <div class="flex items-center justify-between text-[11px]">
+                  <span class="text-slate-400">Optimisation XI :</span>
+                  <span class="text-teal-400 font-semibold">PuLP (ILP)</span>
+                </div>
+                <div class="flex items-center justify-between text-[11px]">
+                  <span class="text-slate-400">Horizon cible :</span>
+                  <span class="text-slate-300 font-medium">Saison 2026-27</span>
+                </div>
+              </div>
+              <a href="{% url 'core:model_performance' %}" class="inline-flex items-center gap-1.5 text-emerald-400 hover:text-emerald-300 transition font-medium">
+                Consulter les métriques ROC/AUC
+                <i data-lucide="arrow-right" class="w-3 h-3"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Disclaimer & Copyright Bar -->
+        <div class="mt-10 pt-6 border-t border-slate-800/80 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-slate-400">
+          <p class="text-center md:text-left leading-relaxed">
+            &copy; 2026 Football Intelligence. Les prédictions générées sont strictement probabilistes et informatives — Elles ne constituent en aucun cas une incitation aux paris sportifs.
+          </p>
+          <div class="flex items-center gap-4 shrink-0 text-slate-400">
+            <span class="inline-flex items-center gap-1">
+              <i data-lucide="code-2" class="w-3.5 h-3.5 text-slate-400"></i>
+              Django &middot; Tailwind CSS &middot; Python ML
+            </span>
+          </div>
+        </div>
+      </div>
     </footer>
+
+    <!-- Dropdown & Mobile Menu Interactive Script -->
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        // Initialize Lucide icons
+        if (window.lucide) {
+          lucide.createIcons();
+        }
+
+        // Dropdown Handlers (Desktop)
+        const dropdownContainers = document.querySelectorAll('.dropdown-container');
+        
+        dropdownContainers.forEach(container => {
+          const trigger = container.querySelector('.dropdown-trigger');
+          const menu = container.querySelector('.dropdown-menu');
+          const chevron = trigger ? trigger.querySelector('[data-lucide="chevron-down"]') : null;
+
+          if (!trigger || !menu) return;
+
+          trigger.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const isOpen = menu.classList.contains('active');
+
+            // Close all open dropdowns first
+            document.querySelectorAll('.dropdown-menu.active').forEach(openMenu => {
+              if (openMenu !== menu) {
+                openMenu.classList.remove('active');
+                const openTrigger = openMenu.closest('.dropdown-container')?.querySelector('.dropdown-trigger');
+                if (openTrigger) {
+                  openTrigger.setAttribute('aria-expanded', 'false');
+                  const arrow = openTrigger.querySelector('[data-lucide="chevron-down"]');
+                  if (arrow) arrow.style.transform = 'rotate(0deg)';
+                }
+              }
+            });
+
+            // Toggle target dropdown
+            if (isOpen) {
+              menu.classList.remove('active');
+              trigger.setAttribute('aria-expanded', 'false');
+              if (chevron) chevron.style.transform = 'rotate(0deg)';
+            } else {
+              menu.classList.add('active');
+              trigger.setAttribute('aria-expanded', 'true');
+              if (chevron) chevron.style.transform = 'rotate(180deg)';
+            }
+          });
+        });
+
+        // Close dropdowns on outside click or Escape key
+        document.addEventListener('click', () => {
+          document.querySelectorAll('.dropdown-menu.active').forEach(openMenu => {
+            openMenu.classList.remove('active');
+            const openTrigger = openMenu.closest('.dropdown-container')?.querySelector('.dropdown-trigger');
+            if (openTrigger) {
+              openTrigger.setAttribute('aria-expanded', 'false');
+              const arrow = openTrigger.querySelector('[data-lucide="chevron-down"]');
+              if (arrow) arrow.style.transform = 'rotate(0deg)';
+            }
+          });
+        });
+
+        document.addEventListener('keydown', (e) => {
+          if (e.key === 'Escape') {
+            document.querySelectorAll('.dropdown-menu.active').forEach(openMenu => {
+              openMenu.classList.remove('active');
+              const openTrigger = openMenu.closest('.dropdown-container')?.querySelector('.dropdown-trigger');
+              if (openTrigger) {
+                openTrigger.setAttribute('aria-expanded', 'false');
+                const arrow = openTrigger.querySelector('[data-lucide="chevron-down"]');
+                if (arrow) arrow.style.transform = 'rotate(0deg)';
+              }
+            });
+          }
+        });
+
+        // Mobile menu toggle
+        const mobileBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const iconOpen = document.getElementById('menu-icon-open');
+        const iconClose = document.getElementById('menu-icon-close');
+
+        if (mobileBtn && mobileMenu) {
+          mobileBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const isHidden = mobileMenu.classList.contains('hidden');
+            if (isHidden) {
+              mobileMenu.classList.remove('hidden');
+              mobileBtn.setAttribute('aria-expanded', 'true');
+              if (iconOpen) iconOpen.classList.add('hidden');
+              if (iconClose) iconClose.classList.remove('hidden');
+            } else {
+              mobileMenu.classList.add('hidden');
+              mobileBtn.setAttribute('aria-expanded', 'false');
+              if (iconOpen) iconOpen.classList.remove('hidden');
+              if (iconClose) iconClose.classList.add('hidden');
+            }
+          });
+        }
+      });
+    </script>
+
+    {% block extra_scripts %}{% endblock %}
   </body>
 </html>
