@@ -45,20 +45,20 @@ GOAL: a clean, empty project that runs, with Git, a virtual environment and the
 data in place.
 
 TASKS
-[ ] [M] Install/verify: Python 3.11+ (3.10 minimum), Git, VS Code (or PyCharm),
+[X] [M] Install/verify: Python 3.11+ (3.10 minimum), Git, VS Code (or PyCharm),
         Jupyter (pip install notebook), DB Browser for SQLite (optional).
-[ ] [M] Create the project folder:  football_platform/
-[ ] [M] Create the virtual environment:
+[X] [M] Create the project folder:  football_platform/
+[X] [M] Create the virtual environment:
           python -m venv .venv
           Windows:  .venv\Scripts\activate
           Linux/Mac: source .venv/bin/activate
-[ ] [M] Install base packages and freeze them:
+[X] [M] Install base packages and freeze them:
           pip install django pandas numpy scikit-learn xgboost joblib plotly
                       pulp djangorestframework matplotlib jupyter pytest
           pip freeze > requirements.txt
-[ ] [M] Create the Django project in the current folder:
+[X] [M] Create the Django project in the current folder:
           django-admin startproject config .
-[ ] [M] Create the apps inside an apps/ folder (create the folder first, add an
+[X] [M] Create the apps inside an apps/ folder (create the folder first, add an
         empty __init__.py, then):
           mkdir apps\core  (and matches, players, season, accounts)
           python manage.py startapp core apps/core
@@ -68,23 +68,23 @@ TASKS
           python manage.py startapp accounts apps/accounts
         IMPORTANT: in each apps/<name>/apps.py set  name = "apps.<name>"
         and add "apps.<name>" to INSTALLED_APPS in config/settings.py.
-[ ] [M] Create the non-Django folders:
+[X] [M] Create the non-Django folders:
           ml/ (data_loader.py, cleaning.py, features.py, train_match_model.py,
                train_player_model.py, optimize_squad.py, predict.py,
                artifacts/)
           data/raw/   data/processed/   notebooks/   templates/   static/
-[ ] [M] Copy your season folders (2020-21 ... 2026-27) into data/raw/.
-[ ] [M] Create .gitignore: .venv/, __pycache__/, db.sqlite3, *.pyc,
+[X] [M] Copy your season folders (2020-21 ... 2026-27) into data/raw/.
+[X] [M] Create .gitignore: .venv/, __pycache__/, db.sqlite3, *.pyc,
         .env, data/raw/ (if files are big), ml/artifacts/*.joblib (optional).
-[ ] [M] git init, first commit "Initial project skeleton".
+[X] [M] git init, first commit "Initial project skeleton".
         Create a GitHub/GitLab repository (private) and push.
-[ ] [M] Settings: set LANGUAGE_CODE = "fr" (or "en"), TIME_ZONE = "Africa/Tunis",
+[X] [M] Settings: set LANGUAGE_CODE = "fr" (or "en"), TIME_ZONE = "Africa/Tunis",
         add TEMPLATES DIRS = [BASE_DIR / "templates"],
         STATICFILES_DIRS = [BASE_DIR / "static"].
-[ ] [M] Run:  python manage.py migrate  then  python manage.py runserver
+[X] [M] Run:  python manage.py migrate  then  python manage.py runserver
         -> the Django welcome page must open.
-[ ] [S] Write a first README.md (project name, how to install, how to run).
-[ ] [S] Create a Trello/Notion/GitHub Projects board with this roadmap's tasks.
+[X] [S] Write a first README.md (project name, how to install, how to run).
+[X] [S] Create a Trello/Notion/GitHub Projects board with this roadmap's tasks.
 
 DELIVERABLES: running empty Django project, Git repo, requirements.txt.
 DONE WHEN: `python manage.py runserver` works and the first commit is pushed.
@@ -97,7 +97,7 @@ GOAL: know your data perfectly BEFORE modelling. Notebook:
 notebooks/01_exploration.ipynb
 
 TASKS
-[ ] [M] For EACH file type, load one season and print: shape, columns, dtypes,
+[X] [M] For EACH file type, load one season and print: shape, columns, dtypes,
         head(), describe(), missing values (isna().sum()).
           - E0_Season_XXXXYYYY.csv  (match results + odds)
           - master_gameweeks.csv
@@ -105,18 +105,18 @@ TASKS
           - master_player_history.csv
           - master_understat_teams.csv   (absent for 2025-26 and 2026-27)
           - master_xP_projections.csv
-[ ] [M] Write the data dictionary: a table "file | column | meaning | type |
+[X] [M] Write the data dictionary: a table "file | column | meaning | type |
         used for". Save it as docs/data_dictionary.md.
-[ ] [M] Check consistency across seasons: same columns? same names? same
+[X] [M] Check consistency across seasons: same columns? same names? same
         number of matches (380 per complete season)? Columns that appear or
         disappear between seasons.
-[ ] [M] Inspect the 2026-27 folder: how many matches are already played, what
+[X] [M] Inspect the 2026-27 folder: how many matches are already played, what
         is the date of the last played match, which fixtures are upcoming.
-[ ] [M] List ALL team names found in each file/season (set of unique names) and
+[X] [M] List ALL team names found in each file/season (set of unique names) and
         spot the differences (e.g. "Man United" vs "Manchester Utd").
-[ ] [M] List the identifiers of players (id? name? element id?) and test if the
+[X] [M] List the identifiers of players (id? name? element id?) and test if the
         same player has the same id across seasons.
-[ ] [M] Answer these questions in the notebook:
+[X] [M] Answer these questions in the notebook:
           - Is the date of birth / age available anywhere?  (needed for the
             "best young player" feature)
           - Do E0 files contain bookmaker odds columns (B365H/D/A ...)?
@@ -124,10 +124,10 @@ TASKS
             BPS, price, points?
           - Does master_player_history have one row per past season per player?
           - Which player positions exist (GK/DEF/MID/FWD)?
-[ ] [M] Simple analysis: % home wins / draws / away wins per season; average
+[X] [M] Simple analysis: % home wins / draws / away wins per season; average
         goals per match; home advantage. -> this gives your BASELINE numbers.
-[ ] [S] First plots: results distribution, goals per season, top scorers.
-[ ] [S] Write a short "findings" cell: data problems you must fix in Phase 2.
+[X] [S] First plots: results distribution, goals per season, top scorers.
+[X] [S] Write a short "findings" cell: data problems you must fix in Phase 2.
 
 DELIVERABLES: 01_exploration.ipynb, docs/data_dictionary.md, list of problems.
 DONE WHEN: you can explain every file and column, and you know the baseline

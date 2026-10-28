@@ -1,0 +1,1515 @@
+element_code,name,position,current_team
+37605,Mesut Özil,MID,Arsenal
+39476,Sokratis Papastathopoulos,DEF,Arsenal
+41270,David Luiz Moreira Marinho,DEF,Arsenal
+69140,Shkodran Mustafi,DEF,Arsenal
+37339,Ahmed El Mohamady,DEF,Aston Villa
+40564,Henri Lansbury,MID,Aston Villa
+47390,Neil Taylor,DEF,Aston Villa
+89274,José Ignacio Peleteiro Romallo,MID,Aston Villa
+98770,Ørjan Nyland,GK,Aston Villa
+223349,Indiana Vassilev,FWD,Aston Villa
+20529,Glenn Murray,FWD,Brighton
+50093,David Button,GK,West Brom
+74471,Aaron Mooy,MID,Brighton
+86153,Martín Montoya,DEF,Brighton
+167473,José Izquierdo,MID,Brighton
+90517,Robbie Brady,MID,Burnley
+194794,Fikayo Tomori,DEF,Chelsea
+19419,Gary Cahill,DEF,Crystal Palace
+40784,Mamadou Sakho,DEF,Crystal Palace
+50472,James McCarthy,MID,Crystal Palace
+59125,Connor Wickham,FWD,Crystal Palace
+74230,Patrick van Aanholt,DEF,Crystal Palace
+141020,Max Meyer,MID,Crystal Palace
+466955,Brandon Pierrick,MID,Crystal Palace
+40559,Fabricio Agosto Ramírez,GK,Fulham
+55038,Kevin McDonald,MID,Fulham
+61739,Maxime Le Marchand,DEF,Fulham
+61916,Stefan Johansen,MID,Fulham
+84915,Michael Hector,DEF,Fulham
+87107,Cyrus Christie,DEF,Fulham
+149266,Alfie Mawson,DEF,Fulham
+170271,Jean Michaël Seri,MID,Fulham
+197030,Aboubakar Kamara,MID,Fulham
+203325,André-Frank Zambo Anguissa,MID,Fulham
+208998,Zeze Steven Sessegnon,DEF,Fulham
+57913,Barry Douglas,DEF,Leeds
+105377,Ezgjan Alioski,DEF,Leeds
+204642,Jay-Roy Grot,MID,Leeds
+214987,Kamil Miazek,GK,Leeds
+434138,Jordan Stevens,MID,Leeds
+467114,Oliver Casey,DEF,Leeds
+15033,Wes Morgan,DEF,Leicester
+37402,Christian Fuchs,DEF,Leicester
+46483,Adrien Silva,MID,Leicester
+61604,Matty James,MID,Leicester
+213405,Filip Benkovic,DEF,Leicester
+41733,Georginio Wijnaldum,MID,Liverpool
+33148,Claudio Bravo,GK,Man City
+37572,Sergio Agüero,FWD,Man City
+57410,Nicolás Otamendi,DEF,Man City
+432656,Eric Garcia,DEF,Man City
+42899,Sergio Romero,GK,Man United
+55909,Chris Smalling,DEF,Man United
+58498,Odion Ighalo,FWD,Man United
+58893,Marcos Rojo,DEF,Man United
+201084,Timothy Fosu-Mensah,DEF,Man United
+40142,Andy Carroll,FWD,Newcastle
+77359,Florian Lejeune,DEF,Newcastle
+104953,Christian Atsu,MID,Newcastle
+151119,DeAndre Yedlin,DEF,Newcastle
+155513,Rolando Aarons,MID,Newcastle
+196118,Yoshinori Muto,FWD,Newcastle
+18867,Billy Sharp,FWD,Sheffield United
+27436,David McGoldrick,FWD,Sheffield United
+63426,Enda Stevens,DEF,Sheffield United
+146610,Jack O'Connell,DEF,Sheffield United
+153723,John Lundstram,MID,Sheffield United
+171975,Callum Robinson,FWD,West Brom
+178304,Lys Mousset,FWD,Sheffield United
+128198,Sofiane Boufal,MID,Southampton
+153379,Josh Sims,MID,Southampton
+214470,Jake Vokins,DEF,Southampton
+195774,Gedson Carvalho Fernandes,MID,Tottenham
+234908,Juan Foyth,DEF,Tottenham
+42427,Kieran Gibbs,DEF,West Brom
+49440,Hal Robson-Kanu,FWD,West Brom
+49944,Jake Livermore,MID,West Brom
+49957,Kamil Grosicki,MID,West Brom
+50229,Matt Phillips,MID,West Brom
+59940,Kyle Bartley,DEF,West Brom
+61600,Romaine Sawyers,MID,West Brom
+77777,Ahmed El-Sayed Hegazy,DEF,West Brom
+78356,Charlie Austin,FWD,West Brom
+82078,Kenneth Zohore,FWD,West Brom
+146426,Oluwasemilogo Adesewo Ibidapo Ajayi,DEF,West Brom
+173809,Jonathan Leko,MID,West Brom
+174593,Kyle Edwards,MID,West Brom
+176420,Darnell Furlong,DEF,West Brom
+195864,Sam Field,MID,West Brom
+197937,Oliver Burke,MID,Sheffield United
+232427,Rekeem Harper,MID,West Brom
+18987,Robert Snodgrass,MID,West Brom
+19194,David Martin,GK,West Ham
+40694,Roberto Jimenez Gago,GK,West Ham
+54102,Jack Wilshere,MID,West Ham
+101537,Felipe Anderson Pereira Gomes,MID,West Ham
+103123,Sébastien Haller,FWD,West Ham
+166640,Fabián Balbuena,DEF,West Ham
+179830,Grady Diangana,MID,West Brom
+181008,Albian Ajeti,FWD,West Ham
+41727,Ryan Bennett,DEF,Wolves
+141569,Léo Bonatini,FWD,Wolves
+179456,Oskar Buur,DEF,Wolves
+474003,Leonardo Campana,FWD,Wolves
+210407,Matheus Pereira,MID,West Brom
+19188,Scott Dann,DEF,Crystal Palace
+183015,Cedric Kipre,DEF,West Brom
+182539,Daniel Ceballos Fernández,MID,Arsenal
+437858,Vitor Ferreira,MID,Wolves
+218023,Jimmy Dunne,DEF,Burnley
+168763,Cameron Carter-Vickers,DEF,Tottenham
+221272,Sam Woods,DEF,Crystal Palace
+72681,Denis Odoi,DEF,Fulham
+7645,Phil Jagielka,DEF,Sheffield United
+41135,Branislav Ivanovic,DEF,West Brom
+463912,Elia Caprile,GK,Leeds
+480216,Mateusz Bogusz,MID,Leeds
+114536,Ryan Inniss,DEF,Crystal Palace
+195471,Anthony Driscoll-Glennon,DEF,Burnley
+449926,Adrián Bernabé,MID,Man City
+228798,Cengiz Ünder,MID,Leicester
+36903,Gareth Bale,MID,Tottenham
+220738,Jayson Molumby,MID,Brighton
+195064,Mace Goodridge,MID,Burnley
+225368,Meritan Shabani,MID,Wolves
+200878,Filip Krovinovic,MID,West Brom
+42525,Stephen Henderson,GK,Crystal Palace
+149828,Islam Slimani,FWD,Leicester
+194126,Michael Verrips,GK,Sheffield United
+180294,Karlan Grant,FWD,West Brom
+461450,Max Thompson,FWD,Burnley
+431019,Karlo Ziger,GK,Chelsea
+232797,Kayne Ramsay,DEF,Southampton
+38716,Lee Peltier,DEF,West Brom
+233489,Leighton Clarkson,MID,Liverpool
+109638,Kean Bryan,DEF,Sheffield United
+6744,Lee Grant,GK,Man United
+223332,Faustino Anjorin,MID,Chelsea
+432927,Daniel Langley,GK,Newcastle
+243343,Jake Cain,MID,Liverpool
+219265,Felix Nmecha,MID,Man City
+443296,Theo Corbeanu,MID,Wolves
+232361,Taylor Perry,MID,Wolves
+430367,Joel Mumbongo,FWD,Burnley
+437688,Lewis Richards,DEF,Wolves
+505265,Cheikh Diaby,FWD,West Brom
+230127,Percy Tau,MID,Brighton
+465551,Nigel Lonwijk,DEF,Wolves
+465572,Reda Khadra,MID,Brighton
+244848,Teddy Jenks,MID,Brighton
+215062,Max Sanders,MID,Brighton
+440241,Jensen Weir,MID,Brighton
+422306,Will Ferry,MID,Southampton
+447093,Allan Tchaptchet,DEF,Southampton
+456966,Caleb Watts,MID,Southampton
+461533,Ademipo Odubeko,FWD,West Ham
+73314,Willian José Da Silva,FWD,Wolves
+449781,Alexandre Jankewitz,MID,Southampton
+478449,Kyron Gordon,DEF,Sheffield United
+164011,Mbaye Diagne,FWD,West Brom
+101394,Okay Yokuslu,MID,West Brom
+481371,Zak Brunt,MID,Sheffield United
+184259,Richard Nartey,DEF,Burnley
+232881,Thakgalo Leshabela,MID,Leicester
+195480,Josh Maja,FWD,Fulham
+531076,Frankie Maguire,MID,Sheffield United
+232398,Nathan Trott,GK,West Ham
+421796,Sidnei Tavares,MID,Leicester
+433019,Liam Hughes,GK,Liverpool
+490138,Jakub Ojrzynski,GK,Liverpool
+422612,Ryan Astley,DEF,Everton
+447373,Shane Flynn,MID,Leicester
+38588,Gaetano Berardi,DEF,Leeds
+513789,Thanawat Suengchitthawon,MID,Leicester
+480818,Billy Koumetio,DEF,Liverpool
+470255,Caleb Taylor,DEF,West Brom
+439242,Taylor Gardner-Hickman,MID,West Brom
+461585,Tawanda Maswanhise,MID,Leicester
+235640,Harry Boyes,DEF,Sheffield United
+444575,Toby King,MID,West Brom
+223335,Sylvester Jasper,MID,Fulham
+461212,Nile John,MID,Tottenham
+461566,William Fish,DEF,Man United
+59966,Alexandre Lacazette,FWD,Arsenal
+98745,Héctor Bellerín,DEF,Arsenal
+111457,Sead Kolasinac,DEF,Arsenal
+242166,Mattéo Guendouzi,MID,Arsenal
+79852,Jed Steer,GK,Aston Villa
+85242,Conor Hourihane,MID,Aston Villa
+108156,Björn Engels,DEF,Aston Villa
+148508,Mahmoud Ahmed Ibrahim Hassan,MID,Aston Villa
+217487,Mbwana Ally Samatta,FWD,Aston Villa
+66242,Davy Pröpper,MID,Brighton
+131897,Mathew Ryan,GK,Brighton
+165210,Alireza Jahanbakhsh,MID,Brighton
+209362,Bernardo Fernandes Da Silva Junior,DEF,Brighton
+17997,Phil Bardsley,DEF,Burnley
+39487,Erik Pieters,DEF,Burnley
+40845,Dale Stephens,MID,Burnley
+41674,Kevin Long,DEF,Burnley
+60551,Ashley Westwood,MID,Burnley
+68983,Matthew Lowton,DEF,Burnley
+81183,Matej Vydra,FWD,Burnley
+168399,Will Norris,GK,Burnley
+217401,Josh Benson,MID,Burnley
+44346,Olivier Giroud,FWD,Chelsea
+94245,Michy Batshuayi,FWD,Chelsea
+102380,Antonio Rüdiger,DEF,Chelsea
+135363,Andreas Christensen,DEF,Chelsea
+58786,Martin Kelly,DEF,Crystal Palace
+185478,Jarosław Jach,DEF,Crystal Palace
+41823,Fabian Delph,MID,Everton
+55422,Gylfi Sigurdsson,MID,Everton
+60025,James Rodríguez,MID,Everton
+100649,Bernard Anício Caldeira Duarte,MID,Everton
+28690,Pablo Hernández Domínguez,MID,Leeds
+39790,Francisco Casilla Cortés,GK,Leeds
+165808,Hélder Wander Sousa de Azevedo e Costa,MID,Leeds
+68312,Xherdan Shaqiri,MID,Liverpool
+110979,Sadio Mané,MID,Liverpool
+157882,Takumi Minamino,MID,Liverpool
+102826,Benjamin Mendy,DEF,Man City
+224444,Ferran Torres,MID,Man City
+40720,Edinson Cavani,FWD,Man United
+62398,Nemanja Matic,MID,Man United
+74208,Paul Pogba,MID,Man United
+220688,Mason Greenwood,MID,Man United
+223175,Matthew Longstaff,MID,Newcastle
+18499,Michael McGovern,GK,Norwich
+57127,Teemu Pukki,FWD,Norwich
+71738,Marco Stiepermann,MID,Norwich
+76306,Lukas Rupp,MID,Norwich
+78607,Kenny McLean,MID,Norwich
+83428,Grant Hanley,DEF,Norwich
+89470,Onel Hernández,MID,Norwich
+167522,Jordan Hugill,FWD,Norwich
+171270,Kieran Dowell,MID,Norwich
+192303,Christoph Zimmermann,DEF,Norwich
+193111,Todd Cantwell,MID,Norwich
+432735,Adam Idah,FWD,Norwich
+439485,Josh Martin,MID,Norwich
+200088,Daniel N'Lundulu,FWD,Southampton
+15749,Joe Hart,GK,Tottenham
+45268,Moussa Sissoko,MID,Watford
+55605,Toby Alderweireld,DEF,Tottenham
+62974,Erik Lamela,MID,Tottenham
+9089,Ben Foster,GK,Watford
+38290,Danny Rose,DEF,Watford
+40387,Dan Gosling,MID,Watford
+41338,Craig Cathcart,DEF,Watford
+41725,Troy Deeney,FWD,Watford
+43250,Tom Cleverley,MID,Watford
+54484,Francisco Femenía Far,DEF,Watford
+73426,Andre Gray,FWD,Watford
+85624,Christian Kabasele,DEF,Watford
+154506,Daniel Bachmann,GK,Watford
+155651,Adam Masina,DEF,Watford
+157775,Ken Sema,MID,Watford
+173514,Isaac Success Ajayi,FWD,Watford
+175353,Ayotomiwa Dele-Bashiru,MID,Watford
+176296,Ashley Fletcher,FWD,Watford
+216058,Domingos Quina,MID,Watford
+220166,Marc Navarro,DEF,Watford
+232391,Jeremy Ngakia,DEF,Watford
+241289,Ben Wilmot,DEF,Watford
+18073,Mark Noble,MID,West Ham
+48717,Winston Reid,DEF,West Ham
+56377,Andriy Yarmolenko,MID,West Ham
+38533,Rui Pedro dos Santos Patrício,GK,Wolves
+107613,Romain Saïss,DEF,Wolves
+111291,Fernando Marçal,DEF,Wolves
+250604,Owen Otasowie,MID,Wolves
+448487,Andreas Söndergaard,GK,Wolves
+27789,Fernando Luiz Rosa,MID,Man City
+83312,Ben Gibson,DEF,Norwich
+43670,Juan Mata,MID,Man United
+78007,Joshua King,FWD,Watford
+93284,Florin Andone,FWD,Brighton
+153673,Jonjoe Kenny,DEF,Everton
+20452,Shane Long,FWD,Southampton
+486870,Frederik Alves,DEF,West Ham
+209353,Patrick Cutrone,FWD,Wolves
+461096,Lewis Richardson,FWD,Burnley
+223824,Reece Hannam,DEF,Crystal Palace
+481626,Christian Marques,DEF,Wolves
+182436,Ben Woodburn,MID,Liverpool
+462384,Jamal Baptiste,DEF,West Ham
+492373,Charlie Cresswell,DEF,Leeds
+242058,Moise Kean,FWD,Everton
+19838,Robert Elliot,GK,Watford
+17349,Aaron Lennon,MID,Burnley
+438277,Ozan Kabak,DEF,Norwich
+219352,Ademola Lookman,MID,Leicester
+106757,Jürgen Locadia,FWD,Brighton
+66838,Cenk Tosun,FWD,Everton
+492374,Jack Jenkins,MID,Leeds
+198044,Harry Lewis,GK,Southampton
+232229,Vontae Daley-Campbell,DEF,Leicester
+57513,Jonas Lössl,GK,Brentford
+445896,Kgaogelo Chauke,MID,Southampton
+439482,Miguel Azeez,MID,Arsenal
+465299,Anthony Mancini,MID,Burnley
+92371,Pablo Marí Villar,DEF,Arsenal
+154043,Ainsley Maitland-Niles,MID,Southampton
+198849,Lucas Torreira di Pascua,MID,Arsenal
+193488,Anwar El Ghazi,MID,Aston Villa
+203368,Frédéric Guilbert,DEF,Aston Villa
+56872,Junior Stanislas,MID,Bournemouth
+154131,Jack Stacey,DEF,Bournemouth
+61810,Pontus Jansson,DEF,Brentford
+216620,Marcus Forss,FWD,Brentford
+232247,Dominic Thompson,DEF,Brentford
+61933,Shane Duffy,DEF,Fulham
+423649,Enock Mwepu,MID,Brighton
+209045,Taylor Richards,MID,Brighton
+433589,Haydon Roberts,DEF,Brighton
+82263,Marcos Alonso,DEF,Chelsea
+116594,N'Golo Kanté,MID,Chelsea
+126187,Ruben Loftus-Cheek,MID,Chelsea
+167767,Robert Kenedy Nunes do Nascimento,DEF,Chelsea
+228286,Edouard Mendy,GK,Chelsea
+50471,James McArthur,MID,Crystal Palace
+54861,Christian Benteke,FWD,Crystal Palace
+66975,Luka Milivojevic,MID,Crystal Palace
+82403,Wilfried Zaha,MID,Crystal Palace
+105666,Jack Butland,GK,Man United
+232423,Nathan Ferguson,DEF,Crystal Palace
+57134,Salomón Rondón,FWD,Everton
+119765,Allan Marques Loureiro,MID,Everton
+164511,Yerry Mina,DEF,Everton
+495542,Niels Nkounkou,DEF,Everton
+89085,Nathaniel Chalobah,MID,Fulham
+92259,Neeskens Kebano,MID,Fulham
+101105,Joe Bryan,DEF,Fulham
+102884,Paulo Gazzaniga Farias,GK,Fulham
+168765,Josh Onomah,MID,Fulham
+55914,Liam Cooper,DEF,Leeds
+66588,Luke Ayling,DEF,Leeds
+72222,Mateusz Klich,MID,Leeds
+80179,Adam Forshaw,MID,Leeds
+80954,Rodrigo Moreno,MID,Leeds
+87873,Stuart Dallas,DEF,Leeds
+149915,Diego Llorente,DEF,Leeds
+173821,Tyler Roberts,MID,Leeds
+193645,Robin Koch,DEF,Leeds
+219961,Raphael Dias Belloli,MID,Leeds
+221610,Jamie Shackleton,MID,Leeds
+223081,Kristoffer Klaesson,GK,Leeds
+443967,Junior Firpo Adames,DEF,Leeds
+450529,Lewis Bate,MID,Leeds
+17745,Kasper Schmeichel,GK,Leicester
+40146,Ryan Bertrand,DEF,Leicester
+51938,Marc Albrighton,MID,Leicester
+86881,Nampalys Mendy,MID,Leicester
+155569,Daniel Amartey,DEF,Leicester
+168580,Ayoze Pérez,MID,Leicester
+173515,Kelechi Iheanacho,FWD,Leicester
+218031,Çaglar Söyüncü,DEF,Leicester
+232620,Lewis Brunt,DEF,Leicester
+81880,Alex Oxlade-Chamberlain,MID,Liverpool
+92217,Roberto Firmino,FWD,Liverpool
+175592,Naby Keita,MID,Liverpool
+439510,Luke Mbete-Tabu,DEF,Man City
+14937,Cristiano Ronaldo dos Santos Aveiro,FWD,Man United
+51940,David De Gea Quintana,GK,Man United
+76359,Phil Jones,DEF,Man United
+57145,Federico Fernández,DEF,Newcastle
+58845,Ciaran Clark,DEF,Newcastle
+104547,Dwight Gayle,FWD,Newcastle
+58771,Jack Colback,MID,Nott'm Forest
+168172,Joe Lolley,MID,Nott'm Forest
+209925,Xande Nascimento da Costa Silva,MID,Nott'm Forest
+20467,Theo Walcott,MID,Southampton
+78056,Oriol Romeu Vidal,MID,Southampton
+91047,Stuart Armstrong,MID,Southampton
+96787,Mohamed Elyounoussi,MID,Southampton
+200439,Che Adams,FWD,Southampton
+203389,Nathan Tella,MID,Southampton
+212721,Lyanco Silveira Neves Vojnovic,DEF,Southampton
+213482,Yan Valery,DEF,Southampton
+240143,Ibrahima Diallo,MID,Southampton
+244560,Romain Perraud,DEF,Southampton
+431131,Moussa Djenepo,MID,Southampton
+450527,Mohammed Salisu,DEF,Southampton
+20310,Willy Caballero,GK,Southampton
+95715,Lucas Rodrigues Moura da Silva,MID,Tottenham
+194252,Steven Bergwijn,MID,Tottenham
+448791,Harvey White,MID,Tottenham
+447235,Troy Parrott,FWD,Tottenham
+86934,Manuel Lanzini,MID,West Ham
+171317,Rúben da Silva Neves,MID,Wolves
+152898,Ben Davies,DEF,Liverpool
+19624,João Filipe Iria Santos Moutinho,MID,Wolves
+109322,Jesse Lingard,MID,Nott'm Forest
+216054,Rúben Nascimento Vinagre,DEF,Everton
+450550,Fin Stevens,DEF,Brentford
+178173,Matt Clarke,DEF,Brighton
+433590,Cody Drameh,DEF,Leeds
+106837,Dennis Praet,MID,Leicester
+461026,Chem Campbell,MID,Wolves
+248865,Armstrong Oko-Flex,MID,West Ham
+78315,Joel Robles,GK,Leeds
+45220,Alex Smithies,GK,Leicester
+461017,Christian Saydee,FWD,Bournemouth
+219291,Claudio Gomes,MID,Man City
+491785,Harvey Vale,MID,Chelsea
+232241,Matthew Smith,MID,Arsenal
+18507,Diego Da Silva Costa,FWD,Wolves
+11974,Eldin Jakupovic,GK,Everton
+232829,Kyle John,DEF,Everton
+448496,Ed Turns,DEF,Brighton
+447372,Ryan Finnigan,MID,Southampton
+250370,Nathan Bishop,GK,Man United
+496228,Sonny Perkins,FWD,Leeds
+491559,Isaac Price,MID,Everton
+45124,André Ayew,MID,Nott'm Forest
+461201,Matthew Craig,MID,Tottenham
+232223,Folarin Balogun,FWD,Arsenal
+58822,Cédric Alves Soares,DEF,Arsenal
+153256,Mohamed Elneny,MID,Arsenal
+479683,Marcus Oliveira Alencar,MID,Arsenal
+195735,Nicolas Pépé,MID,Arsenal
+115918,Rúnar Alex Rúnarsson,GK,Arsenal
+437626,Nuno Varela Tavares,DEF,Nott'm Forest
+201410,Auston Trusty,DEF,Sheffield United
+101184,Calum Chambers,DEF,Aston Villa
+84583,Philippe Coutinho Correia,MID,Aston Villa
+221239,Keinan Davis,FWD,Aston Villa
+184704,Marvelous Nakamba,MID,Luton
+122775,Morgan Sanson,MID,Aston Villa
+213345,Wesley Moraes Ferreira da Silva,FWD,Aston Villa
+244085,Siriki Dembélé,MID,Bournemouth
+81012,Ryan Fredericks,DEF,Bournemouth
+444183,Gavin Kilkenny,MID,Bournemouth
+128309,Jamal Lowe,MID,Bournemouth
+133845,Emiliano Marcondes,MID,Bournemouth
+128340,Kieffer Moore,FWD,Bournemouth
+156687,Ben Pearson,MID,Bournemouth
+32259,Darren Randolph,GK,Bournemouth
+156685,Joe Rothwell,MID,Bournemouth
+432160,Shandon Baptiste,MID,Brentford
+228044,Mads Bech Sørensen,DEF,Brentford
+481405,Mads Bidstrup,MID,Brentford
+174932,Sergi Canós Tenés,MID,Brentford
+434662,Halil Dervişoğlu,FWD,Brentford
+213687,Charlie Goode,DEF,Brentford
+140200,Thomas Strakosha,GK,Brentford
+235382,Steven Alzate,MID,Brighton
+233425,Aaron Connolly,FWD,Brighton
+442229,Michał Karbownik,DEF,Brighton
+204676,Andi Zeqiri,FWD,Brighton
+487968,Ameen Al-Dakhil,DEF,Burnley
+189776,Samuel Bastien,MID,Burnley
+172782,Josh Brownhill,MID,Burnley
+40145,Jack Cork,MID,Burnley
+530873,Dara Costelloe,MID,Burnley
+432711,CJ Egan-Riley,DEF,Burnley
+493347,Denis Franchi,GK,Burnley
+60586,Jóhann Berg Gudmundsson,MID,Burnley
+483391,Luke McNally,DEF,Burnley
+220037,Bailey Peacock-Farrell,GK,Burnley
+44683,Jay Rodriguez,FWD,Burnley
+461102,Bobby Thomas,DEF,Burnley
+226473,Scott Twine,MID,Burnley
+133085,Lawrence Vigouroux,GK,Burnley
+441455,Victor da Silva,DEF,Burnley
+120202,Wout Weghorst,FWD,Burnley
+511783,Anass Zaroury,MID,Burnley
+54694,Pierre-Emerick Aubameyang,FWD,Chelsea
+41328,César Azpilicueta,DEF,Chelsea
+118335,Abdul Rahman Baba,DEF,Chelsea
+176413,Christian Pulisic,MID,Chelsea
+51090,Thiago Emiliano da Silva,DEF,Chelsea
+124183,Hakim Ziyech,MID,Chelsea
+40836,Vicente Guaita,GK,Crystal Palace
+443661,Michael Olise,MID,Crystal Palace
+450541,Luke Plange,FWD,Crystal Palace
+173954,Jairo Riedewald,MID,Crystal Palace
+49413,James Tomkins,DEF,Crystal Palace
+487818,Joe Whitworth,GK,Crystal Palace
+120250,André Tavares Gomes,MID,Everton
+108823,Dele Alli,MID,Everton
+160987,Jean-Philippe Gbamin,MID,Everton
+172632,Demarai Gray,MID,Everton
+218997,Ellis Simms,FWD,Everton
+166324,Ivan Neves Abreu Cavaleiro,MID,Fulham
+432931,Tyrese Francois,MID,Fulham
+83543,Anthony Knockaert,MID,Fulham
+109434,Terence Kongolo,DEF,Fulham
+128389,Aleksandar Mitrović,FWD,Fulham
+155529,Marek Rodák,GK,Fulham
+60706,Adrián San Miguel del Castillo,GK,Liverpool
+116643,Fabio Henrique Tavares,MID,Liverpool
+60914,Joel Matip,DEF,Liverpool
+61558,Thiago Alcántara do Nascimento,MID,Liverpool
+174310,Elijah Adebayo,FWD,Luton
+208904,Mads Juel Andersen,DEF,Luton
+165183,Amari'i Bell,DEF,Luton
+82738,Luke Berry,MID,Luton
+156658,Reece Burke,DEF,Luton
+193195,Allan Campbell,MID,Luton
+96784,Jordan Clark,MID,Luton
+244262,Alfie Doughty,DEF,Luton
+49083,Luke Freeman,MID,Luton
+113534,Matt Macey,GK,Luton
+422303,John McAtee,FWD,Luton
+453537,Carlos Mendes Gomes,MID,Luton
+156700,Carlton Morris,FWD,Luton
+174595,Admiral Muskwe,FWD,Luton
+168035,Fred Onyedinma,MID,Luton
+199056,Gabriel Osho,DEF,Luton
+490180,Aribim Pepple,FWD,Luton
+243532,Dion Pereira,MID,Luton
+108411,Dan Potts,DEF,Luton
+165152,Glen Rea,MID,Luton
+77818,James Shea,GK,Luton
+242500,Joe Taylor,FWD,Luton
+232477,Elliot Thorpe,MID,Luton
+207722,Jack Walton,GK,Luton
+223333,Louie Watson,MID,Luton
+91046,Cauley Woodrow,FWD,Luton
+146941,Aymeric Laporte,DEF,Man City
+103025,Riyad Mahrez,MID,Man City
+482769,Máximo Perrone,MID,Man City
+437468,Sergio Gómez,DEF,Man City
+164484,Zack Steffen,GK,Man City
+152590,Alex Telles,DEF,Man United
+232937,Brandon Williams,DEF,Man United
+197365,Eric Bailly,DEF,Man United
+515501,Álvaro Fernández Carreras,DEF,Man United
+101582,Frederico Rodrigues de Paula Santos,MID,Man United
+148225,Anthony Martial,FWD,Man United
+244856,Teden Mengi,DEF,Luton
+90152,Raphaël Varane,DEF,Man United
+472464,Shola Shoretire,FWD,Man United
+180184,Donny van de Beek,MID,Man United
+83314,Jeff Hendrick,MID,Newcastle
+109528,Javier Manquillo Gaitán,DEF,Newcastle
+56983,Matt Ritchie,MID,Newcastle
+170137,Allan Saint-Maximin,MID,Newcastle
+232977,Kell Watts,DEF,Newcastle
+461682,Brandon Aguilera Zamora,MID,Nott'm Forest
+48615,Harry Arter,MID,Nott'm Forest
+80226,Serge Aurier,DEF,Nott'm Forest
+437753,Giulian Biancone,DEF,Nott'm Forest
+56917,Steve Cook,DEF,Nott'm Forest
+173399,Mohamed Dräger,DEF,Nott'm Forest
+116404,Felipe Augusto de Almeida Monteiro,DEF,Nott'm Forest
+89076,Remo Freuler,MID,Nott'm Forest
+168547,Ethan Horvath,GK,Nott'm Forest
+55037,Cheikhou Kouyaté,MID,Nott'm Forest
+221403,Richie Laryea,DEF,Nott'm Forest
+242885,Loïc Mbe Soh,DEF,Nott'm Forest
+168281,Scott McKenna,DEF,Nott'm Forest
+199170,Moussa Niakhaté,DEF,Nott'm Forest
+437476,Braian Ojeda Rodríguez,MID,Nott'm Forest
+185253,Gustavo Henrique Furtado Scarpa,MID,Nott'm Forest
+50232,Jonjo Shelvey,MID,Nott'm Forest
+217331,Sam Surridge,FWD,Nott'm Forest
+233821,Anel Ahmedhodžić,DEF,Sheffield United
+538206,Jordan Amissah,GK,Sheffield United
+82691,George Baldock,DEF,Sheffield United
+40386,Chris Basham,DEF,Sheffield United
+195473,Rhian Brewster,FWD,Sheffield United
+476938,Ismaila Coulibaly,MID,Sheffield United
+102549,Adam Davies,GK,Sheffield United
+108416,John Egan,DEF,Sheffield United
+47247,John Fleck,MID,Sheffield United
+155197,Max Lowe,DEF,Sheffield United
+169432,Oliver McBurnie,FWD,Sheffield United
+443211,Rhys Norrington-Davies,DEF,Sheffield United
+79934,Oliver Norwood,MID,Sheffield United
+167878,Ben Osborn,MID,Sheffield United
+93264,Eric Dier,DEF,Tottenham
+78830,Harry Kane,FWD,Tottenham
+37915,Hugo Lloris,GK,Tottenham
+231372,Tanguy Ndombélé Alvaro,MID,Tottenham
+45034,Ivan Perišić,DEF,Tottenham
+173904,Davinson Sánchez,DEF,Tottenham
+199584,Japhet Tanganga,DEF,Tottenham
+172841,Saïd Benrahma,MID,West Ham
+222017,Conor Coventry,MID,West Ham
+217593,Pablo Fornals Malla,MID,West Ham
+201057,Thilo Kehrer,DEF,West Ham
+195899,Gianluca Scamacca,FWD,West Ham
+180151,Nikola Vlašić,MID,West Ham
+431960,Bendegúz Bolla,DEF,Wolves
+232351,Ryan Giles,DEF,Luton
+114128,Jonathan Castro Otto,DEF,Wolves
+428610,Bruno Cavaco Jordão,MID,Wolves
+216208,Matija Šarkić,GK,Wolves
+108796,Tom Lockyer,DEF,Luton
+83427,Jack Robinson,DEF,Sheffield United
+40669,Angelo Ogbonna,DEF,West Ham
+11948,Andy Lonergan,GK,Everton
+104542,Loris Karius,GK,Newcastle
+106618,Paul Dummett,DEF,Newcastle
+104047,Pelly Ruddock Mpanzu,MID,Luton
+222677,Tahith Chong,MID,Luton
+504198,Anis Slimane,MID,Sheffield United
+432990,Yasser Larouci,DEF,Sheffield United
+523957,Bénie Traoré,FWD,Sheffield United
+83283,Nathan Redmond,MID,Burnley
+220307,Arnaut Danjuma Groeneveld,MID,Everton
+215531,Ionuț Radu,GK,Bournemouth
+54738,Thomas Kaminski,GK,Luton
+474772,Ben Greenwood,DEF,Bournemouth
+501284,Michael Olakigbe,MID,Brentford
+534392,Mason Burstow,FWD,Chelsea
+547686,Luc De Fougerolles,DEF,Fulham
+242453,Jacob Brown,FWD,Luton
+487828,Omari Forson,MID,Man United
+450197,George Shelvey,GK,Nott'm Forest
+547659,Josh Powell,DEF,Nott'm Forest
+424001,Vini de Souza Costa,MID,Sheffield United
+447879,Joseph Anang,GK,West Ham
+552030,Aidan Francis-Clarke,DEF,Luton
+515023,Matthew Dibley-Dias,MID,Fulham
+471848,Femi Seriki,DEF,Sheffield United
+532377,Louie Marsh,FWD,Sheffield United
+538210,Andre Brooks,MID,Sheffield United
+487836,Antwoine Hackford,FWD,Sheffield United
+461382,John-Kymani Gordon,FWD,Crystal Palace
+196100,Gustavo Hamer,MID,Sheffield United
+20480,Tim Krul,GK,Luton
+173807,Tom Davies,MID,Sheffield United
+477733,Radek Vítek,GK,Man United
+245414,Nicolò Zaniolo,MID,Aston Villa
+218430,Gonzalo Montiel,DEF,Nott'm Forest
+474803,Eddie Beach,GK,Chelsea
+491011,Diego Manuel Jadon da Silva Moreira,MID,Chelsea
+611011,Joseph Johnson,DEF,Luton
+504598,Daniel Gore,MID,Man United
+437757,Han-Noah Massengo,MID,Burnley
+171101,Clément Lenglet,DEF,Aston Villa
+465607,Anssumane Fati Vieira,MID,Brighton
+205836,Saman Ghoddos,MID,Brentford
+225897,Fodé Ballo-Touré,DEF,Fulham
+172912,Sofyan Amrabat,MID,Man United
+152760,Divock Origi,FWD,Nott'm Forest
+517996,Ronnie Stutter,FWD,Chelsea
+519198,Alex Matos,MID,Chelsea
+447261,Mackenzie Hunt,MID,Everton
+531993,Ademola Ola-Adebomi,FWD,Crystal Palace
+513588,Jamie Donley,FWD,Tottenham
+248854,Josh Brooking,DEF,Chelsea
+474908,Jadan Raymond,MID,Crystal Palace
+462491,Luke Chambers,DEF,Liverpool
+60252,Andros Townsend,MID,Luton
+519328,Callum Scanlon,DEF,Liverpool
+608060,Jayden Luker,MID,Luton
+585472,Ryan Oné,MID,Sheffield United
+601496,Jili Buyabu,DEF,Sheffield United
+487693,Devan Tanton,DEF,Fulham
+516432,Valintino Adedokun,DEF,Brentford
+589114,Zack Nelson,MID,Luton
+516874,Charles Sagoe,MID,Arsenal
+535262,Reuell Walters,DEF,Arsenal
+535264,Bradley Ibrahim,MID,Arsenal
+248859,Amadou Diallo,MID,Newcastle
+547716,Ben Parkinson,FWD,Newcastle
+490150,Michael Ndiweni,FWD,Newcastle
+514154,Ben Jackson,DEF,Brighton
+532528,Joshua Duffus,MID,Brighton
+515504,Joe Hugill,FWD,Man United
+483398,Matthew Whittingham,MID,Wolves
+504750,Justin Hubner,DEF,Wolves
+563883,Vincent Angelini,GK,Brentford
+513836,Leigh Kavanagh,DEF,Brighton
+492779,Yago de Santiago Alonso,MID,Tottenham
+500052,Luca Barrington,MID,Brighton
+443629,Marcelo de Araújo Pitaluga Filho,GK,Liverpool
+517995,Leo Castledine,MID,Chelsea
+552425,Sydie Peck,MID,Sheffield United
+496283,Mahamadou Susoho,MID,Man City
+501468,Tayo Adaramola,DEF,Crystal Palace
+518466,Willy Kambwala,DEF,Man United
+515599,Tommi O'Reilly,MID,Aston Villa
+515500,Rhys Bennett,DEF,Man United
+432712,Owen Hesketh,MID,Wolves
+490095,Ty Barnett,MID,Wolves
+462438,Micah Hamilton,MID,Man City
+524070,Jamie McDonnell,MID,Nott'm Forest
+536677,Detlef Esapa Osong,FWD,Nott'm Forest
+536681,Joe Gardner,FWD,Nott'm Forest
+430992,Owen Beck,DEF,Liverpool
+496185,Kaide Gordon,MID,Liverpool
+449133,Harvey Griffiths,MID,Wolves
+173268,Ivo Grbic,GK,Sheffield United
+592436,Travis Hernes,MID,Newcastle
+511504,Kristian Sekularac,MID,Fulham
+209293,Daiki Hashioka,DEF,Luton
+550833,Noha Lemina,MID,Wolves
+427420,Giovanni Reyna,MID,Nott'm Forest
+503724,Lorenz Assignon,DEF,Burnley
+551232,Rodrigo Duarte Ribeiro,FWD,Nott'm Forest
+514514,Lewis Koumas,FWD,Liverpool
+518199,Fabian Mrozek,GK,Liverpool
+504751,Mauro Bandeira,MID,Arsenal
+503308,James Sweet,DEF,Arsenal
+597983,Ollie Harrison,MID,Chelsea
+591539,Billy Blacker,FWD,Sheffield United
+532372,Oliver Arblaster,MID,Sheffield United
+616094,Dovydas Sasnauskas,DEF,Sheffield United
+549344,Sam Curtis,DEF,Sheffield United
+514277,Jimi Tauriainen,MID,Chelsea
+547668,Axel Piesold,MID,Luton
+519325,Habeeb Ogunneye,DEF,Man United
+647597,Dominic Dos Santos Martins,MID,Luton
+602934,Fletcher Holman,FWD,Wolves
+461453,Lewis Warrington,MID,Everton
+493121,Roshaun Mathurin,MID,Crystal Palace
+513840,Samy Chouchane,MID,Brighton
+634640,Christian Chigozie,DEF,Luton
+551995,Taylan Harris,FWD,Luton
+596572,Michael Dacosta Gonzalez,MID,Bournemouth
+559963,Kiano Dyer,MID,Chelsea
+521966,Finley Munroe,DEF,Aston Villa
+530117,Louis Jackson,DEF,Man United
+591538,Owen Hampson,MID,Sheffield United
+518892,Ted Curd,GK,Chelsea
+496222,Zak Sturge,DEF,Chelsea
+549014,Noël Atom,DEF,Brighton
+563934,Tyrese Hall,MID,Tottenham
+438405,Billy Crellin,GK,Everton
+646754,Lander Emery,GK,Aston Villa
+85955,Jorge Luiz Frello Filho,MID,Arsenal
+167199,Thomas Partey,MID,Arsenal
+192895,Kieran Tierney,DEF,Arsenal
+223723,Tomiyasu Takehiro,DEF,Arsenal
+433979,Cameron Archer,FWD,Southampton
+243557,Moussa Diaby,MID,Aston Villa
+165659,Diego Carlos Santos Silva,DEF,Aston Villa
+476344,Jhon Durán,FWD,Aston Villa
+123354,Kortney Hause,DEF,Aston Villa
+465390,Kaine Kesler-Hayden,DEF,Aston Villa
+111782,Robin Olsen,GK,Aston Villa
+248164,Viljami Sinisalo,GK,Aston Villa
+232980,Max Aarons,DEF,Bournemouth
+523700,Daniel Jebbison,FWD,Bournemouth
+494041,Ethan Brierley,MID,Brentford
+118342,Mark Flekken,GK,Brentford
+51927,Ben Mee,DEF,Brentford
+144485,Ivan Toney,FWD,Brentford
+48760,Mathias Jorgensen,DEF,Brentford
+475480,Benicio Baker-Boaitey,MID,Brighton
+543158,Valentín Barco,DEF,Brighton
+519324,Amario Cozier-Duberry,MID,Brighton
+168090,Mahmoud Dahoud,MID,Brighton
+243568,Billy Gilmour,MID,Brighton
+484658,Kacper Kozłowski,MID,Brighton
+243505,Jakub Moder,MID,Brighton
+574402,Mark O’Mahony,FWD,Brighton
+445548,Odeluga Offiah,DEF,Brighton
+491598,Cameron Peupion,MID,Brighton
+450434,Deniz Undav,FWD,Brighton
+518620,Ângelo Gabriel Borges Damaceno,MID,Chelsea
+482158,Lucas Bergström,GK,Chelsea
+505187,Cesare Casadei,MID,Chelsea
+172850,Ben Chilwell,DEF,Crystal Palace
+478912,Carney Chukwuemeka,MID,Chelsea
+520295,David Datro Fofana,FWD,Chelsea
+617054,Deivid Washington de Souza Eugênio,FWD,Chelsea
+514280,Alfie Gilchrist,DEF,Chelsea
+549068,Omari Kellyman,MID,Chelsea
+66749,Romelu Lukaku Bolingoli,FWD,Chelsea
+204727,Malang Sarr,DEF,Chelsea
+103955,Raheem Sterling,MID,Arsenal
+80146,Jordan Ayew,MID,Leicester
+86417,Jeffrey Schlupp,MID,Crystal Palace
+55494,Joel Ward,DEF,Crystal Palace
+121599,Abdoulaye Doucouré,MID,Everton
+194164,Mason Holgate,DEF,Everton
+222627,João Neves Virgínia,GK,Everton
+115382,Neal Maupay,FWD,Everton
+18892,Ashley Young,DEF,Everton
+120721,Kevin Mbabu,DEF,Fulham
+82514,Tim Ream,DEF,Fulham
+490146,Jay Stansfield,FWD,Fulham
+245824,Carlos Vinícius Alves Morais,FWD,Fulham
+173818,Nathan Broadhead,MID,Ipswich
+455084,Leif Davis,DEF,Ipswich
+222625,George Hirst,FWD,Ipswich
+222018,Ben Johnson,DEF,Ipswich
+94926,Freddie Ladapo,FWD,Ipswich
+106606,Massimo Luongo,MID,Ipswich
+434044,Cieran Slicker,GK,Ipswich
+108813,Christian Walton,GK,Ipswich
+225902,Boubakary Soumaré,MID,Leicester
+461416,Tom Cannon,FWD,Leicester
+197469,Hamza Choudhury,MID,Leicester
+94147,Conor Coady,DEF,Leicester
+245419,Patson Daka,FWD,Leicester
+96994,Bobby De Cordova-Reid,MID,Leicester
+218218,Wout Faes,DEF,Leicester
+207270,Daniel Iversen,GK,Leicester
+481510,Victor Kristiansen,DEF,Leicester
+461584,Wanya Marçal-Madivádua,MID,Leicester
+461587,Kasey McAteer,MID,Leicester
+203341,Wilfred Ndidi,MID,Leicester
+111931,Ricardo Barbosa Pereira,DEF,Leicester
+194190,Harry Souttar,DEF,Leicester
+244619,Luke Thomas,DEF,Leicester
+101668,Jamie Vardy,FWD,Leicester
+93100,Jannik Vestergaard,DEF,Leicester
+95463,Danny Ward,GK,Leicester
+157668,Harry Winks,MID,Leicester
+169187,Trent Alexander-Arnold,DEF,Liverpool
+491970,Bobby Clark,MID,Liverpool
+194634,Diogo Teixeira da Silva,MID,Liverpool
+197464,Nathaniel Phillips,DEF,Liverpool
+441428,Jarell Quansah,DEF,Liverpool
+17601,Scott Carson,GK,Man City
+61366,Kevin De Bruyne,MID,Man City
+461358,Julián Álvarez,FWD,Man City
+121145,João Cavaco Cancelo,DEF,Man City
+80607,Christian Eriksen,MID,Man United
+37642,Jonny Evans,DEF,Man United
+195851,Scott McTominay,MID,Man United
+488404,Facundo Pellistri Rebollo,MID,Man United
+179018,Miguel Almirón Rejala,MID,Newcastle
+90105,Ryan Fraser,MID,Southampton
+235530,Lloyd Kelly,DEF,Newcastle
+194799,Jamal Lewis,DEF,Newcastle
+245830,Josh Bowler,MID,Nott'm Forest
+513046,Danilo dos Santos de Oliveira,MID,Nott'm Forest
+230251,Emmanuel Dennis,FWD,Nott'm Forest
+244930,Alex Mighten,MID,Nott'm Forest
+466404,Andrew Omobamidele,DEF,Nott'm Forest
+209035,Jonathan Panzo,DEF,Nott'm Forest
+114241,Harry Toffolo,DEF,Nott'm Forest
+201440,Hwang Ui-jo,FWD,Nott'm Forest
+499724,Samuel Amo-Ameyaw,MID,Southampton
+193204,Joe Aribo,MID,Southampton
+456350,Gavin Bazunu,GK,Southampton
+171771,Jan Bednarek,DEF,Southampton
+477386,Armel Bella-Kotchap,DEF,Southampton
+184386,James Bree,DEF,Southampton
+463210,Shea Charles,MID,Southampton
+490503,Samuel Edozie,MID,Southampton
+245719,Taylor Harwood-Bellis,DEF,Southampton
+504783,Kamaldeen Sulemana,MID,Southampton
+39155,Adam Lallana,MID,Southampton
+515571,Juan Larios López,DEF,Southampton
+200428,Mateusz Lis,GK,Southampton
+476888,Sékou Mara,FWD,Southampton
+58376,Alex McCarthy,GK,Southampton
+147611,Paul Onuachu,FWD,Southampton
+214466,Will Smallbone,MID,Southampton
+88900,Jack Stephens,DEF,Southampton
+103914,Charlie Taylor,DEF,Southampton
+496179,Alfie Devine,MID,Tottenham
+241157,Emerson Leite de Souza Junior,DEF,Tottenham
+132015,Pierre-Emile Højbjerg,MID,Tottenham
+200826,Giovani Lo Celso,MID,Tottenham
+199249,Sergio Reguilón,DEF,Tottenham
+209042,Oliver Skipp,MID,Leicester
+536908,Alejo Véliz,FWD,Tottenham
+165153,Timo Werner,MID,Tottenham
+175941,Alfie Whiteman,GK,Tottenham
+57531,Michail Antonio,FWD,West Ham
+164555,Vladimír Coufal,DEF,West Ham
+55459,Aaron Cresswell,DEF,West Ham
+220585,Flynn Downes,MID,Southampton
+84939,Danny Ings,FWD,West Ham
+103192,Kurt Zouma,DEF,West Ham
+510363,Francisco Jorge Tomás Oliveira,MID,Wolves
+245923,Luke Cundle,MID,Wolves
+60232,Craig Dawson,DEF,Wolves
+220394,Tommy Doyle,MID,Wolves
+151086,Mario Lemina,MID,Wolves
+200402,Nélson Cabral Semedo,DEF,Wolves
+200600,Daniel Castelo Podence,MID,Wolves
+88484,Pablo Sarabia,MID,Wolves
+232917,Arijanet Muric,GK,Ipswich
+481624,Jaden Philogene,MID,Ipswich
+108053,Conor Townsend,DEF,Ipswich
+204814,Ben Brereton Díaz,MID,Southampton
+501770,Ben Nelson,DEF,Leicester
+428399,João Félix Sequeira,MID,Chelsea
+40349,Asmir Begovic,GK,Everton
+476369,Issa Kaboré,DEF,Man City
+216616,Dara O'Shea,DEF,Ipswich
+229164,Chiedozie Ogbene,MID,Ipswich
+498046,Salah-Eddine Oulad M'hand,MID,Arsenal
+514287,Sil Swinkels,DEF,Aston Villa
+516159,Oliwier Zych,GK,Aston Villa
+179519,Orel Mangala,MID,Everton
+447720,Imari Samuels,DEF,Brighton
+461025,Nathan Butler-Oyedeji,FWD,Arsenal
+464353,Harvey Davies,GK,Liverpool
+516250,Jacob Wright,MID,Man City
+447880,Josh Wilson-Esbrand,DEF,Man City
+496683,Max Kinsey,DEF,Bournemouth
+487837,Divin Mubama,FWD,Man City
+519321,Alfie Dorrington,DEF,Tottenham
+613467,Wes Okoduwa,DEF,Wolves
+198826,Ben Godfrey,DEF,Ipswich
+20066,Wayne Hennessey,GK,Nott'm Forest
+112520,Alex Palmer,GK,Ipswich
+47431,Willian Borges da Silva,MID,Fulham
+536238,Ishé Samuels-Smith,DEF,Chelsea
+519223,Sammy Braybrooke,MID,Leicester
+154561,David Raya Martín,GK,Arsenal
+109745,Kepa Arrizabalaga Revuelta,GK,Arsenal
+463748,Karl Hein,GK,Arsenal
+551221,Tommy Setford,GK,Arsenal
+226597,Gabriel dos Santos Magalhães,DEF,Arsenal
+462424,William Saliba,DEF,Arsenal
+466075,Riccardo Calafiori,DEF,Arsenal
+445122,Jurriën Timber,DEF,Arsenal
+440854,Jakub Kiwior,DEF,Arsenal
+499169,Myles Lewis-Skelly,DEF,Arsenal
+198869,Benjamin White,DEF,Arsenal
+206325,Oleksandr Zinchenko,DEF,Nott'm Forest
+563324,Brayden Clarke,DEF,Arsenal
+588793,Maldini Kacurri,DEF,Arsenal
+499167,Josh Nichols,DEF,Arsenal
+223340,Bukayo Saka,MID,Arsenal
+184029,Martin Ødegaard,MID,Arsenal
+248857,Noni Madueke,MID,Arsenal
+444145,Gabriel Martinelli Silva,MID,Arsenal
+116216,Leandro Trossard,MID,Arsenal
+204480,Declan Rice,MID,Arsenal
+195384,Mikel Merino Zazón,MID,Arsenal
+438098,Fábio Ferreira Vieira,MID,Arsenal
+128295,Christian Nørgaard,MID,Arsenal
+499175,Ethan Nwaneri,MID,Arsenal
+200641,Reiss Nelson,MID,Brentford
+588796,Ismeal Kabia,MID,Arsenal
+437742,Albert Sambi Lokonga,MID,Arsenal
+219847,Kai Havertz,FWD,Arsenal
+205651,Gabriel Fernando de Jesus,FWD,Arsenal
+98980,Emiliano Martínez Romero,GK,Aston Villa
+462492,Joe Gauci,GK,Aston Villa
+462381,Filip Marschall,GK,Aston Villa
+199796,Matty Cash,DEF,Aston Villa
+101188,Lucas Digne,DEF,Aston Villa
+199798,Ezri Konsa Ngoyo,DEF,Aston Villa
+441302,Ian Maatsen,DEF,Aston Villa
+149484,Tyrone Mings,DEF,Aston Villa
+244954,Pau Torres,DEF,Aston Villa
+606798,Andrés García,DEF,Aston Villa
+106468,Álex Moreno Lopera,DEF,Aston Villa
+515597,Lamare Bogarde,DEF,Aston Villa
+514315,Lino da Cruz Sousa,DEF,Aston Villa
+244850,Morgan Rogers,MID,Aston Villa
+166989,Youri Tielemans,MID,Aston Villa
+215711,Leon Bailey,MID,Aston Villa
+195546,Emiliano Buendía Stati,MID,Aston Villa
+469247,Samuel Iling-Junior,MID,Aston Villa
+232653,Jacob Ramsey,MID,Newcastle
+204646,Donyell Malen,MID,Aston Villa
+122806,John McGinn,MID,Aston Villa
+88894,Ross Barkley,MID,Aston Villa
+491287,Enzo Barrenechea,MID,Aston Villa
+461421,Lewis Dobbin,MID,Aston Villa
+226944,Boubacar Kamara,MID,Aston Villa
+449871,Amadou Onana,MID,Aston Villa
+577731,Ben Broggio,MID,Aston Villa
+151589,Leander Dendoncker,MID,Aston Villa
+559962,Jamaldeen Jimoh-Aloba,MID,Aston Villa
+537403,Kadan Young,MID,Aston Villa
+178301,Ollie Watkins,FWD,Aston Villa
+69752,Norberto Murara Neto,GK,Bournemouth
+457569,Đorđe Petrović,GK,Bournemouth
+444172,Will Dennis,GK,Bournemouth
+568791,Callan McKenna,GK,Bournemouth
+495145,Alex Paulsen,GK,Bournemouth
+477580,Illia Zabarnyi,DEF,Bournemouth
+221466,Marcos Senesi Barón,DEF,Bournemouth
+54469,Adam Smith,DEF,Bournemouth
+541462,Matai Akinmboni,DEF,Bournemouth
+518906,Owen Bevan,DEF,Bournemouth
+463981,James Hill,DEF,Bournemouth
+436893,Julián Araujo Zúñiga,DEF,Bournemouth
+223911,Chris Mepham,DEF,Bournemouth
+575901,Julio Soler Barreto,DEF,Bournemouth
+222683,Justin Kluivert,MID,Bournemouth
+437730,Antoine Semenyo,MID,Man City
+533463,Dango Ouattara,MID,Brentford
+201658,Marcus Tavernier,MID,Bournemouth
+200785,Tyler Adams,MID,Bournemouth
+111317,David Brooks,MID,Bournemouth
+158499,Ryan Christie,MID,Bournemouth
+155408,Lewis Cook,MID,Bournemouth
+168991,Philip Billing,MID,Bournemouth
+503139,Alex Scott,MID,Bournemouth
+224995,Luis Sinisterra Lucumí,MID,Bournemouth
+441240,Romain Faivre,MID,Bournemouth
+424044,Hamed Traorè,MID,Bournemouth
+550596,Dominic Sadi,MID,Bournemouth
+530121,Zain Silcott-Duberry,MID,Bournemouth
+606775,Ben Winterburn,MID,Bournemouth
+444102,Francisco Evanilson de Lima Barbosa,FWD,Bournemouth
+168636,Enes Ünal,FWD,Bournemouth
+590760,Daniel Adu-Adjei,FWD,Bournemouth
+200720,Caoimhín Kelleher,GK,Brentford
+235448,Ellery Balcombe,GK,Brentford
+503300,Matthew Cox,GK,Brentford
+535017,Julian Eyestone,GK,Brentford
+507433,Hákon Rafn Valdimarsson,GK,Brentford
+432830,Nathan Collins,DEF,Brentford
+249231,Keane Lewis-Potter,DEF,Brentford
+191866,Kristoffer Ajer,DEF,Brentford
+194010,Rico Henry,DEF,Brentford
+607464,Michael Kayode,DEF,Brentford
+231065,Ethan Pinnock,DEF,Brentford
+226956,Mads Roerslev Rasmussen,DEF,Brentford
+444765,Sepp van den Berg,DEF,Brentford
+622536,Benjamin Arthur,DEF,Brentford
+612534,Benjamin Fredrick,DEF,Brentford
+472713,Aaron Hickey,DEF,Brentford
+570241,Kim Ji-soo,DEF,Brentford
+499717,Jayden Meghoma,DEF,Brentford
+446008,Bryan Mbeumo,MID,Man United
+513418,Kevin Schade,MID,Brentford
+440089,Mikkel Damsgaard,MID,Brentford
+244858,Fábio Freitas Gouveia Carvalho,MID,Brentford
+56979,Jordan Henderson,MID,Brentford
+204580,Vitaly Janelt,MID,Brentford
+207283,Mathias Jensen,MID,Brentford
+626464,Gustavo Nunes Fernandes Gomes,MID,Brentford
+428580,Frank Onyeka,MID,Brentford
+508395,Yehor Yarmoliuk,MID,Brentford
+628204,Yunus Emre Konak,MID,Brentford
+220695,Paris Maghoma,MID,Brentford
+450539,Myles Peart-Harris,MID,Brentford
+591357,Ryan Trevitt,MID,Brentford
+216646,Yoane Wissa,FWD,Newcastle
+502500,Igor Thiago Nascimento Rodrigues,FWD,Brentford
+533710,Iwan Morgan,FWD,Brentford
+49262,Jason Steele,GK,Brighton
+489639,Bart Verbruggen,GK,Brighton
+209288,Tom McGill,GK,Brighton
+472739,Carl Rushworth,GK,Brighton
+240514,Kjell Scherpen,GK,Brighton
+83299,Lewis Dunk,DEF,Brighton
+204214,Pervis Estupiñán Tenorio,DEF,Brighton
+231416,Ferdi Kadıoğlu,DEF,Brighton
+223434,Igor Julio dos Santos de Paulo,DEF,Brighton
+232792,Tariq Lamptey,DEF,Brighton
+469142,Jan Paul van Hecke,DEF,Brighton
+111478,Joël Veltman,DEF,Brighton
+110735,Adam Webster,DEF,Brighton
+439135,Eiran Cashin,DEF,Brighton
+589100,Jacob Slater,DEF,Brighton
+547720,Charlie Tasker,DEF,Brighton
+451340,Mitoma Kaoru,MID,Brighton
+463067,Georginio Rutter,MID,Brighton
+109345,Solly March,MID,Brighton
+592031,Yankuba Minteh,MID,Brighton
+474120,Julio Enciso Espínola,MID,Brighton
+513433,Brajan Gruda,MID,Brighton
+532529,Jack Hinshelwood,MID,Brighton
+219249,Matt O'Riley,MID,Brighton
+509416,Yasin Ayari,MID,Brighton
+535301,Carlos Baleba,MID,Brighton
+536916,Facundo Buonanotte,MID,Leeds
+514254,Diego Gómez Amarilla,MID,Brighton
+15157,James Milner,MID,Brighton
+441192,Jeremy Sarmiento Morante,MID,Brighton
+467779,Mats Wieffer,MID,Brighton
+567121,Joe Knight,MID,Brighton
+550141,Adrian Mazilu,MID,Brighton
+513834,Andrew Moran,MID,Brighton
+50175,Danny Welbeck,FWD,Brighton
+487117,Evan Ferguson,FWD,Brighton
+432720,James Trafford,GK,Man City
+192290,Connor Roberts,DEF,Burnley
+58621,Kyle Walker,DEF,Burnley
+247245,Hannes Delcroix,DEF,Burnley
+461567,Owen Dodgson,DEF,Burnley
+478969,Hjalmar Ekdal,DEF,Burnley
+477717,Maxime Estève,DEF,Burnley
+461188,Bashir Humphreys,DEF,Burnley
+241231,Jordan Beyer,DEF,Burnley
+180804,Axel Tuanzebe,DEF,Burnley
+208912,Joe Worrall,DEF,Burnley
+444180,Jaidon Anthony,MID,Burnley
+183751,Manuel Benson Hedilazio,MID,Burnley
+179458,Jacob Bruun Larsen,MID,Burnley
+578614,Enock Agyei,MID,Burnley
+250735,Darko Churlinov,MID,Burnley
+172567,Josh Cullen,MID,Burnley
+465527,Hannibal Mejbri,MID,Burnley
+487702,Luca Koleosho,MID,Burnley
+447715,Aaron Ramsey,MID,Burnley
+437748,Mike Trésor Ndayishimiye,MID,Burnley
+492831,Zeki Amdouni,FWD,Burnley
+435973,Lyle Foster,FWD,Burnley
+44699,Ashley Barnes,FWD,Burnley
+220598,Michael Obafemi,FWD,Burnley
+215059,Robert Lynch Sánchez,GK,Chelsea
+508479,Filip Jörgensen,GK,Chelsea
+471798,Gabriel Słonina,GK,Chelsea
+179268,Marc Cucurella Saseta,DEF,Chelsea
+225796,Reece James,DEF,Chelsea
+180736,Trevoh Chalobah,DEF,Chelsea
+460028,Levi Samuels Colwill,DEF,Chelsea
+482609,Malo Gusto,DEF,Chelsea
+242880,Benoît Badiashile Mukinayi,DEF,Chelsea
+444463,Wesley Fofana,DEF,Chelsea
+109646,Tosin Adarabioyo,DEF,Chelsea
+577016,Josh Acheampong,DEF,Chelsea
+622758,Aarón Anselmino,DEF,Chelsea
+244851,Cole Palmer,MID,Chelsea
+247632,Pedro Lomba Neto,MID,Chelsea
+448047,Enzo Fernández,MID,Chelsea
+213198,Christopher Nkunku,MID,Chelsea
+486672,Moisés Caicedo Corozo,MID,Chelsea
+215413,Kiernan Dewsbury-Hall,MID,Everton
+550615,Tyrique George,MID,Everton
+514356,Roméo Lavia,MID,Chelsea
+465920,Mykhailo Mudryk,MID,Chelsea
+532605,Andrey Nascimento dos Santos,MID,Chelsea
+475168,João Pedro Junqueira de Jesus,FWD,Chelsea
+463034,Liam Delap,FWD,Chelsea
+517052,Nicolas Jackson,FWD,Chelsea
+499309,Marc Guiu Paz,FWD,Chelsea
+172649,Dean Henderson,GK,Crystal Palace
+169593,Remi Matthews,GK,Crystal Palace
+247348,Daniel Muñoz Mejía,DEF,Crystal Palace
+437499,Maxence Lacroix,DEF,Crystal Palace
+244723,Tyrick Mitchell,DEF,Crystal Palace
+209036,Marc Guéhi,DEF,Man City
+427623,Chris Richards,DEF,Crystal Palace
+515621,Chadi Riad Dnanou,DEF,Crystal Palace
+57328,Nathaniel Clyne,DEF,Crystal Palace
+156074,Rob Holding,DEF,Crystal Palace
+590012,Caleb Kporha,DEF,Crystal Palace
+232413,Eberechi Eze,MID,Arsenal
+232185,Ismaïla Sarr,MID,Crystal Palace
+438464,Cheick Doucouré,MID,Crystal Palace
+606921,Romain Esse,MID,Crystal Palace
+108413,Will Hughes,MID,Crystal Palace
+209400,Daichi Kamada,MID,Crystal Palace
+152551,Jefferson Lerma Solís,MID,Crystal Palace
+496221,Adam Wharton,MID,Crystal Palace
+579075,Asher Agbinone,MID,Crystal Palace
+466117,Naouirou Ahamada,MID,Crystal Palace
+489706,Justin Devenny,MID,Crystal Palace
+450535,Malcolm Ebiowei,MID,Crystal Palace
+450542,Jesurun Rak-Sakyi,MID,Crystal Palace
+536694,Matheus França de Oliveira,MID,Crystal Palace
+531989,David Ozoh,MID,Crystal Palace
+530318,Kaden Rodney,MID,Crystal Palace
+574398,Franco Umeh-Chibueze,MID,Crystal Palace
+231747,Jean-Philippe Mateta,FWD,Crystal Palace
+205533,Eddie Nketiah,FWD,Crystal Palace
+199670,Odsonne Édouard,FWD,Crystal Palace
+576980,Zach Marsh,FWD,Crystal Palace
+111234,Jordan Pickford,GK,Everton
+229600,Mark Travers,GK,Everton
+447325,Harry Tyrer,GK,Everton
+480455,Jarrad Branthwaite,DEF,Everton
+17761,James Tarkowski,DEF,Everton
+224967,Vitalii Mykolenko,DEF,Everton
+512462,Jake O'Brien,DEF,Everton
+59949,Séamus Coleman,DEF,Everton
+106611,Michael Keane,DEF,Everton
+243571,Nathan Patterson,DEF,Everton
+496178,Roman Dixon,DEF,Everton
+474907,Reece Welch,DEF,Everton
+440993,Iliman Ndiaye,MID,Everton
+433154,Dwight McNeil,MID,Everton
+502697,Carlos Alcaraz Durán,MID,Everton
+80801,Idrissa Gana Gueye,MID,Everton
+232928,James Garner,MID,Everton
+490094,Tim Iroegbunam,MID,Everton
+609873,Harrison Armstrong,MID,Everton
+547801,Callum Bates,MID,Everton
+504296,Coby Ebere,MID,Everton
+496279,Isaac Heath,MID,Everton
+491557,Jenson Metcalfe,MID,Everton
+486385,Norberto Bercique Gomes Betuncal,FWD,Everton
+491012,Youssef Ramalho Chermiti,FWD,Everton
+536241,Martin Sherif,FWD,Everton
+80201,Bernd Leno,GK,Fulham
+428971,Steven Benda,GK,Fulham
+169528,Antonee Robinson,DEF,Fulham
+174874,Joachim Andersen,DEF,Fulham
+232892,Calvin Bassey,DEF,Fulham
+166477,Timothy Castagne,DEF,Fulham
+219924,Issa Diop,DEF,Fulham
+246301,Jorge Cuenca Barreno,DEF,Fulham
+167074,Kenny Tete,DEF,Fulham
+591385,Samuel Amissah,DEF,Fulham
+153133,Alex Iwobi,MID,Fulham
+209289,Emile Smith Rowe,MID,Fulham
+159533,Adama Traoré Diarra,MID,West Ham
+156689,Andreas Hoelgebaum Pereira,MID,Fulham
+184349,Ryan Sessegnon,MID,Fulham
+153682,Harry Wilson,MID,Fulham
+207189,Sander Berge,MID,Fulham
+76357,Tom Cairney,MID,Fulham
+212314,Saša Lukić,MID,Fulham
+573062,Martial Godo,MID,Fulham
+515024,Luke Harris,MID,Fulham
+577725,Josh King,MID,Fulham
+153366,Harrison Reed,MID,Fulham
+102057,Raúl Jiménez Rodríguez,FWD,Fulham
+244042,Rodrigo Muniz Carvalho,FWD,Fulham
+437495,Illan Meslier,GK,Leeds
+59735,Karl Darlow,GK,Leeds
+226182,Jayden Bogle,DEF,Leeds
+222694,Pascal Struijk,DEF,Leeds
+113564,Sam Byram,DEF,Leeds
+214225,Joe Rodon,DEF,Leeds
+427637,Brenden Aaronson,MID,Leeds
+492859,Wilfried Gnonto,MID,Leeds
+221399,Jack Harrison,MID,Leeds
+200617,Daniel James,MID,Leeds
+199598,Ethan Ampadu,MID,Leeds
+248937,Sam Greenwood,MID,Leeds
+462635,Joe Gelhardt,MID,Leeds
+470294,Darko Gyabi,MID,Leeds
+106617,Patrick Bamford,FWD,Leeds
+565297,Mateo Joseph Fernández-Regatillo,FWD,Leeds
+174594,Lukas Nmecha,FWD,Leeds
+116535,Alisson Becker,GK,Liverpool
+155503,Freddie Woodman,GK,Liverpool
+544877,Milos Kerkez,DEF,Liverpool
+122798,Andrew Robertson,DEF,Liverpool
+97032,Virgil van Dijk,DEF,Liverpool
+204716,Ibrahima Konaté,DEF,Liverpool
+492777,Conor Bradley,DEF,Liverpool
+171287,Joe Gomez,DEF,Liverpool
+214285,Konstantinos Tsimikas,DEF,Liverpool
+611926,Amara Nallo,DEF,Liverpool
+219937,Rhys Williams,DEF,Liverpool
+489580,Calvin Ramsay,DEF,Liverpool
+118748,Mohamed Salah,MID,Liverpool
+244731,Luis Díaz Marulanda,MID,Liverpool
+243298,Cody Gakpo,MID,Liverpool
+223541,Federico Chiesa,MID,Liverpool
+243016,Alexis Mac Allister,MID,Liverpool
+424876,Dominik Szoboszlai,MID,Liverpool
+206915,Curtis Jones,MID,Liverpool
+444884,Harvey Elliott,MID,Aston Villa
+441266,Ryan Gravenberch,MID,Liverpool
+496208,Ben Gannon-Doak,MID,Bournemouth
+158983,Endo Wataru,MID,Liverpool
+535928,Stefan Bajčetić Maquieira,MID,Liverpool
+491501,James McConnell,MID,Liverpool
+440148,Tyler Morton,MID,Liverpool
+591386,Trey Nyoni,MID,Liverpool
+447203,Darwin Núñez Ribeiro,FWD,Liverpool
+500058,Jayden Danns,FWD,Liverpool
+121160,Ederson Santana de Moraes,GK,Man City
+88248,Stefan Ortega Moreno,GK,Nott'm Forest
+122074,Marcus Bettinelli,GK,Man City
+448514,Rayan Aït-Nouri,DEF,Man City
+477424,Joško Gvardiol,DEF,Man City
+211975,Manuel Akanji,DEF,Man City
+126184,Nathan Aké,DEF,Man City
+578153,Abdukodir Khusanov,DEF,Man City
+465351,Matheus Nunes,DEF,Man City
+171314,Rúben dos Santos Gato Alves Dias,DEF,Man City
+97299,John Stones,DEF,Man City
+477064,Rico Lewis,DEF,Man City
+472769,Nico O'Reilly,DEF,Man City
+616222,Vitor de Oliveira Nunes dos Reis,DEF,Man City
+438234,Omar Marmoush,MID,Man City
+209244,Phil Foden,MID,Man City
+510281,Sávio Moreira de Oliveira,MID,Man City
+165809,Bernardo Mota Veiga de Carvalho e Silva,MID,Man City
+248875,Jérémy Doku,MID,Man City
+114283,Jack Grealish,MID,Everton
+59859,İlkay Gündoğan,MID,Man City
+220566,Rodrigo 'Rodri' Hernandez Cascante,MID,Man City
+91651,Mateo Kovačić,MID,Man City
+465694,Nico González Iglesias,MID,Man City
+477555,Oscar Bobb,MID,Fulham
+575204,Claudio Echeverri,MID,Man City
+432714,James McAtee,MID,Nott'm Forest
+155405,Kalvin Phillips,MID,Man City
+223094,Erling Haaland,FWD,Man City
+451302,Altay Bayındır,GK,Man United
+202641,André Onana,GK,Man United
+588555,Elyh Harrison,GK,Man United
+21205,Tom Heaton,GK,Man United
+461537,Dermot Mee,GK,Man United
+209365,Matthijs de Ligt,DEF,Man United
+221820,Lisandro Martínez,DEF,Man United
+230001,Noussair Mazraoui,DEF,Man United
+216051,Diogo Dalot Teixeira,DEF,Man United
+596777,Patrick Dorgu,DEF,Man United
+95658,Harry Maguire,DEF,Man United
+106760,Luke Shaw,DEF,Man United
+550864,Leny Yoro,DEF,Man United
+577974,Harry Amass,DEF,Man United
+547676,Tyler Fredricson,DEF,Man United
+606745,Ayden Heaven,DEF,Man United
+222690,Tyrell Malacia,DEF,Man United
+141746,Bruno Borges Fernandes,MID,Man United
+430871,Matheus Santos Carneiro da Cunha,MID,Man United
+176297,Marcus Rashford,MID,Man United
+493250,Amad Diallo,MID,Man United
+493105,Alejandro Garnacho Ferreyra,MID,Chelsea
+467169,Antony dos Santos,MID,Man United
+184341,Mason Mount,MID,Man United
+209243,Jadon Sancho,MID,Aston Villa
+61256,Carlos Henrique Casimiro,MID,Man United
+516895,Kobbie Mainoo,MID,Man United
+232112,Manuel Ugarte Ribeiro,MID,Man United
+490881,Toby Collyer,MID,Man United
+556639,Jayce Fitzgerald,MID,Man United
+547037,Jack Fletcher,MID,Man United
+618873,Sékou Koné,MID,Man United
+559684,Jack Moorhouse,MID,Man United
+497894,Rasmus Højlund,FWD,Man United
+458249,Joshua Zirkzee,FWD,Man United
+596047,Chido Obi,FWD,Man United
+575034,Ethan Wheatley,FWD,Man United
+98747,Nick Pope,GK,Newcastle
+67089,Martin Dúbravka,GK,Burnley
+81441,Mark Gillespie,GK,Newcastle
+111452,Odysseas Vlachodimos,GK,Newcastle
+487838,Lewis Hall,DEF,Newcastle
+119471,Fabian Schär,DEF,Newcastle
+220237,Sven Botman,DEF,Newcastle
+78916,Dan Burn,DEF,Newcastle
+441191,Tino Livramento,DEF,Newcastle
+77794,Kieran Trippier,DEF,Newcastle
+111773,Emil Krafth,DEF,Newcastle
+101148,Jamaal Lascelles,DEF,Newcastle
+545477,Alex Murphy,DEF,Newcastle
+441024,Harrison Ashby,DEF,Newcastle
+578512,Miodrag Pivaš,DEF,Newcastle
+169359,Matt Targett,DEF,Newcastle
+232826,Anthony Gordon,MID,Newcastle
+449434,Anthony Elanga,MID,Newcastle
+201666,Harvey Barnes,MID,Newcastle
+208706,Bruno Guimarães Rodriguez Moura,MID,Newcastle
+114243,Jacob Murphy,MID,Newcastle
+180974,Joelinton Cássio Apolinário de Lira,MID,Newcastle
+432422,Sandro Tonali,MID,Newcastle
+180135,Sean Longstaff,MID,Leeds
+200089,Joe Willock,MID,Newcastle
+153127,Isaac Hayden,MID,Newcastle
+564510,Garang Kuol,MID,Newcastle
+547719,Lewis Miley,MID,Newcastle
+461484,Joe White,MID,Newcastle
+219168,Alexander Isak,FWD,Liverpool
+538207,William Osula,FWD,Newcastle
+599303,Sean Neave,FWD,Newcastle
+85633,Matz Sels,GK,Nott'm Forest
+475123,Carlos Miguel dos Santos Pereira,GK,Nott'm Forest
+224068,Matt Turner,GK,Nott'm Forest
+227444,Nikola Milenković,DEF,Nott'm Forest
+575476,Murillo Costa dos Santos,DEF,Nott'm Forest
+159506,Ola Aina,DEF,Nott'm Forest
+215136,Neco Williams,DEF,Nott'm Forest
+485047,Felipe Rodrigues da Silva,DEF,Nott'm Forest
+204822,Omar Richards,DEF,Nott'm Forest
+549067,Zach Abbott,DEF,Nott'm Forest
+90585,Willy Boly,DEF,Nott'm Forest
+222531,Morgan Gibbs-White,MID,Nott'm Forest
+209046,Callum Hudson-Odoi,MID,Nott'm Forest
+215379,Elliot Anderson,MID,Nott'm Forest
+510500,João Pedro Ferreira da Silva,MID,Nott'm Forest
+250199,Nicolás Domínguez,MID,Nott'm Forest
+243345,Lewis O'Brien,MID,Nott'm Forest
+210462,Ibrahim Sangaré,MID,Nott'm Forest
+204968,Ryan Yates,MID,Nott'm Forest
+569014,Eric da Silva Moreira,MID,Nott'm Forest
+60689,Chris Wood,FWD,Nott'm Forest
+210156,Taiwo Awoniyi,FWD,Nott'm Forest
+74854,Simon Moore,GK,Sunderland
+220684,Aji Alese,DEF,Sunderland
+461195,Dennis Cirkin,DEF,Sunderland
+477547,Leo Fuhr Hjelde,DEF,Sunderland
+492066,Niall Huggins,DEF,Sunderland
+535818,Simon Adingra,MID,Sunderland
+124165,Patrick Roberts,MID,Sunderland
+461199,Romaine Mundle,MID,Sunderland
+215460,Ian Poveda-Ocampo,MID,Sunderland
+458297,Pierre Ekwah Elimby,MID,Sunderland
+184254,Guglielmo Vicario,GK,Tottenham
+214572,Brandon Austin,GK,Tottenham
+485055,Antonín Kinský,GK,Tottenham
+441164,Pedro Porro Sauceda,DEF,Tottenham
+221632,Cristian Romero,DEF,Tottenham
+135720,Kevin Danso,DEF,Tottenham
+115556,Ben Davies,DEF,Tottenham
+493125,Radu Drăgușin,DEF,Tottenham
+232859,Djed Spence,DEF,Tottenham
+487053,Destiny Udogie,DEF,Tottenham
+491279,Micky van de Ven,DEF,Tottenham
+548308,Ashley Phillips,DEF,Tottenham
+85971,Son Heung-min,MID,Tottenham
+242898,Brennan Johnson,MID,Crystal Palace
+172780,James Maddison,MID,Tottenham
+460842,Mohammed Kudus,MID,Tottenham
+445044,Dejan Kulusevski,MID,Tottenham
+511499,Mathys Tel,MID,Tottenham
+202993,Rodrigo Bentancur,MID,Tottenham
+570526,Lucas Bergvall,MID,Tottenham
+227127,Yves Bissouma,MID,Tottenham
+550839,Wilson Odobert,MID,Tottenham
+235674,Manor Solomon,MID,Tottenham
+436234,Bryan Gil Salvatierra,MID,Tottenham
+547701,Archie Gray,MID,Tottenham
+499721,Mikey Moore,MID,Tottenham
+482442,Pape Matar Sarr,MID,Tottenham
+623095,Yang Min-hyeok,MID,Tottenham
+499726,Callum Olusesi,MID,Tottenham
+154566,Dominic Solanke-Mitchell,FWD,Tottenham
+212319,Richarlison de Andrade,FWD,Tottenham
+552427,Will Lankshear,FWD,Tottenham
+490145,Dane Scarlett,FWD,Tottenham
+84182,Alphonse Areola,GK,West Ham
+82143,Wes Foderingham,GK,West Ham
+483364,Krisztián Hegyi,GK,West Ham
+109533,Emerson Palmieri dos Santos,DEF,West Ham
+214048,Maximilian Kilman,DEF,West Ham
+233963,Konstantinos Mavropanos,DEF,West Ham
+210494,Nayef Aguerd,DEF,West Ham
+536109,Ollie Scarles,DEF,West Ham
+462116,Jean-Clair Todibo,DEF,West Ham
+214590,Aaron Wan-Bissaka,DEF,West Ham
+518438,Kaelan Casey,DEF,West Ham
+224024,Lucas Tolentino Coelho de Lima,MID,West Ham
+215439,Tomáš Souček,MID,West Ham
+101178,James Ward-Prowse,MID,Burnley
+450070,Crysencio Summerville,MID,West Ham
+213999,Edson Álvarez Velázquez,MID,West Ham
+149519,Maxwel Cornet,MID,West Ham
+197024,Guido Rodríguez,MID,West Ham
+577114,Luis Guilherme Lira dos Santos,MID,West Ham
+490885,George Earthy,MID,West Ham
+229384,Andy Irving,MID,West Ham
+518442,Lewis Orford,MID,West Ham
+178186,Jarrod Bowen,FWD,West Ham
+91889,Niclas Füllkrug,FWD,West Ham
+565431,Callum Marshall,FWD,West Ham
+101982,Sam Johnstone,GK,Wolves
+149065,José Malheiro de Sá,GK,Wolves
+79602,Daniel Bentley,GK,Wolves
+138001,Tom King,GK,Everton
+516939,Emmanuel Agbadou,DEF,Wolves
+87835,Matt Doherty,DEF,Wolves
+490721,Hugo Bueno López,DEF,Wolves
+501837,Yerson Mosquera Valdelamar,DEF,Wolves
+483081,Rodrigo Martins Gomes,DEF,Wolves
+231480,Santiago Ignacio Bueno,DEF,Wolves
+510362,Toti Gomes,DEF,Wolves
+441271,Ki-Jana Hoever,DEF,Wolves
+560248,Bastien Meupiyou Menadjou,DEF,Wolves
+641221,Pedro Cardoso de Lima,DEF,Wolves
+517179,Alfie Pond,DEF,Wolves
+184754,Hwang Hee-chan,MID,Wolves
+509291,André Trindade da Costa Neto,MID,Wolves
+231057,Jean-Ricner Bellegarde,MID,Wolves
+448089,João Victor Gomes da Silva,MID,Wolves
+181284,Gonçalo Manuel Ganchinho Guedes,MID,Wolves
+433312,Marshall Munetsi,MID,Wolves
+476502,Boubacar Traoré,MID,Wolves
+497606,Tawanda Chirewa,MID,Wolves
+596054,Tom Edozie,MID,Wolves
+593001,Enso González Medina,MID,Wolves
+240299,Joe Hodge,MID,Wolves
+247412,Jørgen Strand Larsen,FWD,Crystal Palace
+449988,Fábio Soares Silva,FWD,Wolves
+429414,Saša Kalajdžić,FWD,Wolves
+589507,Leon Chiwome,FWD,Wolves
+531363,Nathan Fraser,FWD,Wolves
+158534,Kyle Walker-Peters,DEF,West Ham
+201595,Lucas Estella Perri,GK,Leeds
+224117,Viktor Gyökeres,FWD,Arsenal
+84450,Granit Xhaka,MID,Sunderland
+75115,Callum Wilson,FWD,West Ham
+154296,João Maria Lobo Alves Palhares Costa Palhinha Gonçalves,MID,Tottenham
+225321,Aaron Ramsdale,GK,Newcastle
+107265,Angus Gunn,GK,Nott'm Forest
+503714,Lesley Ugochukwu,MID,Burnley
+105717,Arthur Masuaku,DEF,Sunderland
+467189,Mads Hermansen,GK,West Ham
+440323,Armando Broja,FWD,Burnley
+606774,Remy Rees-Dottin,MID,Bournemouth
+481283,James Wright,GK,Aston Villa
+177815,Dominic Calvert-Lewin,FWD,Leeds
+503301,Omari Hutchinson,MID,Nott'm Forest
+230046,Douglas Luiz Soares de Paulo,MID,Aston Villa
+564505,Sam Proctor,GK,Aston Villa
+461446,Tyler Onyango,MID,Everton
+491745,Elijah Campbell,DEF,Everton
+220627,James Justin,DEF,Leeds
+496661,Tyler Dibling,MID,Everton
+551226,Mateus Gonçalo Espanha Fernandes,MID,West Ham
+534836,Travis Patterson,DEF,Aston Villa
+184667,Victor Lindelöf,DEF,Aston Villa
+110504,Bertrand Traoré,MID,Sunderland
+37096,Lukasz Fabianski,GK,West Ham
+602903,Ezra Mayers,DEF,West Ham
+183656,Josh Dasilva,MID,Brentford
+647671,Mateus Mané,FWD,Wolves
+19236,John Ruddy,GK,Newcastle
+604988,Freddie Simmonds,DEF,Brighton
+514362,Temple Ojinnaka,MID,Wolves
+40383,Fraser Forster,GK,Bournemouth
+60307,Pascal Groß,MID,Brighton
+576637,Godwill Kukonki,DEF,Man United
+611917,Lucá Williams-Barnett,MID,Tottenham
+494307,Max Alleyne,DEF,Man City
+597320,Harry Howell,MID,Brighton
+232787,Conor Gallagher,MID,Tottenham
+499857,Teddy Sharman-Lowe,GK,Chelsea
+173879,Tammy Abraham,FWD,Aston Villa
+220362,Axel Disasi,DEF,West Ham
+209041,Angel Gomes,MID,Wolves
+155511,Adam Armstrong,FWD,Wolves
+567119,Shumaira Mheuka,FWD,Chelsea

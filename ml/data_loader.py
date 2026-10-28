@@ -1,270 +1,140 @@
 """
-
 Loads raw CSVs from data/raw/<season>/ into typed pandas DataFrames.
 
-
-
 Design rules
-
 ------------
-
-- Do NOT clean here. Type coercion, name harmonisation, ppda parsing, ID
-
-  bridging: all live in ml/cleaning.py (Phase 2).
-
-- Missing files return None with a warning, never raise. Understat is
-
-  legitimately absent for 2025-26 and 2026-27 (cahier des charges §4.1).
-
-- Every returned DataFrame gets a ``season`` column (the folder name,
-
-  e.g. ``"2020-21"``) so concatenation is trivial downstream.
-
-- No Django imports. This module must stay pure-Python / pandas.
-
+- Do NOT clean here. All cleaning lives in ml/cleaning.py.
+- Missing files return None with a warning, never raise.
+- Every returned DataFrame gets a ``season`` column (the folder name).
+- No Django imports.
 """
-
-
 
 from __future__ import annotations
 
-
-
 import logging
-
+import warnings
 from pathlib import Path
-
-
 
 import pandas as pd
 
-
+# Silence harmless fragmentation warnings from read_csv + assign
+warnings.filterwarnings("ignore", category=pd.errors.PerformanceWarning)
 
 logger = logging.getLogger(__name__)
 
-
-
-# data/raw/ lives at project root, two levels above ml/
-
 DATA_RAW = Path(__file__).resolve().parent.parent / "data" / "raw"
-
-
-
-# Columns we always want to parse as datetime when loading E0
 
 E0_DATE_COL = "Match_Date"
 
 
-
-
-
 # ---------------------------------------------------------------------------
-
 # Discovery
-
 # ---------------------------------------------------------------------------
-
 def list_seasons() -> list[str]:
-
-    """Return sorted list of season folder names under data/raw/."""
-
     if not DATA_RAW.exists():
-
         raise FileNotFoundError(f"Data folder not found: {DATA_RAW}")
-
     seasons = sorted(p.name for p in DATA_RAW.iterdir() if p.is_dir())
-
     if not seasons:
-
         raise FileNotFoundError(f"No season folders under {DATA_RAW}")
-
     return seasons
 
 
-
-
-
 def _e0_filename(season: str) -> str:
-    """Build the E0 filename from a season label.
-
-    "2020-21" -> "E0_Season_20202021.csv"
-    "2026-27" -> "E0_Season_20262027.csv"
-
-    The season label is YYYY-YY (2-digit end year); the filename uses the
-    full 4-digit end year. Confirmed against the real data in Phase 1.
-    """
-    start = season.split("-")[0]          # "2020"
-    end = str(int(start) + 1)             # "2021"
+    """'2020-21' -> 'E0_Season_20202021.csv' (8-digit convention)."""
+    start = season.split("-")[0]
+    end = str(int(start) + 1)
     return f"E0_Season_{start}{end}.csv"
 
 
-def file_inventory(season: str) -> dict[str, bool]:
-    """Return {logical_key: exists} for the 6 expected files in a season.
-
-    Uses fixed logical keys (not filenames) so the transposed inventory
-    DataFrame has stable columns across seasons.
-    """
+def _find_e0_file(season: str) -> Path | None:
+    """Locate the E0 file tolerant to 8-digit / 6-digit / underscore naming."""
     folder = DATA_RAW / season
-    expected = {
-        "e0":             _e0_filename(season),
-        "gameweeks":      "master_gameweeks.csv",
-        "player_gw":      "master_player_gw.csv",
-        "player_history": "master_player_history.csv",
-        "understat":      "master_understat_teams.csv",
-        "xp":             "master_xP_projections.csv",
-    }
-    return {key: (folder / name).exists() for key, name in expected.items()}
-
-
-
-
-
-# ---------------------------------------------------------------------------
-
-# Per-file loaders
-
-# ---------------------------------------------------------------------------
-
-def _safe_read(path: Path) -> pd.DataFrame | None:
-
-    if not path.exists():
-
-        logger.warning("File not found, returning None: %s", path)
-
+    if not folder.exists():
         return None
+    for cand in (
+        folder / _e0_filename(season),                                    # 8-digit
+        folder / f"E0_Season_{season.replace('-', '')}.csv",              # 6-digit
+        folder / f"E0_Season_{season[:4]}_{int(season[:4]) + 1}.csv",     # underscore
+    ):
+        if cand.exists():
+            return cand
+    globbed = sorted(folder.glob("E0_Season_*.csv"))
+    return globbed[0] if globbed else None
 
+
+def file_inventory(season: str) -> dict[str, bool]:
+    folder = DATA_RAW / season
+    return {
+        "e0":             _find_e0_file(season) is not None,
+        "gameweeks":      (folder / "master_gameweeks.csv").exists(),
+        "player_gw":      (folder / "master_player_gw.csv").exists(),
+        "player_history": (folder / "master_player_history.csv").exists(),
+        "understat":      (folder / "master_understat_teams.csv").exists(),
+        "xp":             (folder / "master_xP_projections.csv").exists(),
+    }
+
+
+# ---------------------------------------------------------------------------
+# Loaders
+# ---------------------------------------------------------------------------
+def _safe_read(path: Path) -> pd.DataFrame | None:
+    if not path.exists():
+        logger.warning("File not found, returning None: %s", path)
+        return None
     return pd.read_csv(path)
 
 
-
+def _with_season(df: pd.DataFrame | None, season: str, col: str = "season") -> pd.DataFrame | None:
+    if df is None:
+        return None
+    df = df.copy()          # defragments before assign -> no warning
+    df[col] = season
+    return df
 
 
 def load_e0(season: str) -> pd.DataFrame | None:
-    """Load E0_Season_YYYYYYYY.csv (match results + bookmaker odds)."""
-    path = DATA_RAW / season / _e0_filename(season)
-    df = _safe_read(path)
-    if df is not None:
-        df["season"] = season
-    return df
-
-
-
+    path = _find_e0_file(season)
+    if path is None:
+        logger.warning("No E0 file found for season %s in %s",
+                       season, DATA_RAW / season)
+        return None
+    return _with_season(_safe_read(path), season)
 
 
 def load_gameweeks(season: str) -> pd.DataFrame | None:
-
-    """Load master_gameweeks.csv (FPL per-GW player rows + name/pos/team/xP)."""
-
-    df = _safe_read(DATA_RAW / season / "master_gameweeks.csv")
-
-    if df is not None:
-
-        df["season"] = season
-
-    return df
-
-
-
+    return _with_season(_safe_read(DATA_RAW / season / "master_gameweeks.csv"), season)
 
 
 def load_player_gw(season: str) -> pd.DataFrame | None:
-
-    """Load master_player_gw.csv (FPL per-GW player rows + player_folder_name)."""
-
-    df = _safe_read(DATA_RAW / season / "master_player_gw.csv")
-
-    if df is not None:
-
-        df["season"] = season
-
-    return df
-
-
-
+    return _with_season(_safe_read(DATA_RAW / season / "master_player_gw.csv"), season)
 
 
 def load_player_history(season: str) -> pd.DataFrame | None:
-
-    """Load master_player_history.csv (season-level FPL aggregates)."""
-
-    df = _safe_read(DATA_RAW / season / "master_player_history.csv")
-
-    if df is not None:
-
-        # Folder tag, distinct from the historical `season_name` column
-
-        df["folder_season"] = season
-
-    return df
-
-
-
+    return _with_season(_safe_read(DATA_RAW / season / "master_player_history.csv"),
+                        season, col="folder_season")
 
 
 def load_understat(season: str) -> pd.DataFrame | None:
-
-    """Load master_understat_teams.csv (per-team-per-match xG/xGA/PPDA)."""
-
-    df = _safe_read(DATA_RAW / season / "master_understat_teams.csv")
-
-    if df is not None:
-
-        df["season"] = season
-
-    return df
-
-
-
+    return _with_season(_safe_read(DATA_RAW / season / "master_understat_teams.csv"), season)
 
 
 def load_xp_projections(season: str) -> pd.DataFrame | None:
-
-    """Load master_xP_projections.csv (id, xP)."""
-
-    df = _safe_read(DATA_RAW / season / "master_xP_projections.csv")
-
-    if df is not None:
-
-        df["season"] = season
-
-    return df
-
-
-
+    return _with_season(_safe_read(DATA_RAW / season / "master_xP_projections.csv"), season)
 
 
 # ---------------------------------------------------------------------------
-
 # Convenience
-
 # ---------------------------------------------------------------------------
-
 def load_all(season: str) -> dict[str, pd.DataFrame | None]:
-
-    """Load all 6 files for one season. Missing files are None."""
-
     return {
-
         "e0": load_e0(season),
-
         "gameweeks": load_gameweeks(season),
-
         "player_gw": load_player_gw(season),
-
         "player_history": load_player_history(season),
-
         "understat": load_understat(season),
-
         "xp": load_xp_projections(season),
-
     }
 
 
-
-
-
 def load_all_seasons() -> dict[str, dict[str, pd.DataFrame | None]]:
-
-    """Load every season found under data/raw/. Returns {season: {file: df}}."""
-
     return {s: load_all(s) for s in list_seasons()}
