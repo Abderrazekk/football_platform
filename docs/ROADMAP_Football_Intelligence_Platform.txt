@@ -141,39 +141,39 @@ PHASE 2 - CLEANING, UNIFICATION & DATABASE   (Week 2)
 GOAL: one clean, consistent dataset + SQLite database filled by a command.
 
 TASKS: CLEANING (ml/data_loader.py, ml/cleaning.py)
-[ ] [M] data_loader.py: functions that read every season folder and concatenate
+[X] [M] data_loader.py: functions that read every season folder and concatenate
         into one DataFrame per file type, with a "season" column.
-[ ] [M] Build a team-name mapping dict (raw name -> official name) and apply it
+[X] [M] Build a team-name mapping dict (raw name -> official name) and apply it
         to ALL files. Save it in ml/team_mapping.json. Test: after mapping, the
         set of teams per season must be exactly 20.
-[ ] [M] Build a player-matching strategy: use the unique id if it is stable;
+[X] [M] Build a player-matching strategy: use the unique id if it is stable;
         otherwise create your own player_key (normalized name: lowercase, no
         accents, trimmed) and handle duplicates manually.
-[ ] [M] Parse dates correctly (dayfirst for football-data format), sort by date.
-[ ] [M] Fix types (ints, floats, categories), strip whitespace, standardize
+[X] [M] Parse dates correctly (dayfirst for football-data format), sort by date.
+[X] [M] Fix types (ints, floats, categories), strip whitespace, standardize
         position labels.
-[ ] [M] Handle missing values explicitly (document each decision):
+[X] [M] Handle missing values explicitly (document each decision):
           - Understat missing for 2025-26 / 2026-27 -> keep NaN + plan a model
             version that works without xG, or impute from other stats.
           - Missing odds -> keep NaN (odds are only a benchmark).
-[ ] [M] Remove/flag duplicates, postponed or void matches.
-[ ] [M] Save clean files in data/processed/ (matches.csv, player_gw.csv,
+[X] [M] Remove/flag duplicates, postponed or void matches.
+[X] [M] Save clean files in data/processed/ (matches.csv, player_gw.csv,
         player_history.csv, teams.csv, players.csv, understat.csv).
-[ ] [M] Data tests (pytest or asserts): 380 matches/season for complete seasons,
+[X] [M] Data tests (pytest or asserts): 380 matches/season for complete seasons,
         no duplicate (date, home, away), all teams mapped, no negative minutes.
 
 TASKS: DATABASE (Django)
-[ ] [M] matches/models.py: Team, Season, Match (+ Prediction later).
-[ ] [M] players/models.py: Player, PlayerSeasonStats, PlayerGameweekStats.
-[ ] [M] makemigrations + migrate.
-[ ] [M] Management command: apps/core/management/commands/import_data.py
+[X] [M] matches/models.py: Team, Season, Match (+ Prediction later).
+[X] [M] players/models.py: Player, PlayerSeasonStats, PlayerGameweekStats.
+[X] [M] makemigrations + migrate.
+[X] [M] Management command: apps/core/management/commands/import_data.py
         - reads data/processed/*.csv and fills the tables
         - IDEMPOTENT (running twice does not create duplicates: use
           update_or_create or clear + reload with a flag --reset)
         - uses bulk_create for speed
-[ ] [M] Register all models in admin.py (list_display, search_fields, filters).
-[ ] [M] Create superuser; check data in /admin/.
-[ ] [S] Add an "is_played" flag and keep upcoming 2026-27 fixtures in Match.
+[X] [M] Register all models in admin.py (list_display, search_fields, filters).
+[X] [M] Create superuser; check data in /admin/.
+[X] [S] Add an "is_played" flag and keep upcoming 2026-27 fixtures in Match.
 
 DELIVERABLES: clean CSVs, mapping files, models, import_data command, filled DB.
 DONE WHEN: `python manage.py import_data` produces a full DB, and the data tests
