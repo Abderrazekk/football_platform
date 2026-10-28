@@ -1,6 +1,6 @@
 # apps/matches/admin.py
 from django.contrib import admin
-from .models import Match, Season, Team
+from .models import Match, Prediction, Season, Team
 
 
 @admin.register(Season)
@@ -23,3 +23,18 @@ class MatchAdmin(admin.ModelAdmin):
     search_fields = ("home_team__name", "away_team__name")
     date_hierarchy = "date"
     autocomplete_fields = ("home_team", "away_team")
+    
+
+@admin.register(Prediction)
+class PredictionAdmin(admin.ModelAdmin):
+    list_display = (
+        "user", "home_team", "away_team",
+        "predicted_result", "p_home", "p_draw", "p_away",
+        "actual_result", "is_correct", "created_at",
+    )
+    list_filter = ("predicted_result", "actual_result", "created_at")
+    search_fields = ("user__username", "home_team__name", "away_team__name")
+    date_hierarchy = "created_at"
+    autocomplete_fields = ("home_team", "away_team", "match")
+    readonly_fields = ("created_at", "model_version")
+    

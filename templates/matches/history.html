@@ -1,0 +1,88 @@
+{% extends "base.html" %}
+{% block title %}Mon historique{% endblock %}
+{% block content %}
+
+<h1 class="text-3xl font-bold mb-2">Mon historique</h1>
+
+{% if stats.completed %}
+<p class="text-slate-600 mb-6">
+    {{ stats.correct }} / {{ stats.completed }} correctes
+    — taux de réussite : <strong>{{ stats.accuracy|floatformat:1 }}%</strong>
+</p>
+{% endif %}
+
+{% if page_obj.object_list %}
+<div class="bg-white rounded-lg shadow overflow-hidden">
+    <table class="min-w-full text-sm">
+        <thead class="bg-slate-100 text-slate-600">
+            <tr>
+                <th class="text-left px-4 py-2">Date</th>
+                <th class="text-left px-4 py-2">Match</th>
+                <th class="text-right px-4 py-2">H</th>
+                <th class="text-right px-4 py-2">D</th>
+                <th class="text-right px-4 py-2">A</th>
+                <th class="text-left px-4 py-2">Prédiction</th>
+                <th class="text-left px-4 py-2">Résultat réel</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for p in page_obj %}
+            <tr class="border-t">
+                <td class="px-4 py-2 text-slate-500">{{ p.created_at|date:"d/m/Y H:i" }}</td>
+                <td class="px-4 py-2">
+                    <a href="{% url 'matches:detail' p.pk %}" class="hover:underline">
+                        {{ p.home_team.name }} vs {{ p.away_team.name }}
+                    </a>
+                </td>
+                <td class="px-4 py-2 text-right">{{ p.p_home|floatformat:1 }}%</td>
+                <td class="px-4 py-2 text-right">{{ p.p_draw|floatformat:1 }}%</td>
+                <td class="px-4 py-2 text-right">{{ p.p_away|floatformat:1 }}%</td>
+                <td class="px-4 py-2">
+                    <span class="px-2 py-0.5 rounded text-xs font-mono
+                        {% if p.predicted_result == 'H' %}bg-emerald-100 text-emerald-800
+                        {% elif p.predicted_result == 'D' %}bg-slate-200 text-slate-700
+                        {% else %}bg-red-100 text-red-800{% endif %}">
+                        {{ p.predicted_result }}
+                    </span>
+                </td>
+                <td class="px-4 py-2">
+                    {% if p.actual_result %}
+                        {% if p.is_correct %}
+                            <span class="text-emerald-600 font-bold">✓ {{ p.actual_result }}</span>
+                        {% else %}
+                            <span class="text-red-600 font-bold">✗ {{ p.actual_result }}</span>
+                        {% endif %}
+                    {% else %}
+                        <span class="text-slate-400">—</span>
+                    {% endif %}
+                </td>
+                <td class="px-4 py-2 text-right">
+                    <a href="{% url 'matches:delete' p.pk %}" class="text-red-600 hover:underline text-xs">Supprimer</a>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+{% if page_obj.has_other_pages %}
+<div class="mt-4 flex justify-center gap-2 text-sm">
+    {% if page_obj.has_previous %}
+        <a href="?page={{ page_obj.previous_page_number }}" class="px-3 py-1 bg-white border rounded">← Précédent</a>
+    {% endif %}
+    <span class="px-3 py-1">Page {{ page_obj.number }} / {{ page_obj.paginator.num_pages }}</span>
+    {% if page_obj.has_next %}
+        <a href="?page={{ page_obj.next_page_number }}" class="px-3 py-1 bg-white border rounded">Suivant →</a>
+    {% endif %}
+</div>
+{% endif %}
+
+{% else %}
+<div class="bg-white rounded-lg shadow p-8 text-center text-slate-500">
+    Aucune prédiction pour l'instant.
+    <a href="{% url 'matches:predict' %}" class="text-emerald-600 hover:underline block mt-2">Faire une prédiction</a>
+</div>
+{% endif %}
+
+{% endblock %}

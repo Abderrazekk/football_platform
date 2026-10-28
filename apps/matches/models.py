@@ -1,4 +1,5 @@
 from django.db import models
+from django.conf import settings
 
 
 class Season(models.Model):
@@ -64,3 +65,56 @@ class Match(models.Model):
             f"{self.date:%Y-%m-%d} {self.home_team} "
             f"{self.home_goals}-{self.away_goals} {self.away_team}"
         )
+        
+        
+        
+               
+class Prediction(models.Model):
+    RESULT_CHOICES = [("H", "Home win"), ("D", "Draw"), ("A", "Away win")]
+
+    user = models.ForeignKey(
+        settings.AUTH_USER_MODEL,
+        on_delete=models.CASCADE,
+        related_name="predictions",
+    )
+    home_team = models.ForeignKey(
+        Team, on_delete=models.CASCADE, related_name="predictions_as_home"
+    )
+    away_team = models.ForeignKey(
+        Team, on_delete=models.CASCADE, related_name="predictions_as_away"
+    )
+    match = models.ForeignKey(
+        Match, null=True, blank=True,
+        on_delete=models.SET_NULL,
+        related_name="predictions",
+    )
+
+    p_home = models.FloatField()
+    p_draw = models.FloatField()
+    p_away = models.FloatField()
+    predicted_result = models.CharField(max_length=1, choices=RESULT_CHOICES)
+    actual_result = models.CharField(max_length=1, choices=RESULT_CHOICES, blank=True)
+    model_version = models.CharField(max_length=100, blank=True)
+
+    created_at = models.DateTimeField(auto_now_add=True, db_index=True)
+
+    class Meta:
+        ordering = ["-created_at"]
+        indexes = [models.Index(fields=["user", "-created_at"])]
+
+    def __str__(self) -> str:
+        return (
+            f"{self.user.username}: {self.home_team} vs {self.away_team} "
+            f"({self.predicted_result})"
+        )
+
+    @property
+    def is_correct(self):
+        """None when not yet played, else True/False."""
+        if not self.actual_result:
+            return None
+        return self.predicted_result == self.actual_result        
+        
+        
+        
+        

@@ -1,0 +1,93 @@
+{% extends "base.html" %}
+{% block title %}Prédire un match{% endblock %}
+{% block content %}
+
+<h1 class="text-3xl font-bold mb-6">Prédire un match</h1>
+
+<form method="post" class="bg-white rounded-lg shadow p-6 mb-6">
+    {% csrf_token %}
+    <div class="grid md:grid-cols-3 gap-4 items-end">
+        <div>
+            <label class="block text-sm font-medium mb-1">Équipe à domicile</label>
+            {{ form.home_team }}
+        </div>
+        <div>
+            <label class="block text-sm font-medium mb-1">Équipe à l'extérieur</label>
+            {{ form.away_team }}
+        </div>
+        <div>
+            <button type="submit"
+                    class="w-full bg-emerald-500 hover:bg-emerald-600 text-white py-2 rounded font-medium">
+                Prédire
+            </button>
+        </div>
+    </div>
+    {% if form.errors %}
+        <div class="mt-3 text-sm text-red-600">{{ form.errors|striptags }}</div>
+    {% endif %}
+</form>
+
+{% if result %}
+<div class="grid md:grid-cols-3 gap-4 mb-6">
+    <div class="bg-emerald-50 border-2 border-emerald-500 rounded-lg p-6 text-center">
+        <div class="text-sm text-slate-600 mb-1">Victoire {{ home_team.name }}</div>
+        <div class="text-4xl font-bold text-emerald-600">{{ result.home|floatformat:1 }}%</div>
+    </div>
+    <div class="bg-slate-50 border-2 border-slate-400 rounded-lg p-6 text-center">
+        <div class="text-sm text-slate-600 mb-1">Match nul</div>
+        <div class="text-4xl font-bold text-slate-600">{{ result.draw|floatformat:1 }}%</div>
+    </div>
+    <div class="bg-red-50 border-2 border-red-500 rounded-lg p-6 text-center">
+        <div class="text-sm text-slate-600 mb-1">Victoire {{ away_team.name }}</div>
+        <div class="text-4xl font-bold text-red-600">{{ result.away|floatformat:1 }}%</div>
+    </div>
+</div>
+
+{% if home_form %}
+<div class="grid md:grid-cols-2 gap-4 mb-6">
+    <div class="bg-white rounded-lg shadow p-4">
+        <h3 class="font-semibold mb-2">{{ home_team.name }} — forme récente</h3>
+        <div class="flex gap-1 mb-2">
+            {% for m in home_form %}
+                <span class="w-7 h-7 flex items-center justify-center rounded text-xs font-bold text-white
+                    {% if m.outcome == 'W' %}bg-emerald-500{% elif m.outcome == 'D' %}bg-slate-400{% else %}bg-red-500{% endif %}">
+                    {{ m.outcome }}
+                </span>
+            {% empty %}
+                <span class="text-slate-500 text-sm">Aucun match enregistré.</span>
+            {% endfor %}
+        </div>
+    </div>
+    <div class="bg-white rounded-lg shadow p-4">
+        <h3 class="font-semibold mb-2">{{ away_team.name }} — forme récente</h3>
+        <div class="flex gap-1 mb-2">
+            {% for m in away_form %}
+                <span class="w-7 h-7 flex items-center justify-center rounded text-xs font-bold text-white
+                    {% if m.outcome == 'W' %}bg-emerald-500{% elif m.outcome == 'D' %}bg-slate-400{% else %}bg-red-500{% endif %}">
+                    {{ m.outcome }}
+                </span>
+            {% empty %}
+                <span class="text-slate-500 text-sm">Aucun match enregistré.</span>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endif %}
+
+{% if h2h and h2h.total %}
+<div class="bg-white rounded-lg shadow p-4 mb-6">
+    <h3 class="font-semibold mb-2">Confrontations directes ({{ h2h.total }} match{{ h2h.total|pluralize }})</h3>
+    <div class="grid grid-cols-3 text-center text-sm">
+        <div><span class="text-2xl font-bold text-emerald-600">{{ h2h.home_wins }}</span><br>{{ home_team.name }}</div>
+        <div><span class="text-2xl font-bold text-slate-500">{{ h2h.draws }}</span><br>Nuls</div>
+        <div><span class="text-2xl font-bold text-red-600">{{ h2h.away_wins }}</span><br>{{ away_team.name }}</div>
+    </div>
+</div>
+{% endif %}
+
+<p class="text-xs text-slate-500 italic">
+    Les probabilités affichées sont issues d'un modèle statistique. Elles ne garantissent en aucun cas le résultat et ne constituent pas une incitation aux paris.
+</p>
+{% endif %}
+
+{% endblock %}

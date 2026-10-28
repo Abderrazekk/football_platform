@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+{% block title %}Accueil — Football Intelligence{% endblock %}
+{% block content %}
+
+<h1 class="text-3xl font-bold mb-2">Bienvenue</h1>
+<p class="text-slate-600 mb-8">
+    Plateforme académique d'analyse et de prédiction des résultats de Premier League.
+</p>
+
+<div class="grid md:grid-cols-2 gap-6 mb-8">
+    <div class="bg-white rounded-lg shadow p-6">
+        <h2 class="text-xl font-semibold mb-3">🔮 Prédire un match</h2>
+        <p class="text-slate-600 mb-4">
+            Choisissez deux équipes et obtenez les probabilités victoire / nul / défaite.
+        </p>
+        <a href="{% url 'matches:predict' %}"
+           class="inline-block bg-emerald-500 hover:bg-emerald-600 text-white px-4 py-2 rounded">
+            Prédire maintenant
+        </a>
+    </div>
+
+    <div class="bg-white rounded-lg shadow p-6">
+        <h2 class="text-xl font-semibold mb-3">📊 Mes prédictions</h2>
+        {% if user.is_authenticated %}
+            <p class="text-slate-600 mb-4">
+                {{ user.predictions.count }} prédiction{{ user.predictions.count|pluralize }} enregistrée{{ user.predictions.count|pluralize }}.
+            </p>
+            <a href="{% url 'matches:history' %}"
+               class="inline-block bg-slate-700 hover:bg-slate-800 text-white px-4 py-2 rounded">
+                Voir l'historique
+            </a>
+        {% else %}
+            <p class="text-slate-600 mb-4">Connectez-vous pour accéder à votre historique.</p>
+            <a href="{% url 'accounts:login' %}"
+               class="inline-block bg-slate-700 hover:bg-slate-800 text-white px-4 py-2 rounded">
+                Se connecter
+            </a>
+        {% endif %}
+    </div>
+</div>
+
+{% if recent_matches %}
+<h2 class="text-xl font-semibold mb-3">Derniers résultats</h2>
+<div class="bg-white rounded-lg shadow overflow-hidden">
+    <table class="min-w-full text-sm">
+        <tbody>
+        {% for m in recent_matches %}
+            <tr class="border-b last:border-0">
+                <td class="px-4 py-2 text-slate-500">{{ m.date|date:"d/m/Y" }}</td>
+                <td class="px-4 py-2">{{ m.home_team.name }} — {{ m.away_team.name }}</td>
+                <td class="px-4 py-2 font-mono">{{ m.home_goals }}–{{ m.away_goals }}</td>
+                <td class="px-4 py-2">{{ m.get_result_display }}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endif %}
+
+{% endblock %}

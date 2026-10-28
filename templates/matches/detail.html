@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block title %}Prédiction{% endblock %}
+{% block content %}
+
+<div class="max-w-2xl mx-auto bg-white rounded-lg shadow p-8">
+    <h1 class="text-2xl font-bold mb-1">{{ prediction.home_team.name }} vs {{ prediction.away_team.name }}</h1>
+    <p class="text-sm text-slate-500 mb-6">Prédiction du {{ prediction.created_at|date:"d/m/Y à H:i" }}</p>
+
+    <div class="grid grid-cols-3 gap-4 mb-6">
+        <div class="text-center"><div class="text-2xl font-bold text-emerald-600">{{ prediction.p_home|floatformat:1 }}%</div><div class="text-xs text-slate-500">Victoire domicile</div></div>
+        <div class="text-center"><div class="text-2xl font-bold text-slate-500">{{ prediction.p_draw|floatformat:1 }}%</div><div class="text-xs text-slate-500">Nul</div></div>
+        <div class="text-center"><div class="text-2xl font-bold text-red-600">{{ prediction.p_away|floatformat:1 }}%</div><div class="text-xs text-slate-500">Victoire extérieur</div></div>
+    </div>
+
+    <dl class="text-sm">
+        <div class="flex justify-between py-2 border-t"><dt class="text-slate-500">Prédiction</dt><dd class="font-mono">{{ prediction.predicted_result }}</dd></div>
+        <div class="flex justify-between py-2 border-t"><dt class="text-slate-500">Résultat réel</dt><dd class="font-mono">{{ prediction.actual_result|default:"—" }}</dd></div>
+        <div class="flex justify-between py-2 border-t"><dt class="text-slate-500">Modèle</dt><dd>{{ prediction.model_version }}</dd></div>
+    </dl>
+
+    <div class="mt-6 flex gap-3">
+        <a href="{% url 'matches:history' %}" class="text-slate-600 hover:underline text-sm">← Retour à l'historique</a>
+        <a href="{% url 'matches:delete' prediction.pk %}" class="text-red-600 hover:underline text-sm ml-auto">Supprimer</a>
+    </div>
+</div>
+
+{% endblock %}
