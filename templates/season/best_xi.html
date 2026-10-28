@@ -1,0 +1,89 @@
+{% extends "base.html" %}
+{% block title %}Équipe type 2026-27{% endblock %}
+{% block content %}
+
+<h1 class="text-3xl font-bold mb-2">Équipe type — Saison 2026-27</h1>
+<p class="text-slate-600 mb-6">
+    Sélection optimisée par programmation linéaire en nombres entiers (PuLP) sous
+    contraintes FPL : 2 GK / 5 DEF / 5 MID / 3 FWD, budget ≤ 100 M, maximum 3 joueurs par club.
+</p>
+
+{% if not available %}
+<div class="bg-yellow-50 border border-yellow-300 text-yellow-900 rounded p-4">
+    {% if payload and payload.error %}
+        <strong>Erreur d'optimisation :</strong> {{ payload.error }}
+    {% else %}
+        Équipe type non générée. Exécutez <code>python -m ml.train_season_model</code>.
+    {% endif %}
+</div>
+{% else %}
+
+<div class="grid md:grid-cols-3 gap-4 mb-6">
+    <div class="bg-white rounded-lg shadow p-4 text-center">
+        <div class="text-xs text-slate-500">Formation</div>
+        <div class="text-2xl font-bold">{{ payload.formation }}</div>
+    </div>
+    <div class="bg-white rounded-lg shadow p-4 text-center">
+        <div class="text-xs text-slate-500">Points attendus (15 joueurs)</div>
+        <div class="text-2xl font-bold text-emerald-600">{{ payload.total_expected }}</div>
+    </div>
+    <div class="bg-white rounded-lg shadow p-4 text-center">
+        <div class="text-xs text-slate-500">Prix total</div>
+        <div class="text-2xl font-bold">{{ payload.total_price }} M</div>
+    </div>
+</div>
+
+<h2 class="text-xl font-semibold mb-3">Onze de départ ({{ payload.formation }})</h2>
+<div class="bg-white rounded-lg shadow overflow-hidden mb-8">
+    <table class="w-full text-sm">
+        <thead class="bg-emerald-50 text-emerald-900">
+            <tr>
+                <th class="text-left px-3 py-2">Joueur</th>
+                <th class="text-center px-3 py-2">Poste</th>
+                <th class="text-left px-3 py-2">Équipe</th>
+                <th class="text-right px-3 py-2">Points attendus</th>
+                <th class="text-right px-3 py-2">Prix</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for p in payload.starting_xi %}
+            <tr class="border-t {% if p.is_captain %}bg-amber-50{% endif %}">
+                <td class="px-3 py-2 font-medium">
+                    {{ p.name }}
+                    {% if p.is_captain %}<span class="ml-1 text-xs bg-amber-200 text-amber-900 px-1.5 py-0.5 rounded">C</span>{% endif %}
+                </td>
+                <td class="px-3 py-2 text-center text-xs">{{ p.position }}</td>
+                <td class="px-3 py-2 text-slate-600">{{ p.team }}</td>
+                <td class="px-3 py-2 text-right font-bold">{{ p.predicted_points|floatformat:1 }}</td>
+                <td class="px-3 py-2 text-right text-slate-500">{{ p.price|floatformat:1 }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+<h2 class="text-xl font-semibold mb-3">Banc (4 remplaçants)</h2>
+<div class="bg-white rounded-lg shadow overflow-hidden mb-6">
+    <table class="w-full text-sm">
+        <tbody>
+            {% for p in payload.squad %}{% if not p.is_starter %}
+            <tr class="border-t">
+                <td class="px-3 py-2 font-medium">{{ p.name }}</td>
+                <td class="px-3 py-2 text-center text-xs">{{ p.position }}</td>
+                <td class="px-3 py-2 text-slate-600">{{ p.team }}</td>
+                <td class="px-3 py-2 text-right">{{ p.predicted_points|floatformat:1 }}</td>
+                <td class="px-3 py-2 text-right text-slate-500">{{ p.price|floatformat:1 }}</td>
+            </tr>
+            {% endif %}{% endfor %}
+        </tbody>
+    </table>
+</div>
+
+<p class="text-xs text-slate-500 italic">
+    Sélection optimale sous contraintes — classement indicatif, pas une certitude.
+    Budget paramétrable, max 3 joueurs par club appliqué.
+</p>
+
+{% endif %}
+
+{% endblock %}

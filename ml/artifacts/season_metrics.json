@@ -1,0 +1,163 @@
+{
+  "generated_at": "2026-10-28T20:04:39.091049+00:00",
+  "n_features": 15,
+  "folds": [
+    "2022-23",
+    "2023-24",
+    "2024-25",
+    "2025-26"
+  ],
+  "models": {
+    "ridge": {
+      "mean_mae": 29.179504309729154,
+      "mean_rmse": 39.635177609786005,
+      "mean_spearman": 0.6580734560296235,
+      "mean_top10_overlap": 0.375,
+      "per_fold": [
+        {
+          "mae": 29.987462843864744,
+          "rmse": 39.63522990505626,
+          "spearman": 0.6679969037770177,
+          "n": 494,
+          "fold": 1,
+          "test_season": "2022-23",
+          "top10_overlap": 0.4,
+          "train_time_s": 0.1
+        },
+        {
+          "mae": 28.471799002335835,
+          "rmse": 39.48182017173182,
+          "spearman": 0.6121004759996241,
+          "n": 597,
+          "fold": 2,
+          "test_season": "2023-24",
+          "top10_overlap": 0.5,
+          "train_time_s": 0.0
+        },
+        {
+          "mae": 28.631951900805127,
+          "rmse": 38.71695536537459,
+          "spearman": 0.6738742577861213,
+          "n": 588,
+          "fold": 3,
+          "test_season": "2024-25",
+          "top10_overlap": 0.3,
+          "train_time_s": 0.0
+        },
+        {
+          "mae": 29.626803491910916,
+          "rmse": 40.70670499698136,
+          "spearman": 0.678322186555731,
+          "n": 605,
+          "fold": 4,
+          "test_season": "2025-26",
+          "top10_overlap": 0.3,
+          "train_time_s": 0.0
+        }
+      ]
+    },
+    "rf": {
+      "mean_mae": 28.621953193843485,
+      "mean_rmse": 39.19612838687678,
+      "mean_spearman": 0.6777322238345546,
+      "mean_top10_overlap": 0.35000000000000003,
+      "per_fold": [
+        {
+          "mae": 29.790547644111253,
+          "rmse": 39.73741111399379,
+          "spearman": 0.674908514223417,
+          "n": 494,
+          "fold": 1,
+          "test_season": "2022-23",
+          "top10_overlap": 0.4,
+          "train_time_s": 0.3
+        },
+        {
+          "mae": 27.79269215033978,
+          "rmse": 38.82429239041424,
+          "spearman": 0.6452195605071138,
+          "n": 597,
+          "fold": 2,
+          "test_season": "2023-24",
+          "top10_overlap": 0.5,
+          "train_time_s": 0.3
+        },
+        {
+          "mae": 28.16266641197297,
+          "rmse": 38.281936758583974,
+          "spearman": 0.7102735460833862,
+          "n": 588,
+          "fold": 3,
+          "test_season": "2024-25",
+          "top10_overlap": 0.2,
+          "train_time_s": 0.3
+        },
+        {
+          "mae": 28.741906568949943,
+          "rmse": 39.9408732845151,
+          "spearman": 0.6805272745243012,
+          "n": 605,
+          "fold": 4,
+          "test_season": "2025-26",
+          "top10_overlap": 0.3,
+          "train_time_s": 0.4
+        }
+      ]
+    },
+    "xgboost": {
+      "mean_mae": 28.525784610419006,
+      "mean_rmse": 39.389250508266436,
+      "mean_spearman": 0.689120189924899,
+      "mean_top10_overlap": 0.325,
+      "per_fold": [
+        {
+          "mae": 30.32435837840503,
+          "rmse": 41.61651099693538,
+          "spearman": 0.667916754118977,
+          "n": 494,
+          "fold": 1,
+          "test_season": "2022-23",
+          "top10_overlap": 0.2,
+          "train_time_s": 0.2
+        },
+        {
+          "mae": 28.061241457085913,
+          "rmse": 39.369531981919756,
+          "spearman": 0.6460221287596634,
+          "n": 597,
+          "fold": 2,
+          "test_season": "2023-24",
+          "top10_overlap": 0.6,
+          "train_time_s": 0.1
+        },
+        {
+          "mae": 27.96419098273832,
+          "rmse": 38.22087293573991,
+          "spearman": 0.7246797545635,
+          "n": 588,
+          "fold": 3,
+          "test_season": "2024-25",
+          "top10_overlap": 0.3,
+          "train_time_s": 0.1
+        },
+        {
+          "mae": 27.753347623446757,
+          "rmse": 38.3500861184707,
+          "spearman": 0.7178621222574556,
+          "n": 605,
+          "fold": 4,
+          "test_season": "2025-26",
+          "top10_overlap": 0.2,
+          "train_time_s": 0.1
+        }
+      ]
+    }
+  },
+  "final_model": "xgboost",
+  "versions": {
+    "sklearn": "1.9.1",
+    "xgboost": "3.4.1",
+    "pandas": "3.1.0",
+    "numpy": "2.5.4"
+  }
+}

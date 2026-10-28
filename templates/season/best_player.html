@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% block title %}Meilleur joueur 2026-27{% endblock %}
+{% block content %}
+
+<h1 class="text-3xl font-bold mb-2">Meilleur joueur — Saison 2026-27</h1>
+<p class="text-slate-600 mb-6">
+    Classement des 10 joueurs les plus susceptibles de réaliser la meilleure saison,
+    d'après un modèle entraîné sur 2020-21 → 2025-26.
+</p>
+
+{% if not available %}
+<div class="bg-yellow-50 border border-yellow-300 text-yellow-900 rounded p-4">
+    Prévisions saisonnières indisponibles. Exécutez
+    <code>python -m ml.train_season_model</code> pour les générer.
+</div>
+{% else %}
+
+{% if payload.top_10 %}
+<div class="bg-white rounded-lg shadow overflow-hidden mb-4">
+    <table class="w-full text-sm">
+        <thead class="bg-slate-100 text-slate-600">
+            <tr>
+                <th class="text-center px-3 py-2 w-12">#</th>
+                <th class="text-left px-3 py-2">Joueur</th>
+                <th class="text-center px-3 py-2">Poste</th>
+                <th class="text-left px-3 py-2">Équipe</th>
+                <th class="text-right px-3 py-2 font-bold">Points attendus</th>
+                <th class="text-right px-3 py-2">Incertitude (±)</th>
+                <th class="text-right px-3 py-2">Prix (£m)</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for p in payload.top_10 %}
+            <tr class="border-t {% if forloop.counter <= 3 %}bg-emerald-50{% endif %}">
+                <td class="text-center py-2 font-semibold text-slate-500">{{ forloop.counter }}</td>
+                <td class="px-3 py-2 font-medium">{{ p.name }}</td>
+                <td class="px-3 py-2 text-center text-xs">{{ p.position }}</td>
+                <td class="px-3 py-2 text-slate-600">{{ p.team }}</td>
+                <td class="px-3 py-2 text-right font-bold text-emerald-700">{{ p.predicted_points|floatformat:1 }}</td>
+                <td class="px-3 py-2 text-right text-slate-500">± {{ payload.uncertainty_95|default:p.uncertainty }}</td>
+                <td class="px-3 py-2 text-right text-slate-500">{{ p.price|floatformat:1 }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+<p class="text-xs text-slate-500 italic">
+    Classement projeté — pas une certitude. Intervalle de confiance à 95 % fourni à titre indicatif.
+</p>
+{% else %}
+<p class="text-slate-500">Aucune prédiction disponible.</p>
+{% endif %}
+
+{% endif %}
+
+{% endblock %}

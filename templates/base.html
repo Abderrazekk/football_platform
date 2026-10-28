@@ -43,6 +43,18 @@
             class="hover:text-emerald-400"
             >Stars</a
           >
+          <span class="text-slate-500">|</span>
+          <a
+            href="{% url 'season:best_player' %}"
+            class="hover:text-emerald-400"
+            >Meilleur joueur</a
+          >
+          <a href="{% url 'season:best_young' %}" class="hover:text-emerald-400"
+            >Jeune</a
+          >
+          <a href="{% url 'season:best_xi' %}" class="hover:text-emerald-400"
+            >Équipe type</a
+          >
           <a
             href="{% url 'core:model_performance' %}"
             class="hover:text-emerald-400"

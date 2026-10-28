@@ -1,0 +1,1515 @@
+element_code,name,prev_position,prev_team,predicted_points,uncertainty,prev_price_end,age,n_prior_seasons
+141746,Bruno Borges Fernandes,MID,Man United,198.48296,75.2,10.4,32.0,6
+118748,Mohamed Salah,MID,Liverpool,188.77364,75.2,14.0,,6
+223094,Erling Haaland,FWD,Man City,176.1722,75.2,14.7,26.0,4
+244850,Morgan Rogers,MID,Aston Villa,171.32774,75.2,7.3,24.0,3
+502500,Igor Thiago Nascimento Rodrigues,FWD,Brentford,167.2407,75.2,7.2,25.0,2
+178186,Jarrod Bowen,FWD,West Ham,166.67415,75.2,7.8,,6
+110979,,MID,Liverpool,162.68617,75.2,11.8,,2
+448047,Enzo Fernández,MID,Chelsea,158.4012,75.2,6.5,25.0,4
+178301,Ollie Watkins,FWD,Aston Villa,157.00182,75.2,8.7,31.0,6
+209036,Marc Guéhi,DEF,Man City,150.76166,75.2,5.1,26.0,5
+437730,Antoine Semenyo,MID,Man City,148.76703,75.2,8.0,26.0,4
+222531,Morgan Gibbs-White,MID,Nott'm Forest,145.48465,75.2,7.6,26.0,6
+446008,Bryan Mbeumo,MID,Man United,143.58148,75.2,8.3,27.0,5
+424876,Dominik Szoboszlai,MID,Liverpool,142.25362,75.2,7.1,26.0,3
+244851,Cole Palmer,MID,Chelsea,137.69786,75.2,10.3,24.0,6
+215379,Elliot Anderson,MID,Nott'm Forest,134.27328,75.2,5.7,24.0,6
+475168,João Pedro Junqueira de Jesus,FWD,Chelsea,130.19379,75.2,7.4,25.0,4
+445122,Jurriën Timber,DEF,Arsenal,128.97366,75.2,6.0,25.0,3
+221466,Marcos Senesi Barón,DEF,Bournemouth,127.08912,75.2,5.2,29.0,4
+551226,Mateus Gonçalo Espanha Fernandes,MID,West Ham,125.63808,75.2,5.5,22.0,2
+111234,Jordan Pickford,GK,Everton,125.466385,75.2,5.6,32.0,6
+209244,Phil Foden,MID,Man City,124.793205,75.2,8.0,26.0,6
+172649,Dean Henderson,GK,Crystal Palace,124.09871,75.2,5.1,29.0,6
+489639,Bart Verbruggen,GK,Brighton,123.977135,75.2,4.6,24.0,3
+472769,Nico O'Reilly,DEF,Man City,123.61404,75.2,5.3,21.0,3
+462424,William Saliba,DEF,Arsenal,123.41604,75.2,6.3,25.0,6
+430871,Matheus Santos Carneiro da Cunha,MID,Man United,121.99826,75.2,8.1,27.0,4
+97032,Virgil van Dijk,DEF,Liverpool,121.84032,75.2,6.1,35.0,6
+154561,David Raya Martín,GK,Arsenal,121.768005,75.2,6.2,31.0,5
+232928,James Garner,MID,Everton,120.26437,75.2,5.2,25.0,5
+223340,Bukayo Saka,MID,Arsenal,119.19259,75.2,10.0,25.0,6
+513418,Kevin Schade,MID,Brentford,119.0567,75.2,6.8,25.0,4
+437499,Maxence Lacroix,DEF,Crystal Palace,118.29205,75.2,5.2,26.0,2
+17761,James Tarkowski,DEF,Everton,117.09482,75.2,5.8,34.0,6
+503139,Alex Scott,MID,Bournemouth,115.16392,75.2,4.9,23.0,3
+243298,Cody Gakpo,MID,Liverpool,114.563034,75.2,7.3,27.0,4
+156700,,FWD,Luton,114.268715,75.2,4.7,,1
+204480,Declan Rice,MID,Arsenal,114.21088,75.2,7.2,27.0,6
+227444,Nikola Milenković,DEF,Nott'm Forest,113.57521,75.2,5.1,29.0,2
+199598,Ethan Ampadu,MID,Leeds,113.469505,75.2,4.9,26.0,5
+441266,Ryan Gravenberch,MID,Liverpool,112.669334,75.2,5.4,24.0,3
+80201,Bernd Leno,GK,Fulham,109.18867,75.2,5.0,34.0,6
+432830,Nathan Collins,DEF,Brentford,108.953926,75.2,4.9,25.0,5
+200720,Caoimhín Kelleher,GK,Brentford,108.855965,75.2,4.8,28.0,6
+427623,Chris Richards,DEF,Crystal Palace,108.46396,75.2,4.4,26.0,4
+57127,,FWD,Norwich,107.58005,75.2,6.1,,1
+469142,Jan Paul van Hecke,DEF,Brighton,107.2895,75.2,4.7,26.0,4
+427637,Brenden Aaronson,MID,Leeds,106.99177,75.2,5.4,26.0,2
+36903,,MID,Tottenham,106.49883,75.2,9.2,,1
+248875,Jérémy Doku,MID,Man City,106.41676,75.2,6.5,24.0,3
+465351,Matheus Nunes,DEF,Man City,105.09139,75.2,5.3,28.0,4
+466075,Riccardo Calafiori,DEF,Arsenal,104.716644,75.2,5.6,24.0,2
+491279,Micky van de Ven,DEF,Tottenham,104.51521,75.2,4.4,25.0,3
+215136,Neco Williams,DEF,Nott'm Forest,104.24047,75.2,4.8,25.0,6
+201658,Marcus Tavernier,MID,Bournemouth,103.65385,75.2,5.3,27.0,4
+457569,Đorđe Petrović,GK,Bournemouth,102.49452,75.2,4.6,27.0,3
+508395,Yehor Yarmoliuk,MID,Brentford,102.371445,75.2,5.0,22.0,4
+215413,Kiernan Dewsbury-Hall,MID,Everton,102.082954,75.2,5.3,28.0,4
+153682,Harry Wilson,MID,Fulham,102.0751,75.2,5.8,29.0,5
+244723,Tyrick Mitchell,DEF,Crystal Palace,101.90132,75.2,5.0,27.0,6
+592031,Yankuba Minteh,MID,Brighton,101.554,75.2,5.5,22.0,2
+463981,James Hill,DEF,Bournemouth,100.68745,75.2,4.2,24.0,4
+496221,Adam Wharton,MID,Crystal Palace,100.359634,75.2,5.0,22.0,3
+440993,Iliman Ndiaye,MID,Everton,100.23067,75.2,6.3,26.0,4
+533463,Dango Ouattara,MID,Brentford,99.48059,75.2,5.6,24.0,4
+607464,Michael Kayode,DEF,Brentford,99.34405,75.2,4.6,22.0,2
+92217,,FWD,Liverpool,98.77924,75.2,8.0,,3
+486672,Moisés Caicedo Corozo,MID,Chelsea,98.69471,75.2,5.7,25.0,6
+249231,Keane Lewis-Potter,DEF,Brentford,97.78061,75.2,4.8,25.0,4
+226597,Gabriel dos Santos Magalhães,DEF,Arsenal,97.32358,75.2,7.3,29.0,6
+167199,,MID,Arsenal,96.849335,75.2,4.9,,5
+180736,Trevoh Chalobah,DEF,Chelsea,96.3022,75.2,5.4,27.0,5
+512462,Jake O'Brien,DEF,Everton,96.09218,75.2,4.9,25.0,3
+247348,Daniel Muñoz Mejía,DEF,Crystal Palace,95.848564,75.2,5.9,30.0,3
+247412,Jørgen Strand Larsen,FWD,Crystal Palace,95.841805,75.2,5.8,26.0,2
+247632,Pedro Lomba Neto,MID,Chelsea,95.55004,75.2,7.0,26.0,6
+243016,Alexis Mac Allister,MID,Liverpool,95.3822,75.2,6.1,28.0,6
+50175,Danny Welbeck,FWD,Brighton,95.23987,75.2,6.3,36.0,6
+106611,Michael Keane,DEF,Everton,94.751595,75.2,4.5,33.0,6
+460842,Mohammed Kudus,MID,Tottenham,94.711174,75.2,6.4,26.0,3
+441164,Pedro Porro Sauceda,DEF,Tottenham,94.661255,75.2,5.2,27.0,4
+544877,Milos Kerkez,DEF,Liverpool,94.111176,75.2,5.6,23.0,3
+61366,,MID,Man City,93.91543,75.2,9.5,,5
+444765,Sepp van den Berg,DEF,Brentford,93.56996,75.2,4.4,25.0,4
+208706,Bruno Guimarães Rodriguez Moura,MID,Newcastle,93.28757,75.2,6.9,29.0,5
+165809,Bernardo Mota Veiga de Carvalho e Silva,MID,Man City,93.164444,75.2,6.2,,6
+85633,Matz Sels,GK,Nott'm Forest,92.88161,75.2,4.6,34.0,3
+61256,Carlos Henrique Casimiro,MID,Man United,92.343605,75.2,5.8,,4
+212319,Richarlison de Andrade,FWD,Tottenham,92.20802,75.2,6.5,29.0,6
+177815,Dominic Calvert-Lewin,FWD,Leeds,92.06281,75.2,5.8,29.0,6
+444180,Jaidon Anthony,MID,Burnley,91.97586,75.2,5.0,27.0,4
+440089,Mikkel Damsgaard,MID,Brentford,91.90824,75.2,5.6,26.0,4
+575476,Murillo Costa dos Santos,DEF,Nott'm Forest,91.88167,75.2,5.2,24.0,3
+221632,Cristian Romero,DEF,Tottenham,91.03302,75.2,5.0,28.0,5
+231416,Ferdi Kadıoğlu,DEF,Brighton,90.15705,75.2,4.5,27.0,2
+106760,Luke Shaw,DEF,Man United,89.74001,75.2,4.5,31.0,6
+232185,Ismaïla Sarr,MID,Crystal Palace,89.40188,75.2,6.4,28.0,3
+463067,Georginio Rutter,MID,Brighton,89.381096,75.2,5.6,24.0,3
+199798,Ezri Konsa Ngoyo,DEF,Aston Villa,89.325294,75.2,4.4,29.0,6
+231747,Jean-Philippe Mateta,FWD,Crystal Palace,89.32278,75.2,7.6,29.0,6
+448089,João Victor Gomes da Silva,MID,Wolves,89.157234,75.2,5.3,25.0,4
+503301,Omari Hutchinson,MID,Nott'm Forest,88.949455,75.2,5.4,23.0,4
+184254,Guglielmo Vicario,GK,Tottenham,88.5988,75.2,4.7,30.0,3
+174874,Joachim Andersen,DEF,Fulham,88.45413,75.2,4.4,30.0,6
+202993,Rodrigo Bentancur,MID,Tottenham,88.196205,75.2,5.2,29.0,5
+438234,Omar Marmoush,MID,Man City,88.134186,75.2,8.3,27.0,2
+215059,Robert Lynch Sánchez,GK,Chelsea,88.05799,75.2,4.8,29.0,6
+171314,Rúben dos Santos Gato Alves Dias,DEF,Man City,88.037926,75.2,5.5,29.0,6
+514254,Diego Gómez Amarilla,MID,Brighton,87.38174,75.2,4.9,23.0,2
+232859,Djed Spence,DEF,Tottenham,87.08296,75.2,4.1,26.0,4
+209046,Callum Hudson-Odoi,MID,Nott'm Forest,87.04465,75.2,5.7,26.0,6
+242898,Brennan Johnson,MID,Crystal Palace,86.73366,75.2,6.5,25.0,4
+196100,,MID,Sheffield United,86.58196,75.2,4.9,29.0,1
+220237,Sven Botman,DEF,Newcastle,86.43933,75.2,4.9,26.0,4
+486385,Norberto Bercique Gomes Betuncal,FWD,Everton,86.31379,75.2,5.1,28.0,3
+224967,Vitalii Mykolenko,DEF,Everton,86.071625,75.2,4.9,27.0,5
+220627,James Justin,DEF,Leeds,85.63203,75.2,4.0,28.0,5
+83299,Lewis Dunk,DEF,Brighton,85.60188,75.2,4.5,35.0,6
+116535,Alisson Becker,GK,Liverpool,85.51895,75.2,5.4,34.0,6
+195546,Emiliano Buendía Stati,MID,Aston Villa,85.29063,75.2,5.3,30.0,5
+209289,Emile Smith Rowe,MID,Fulham,85.128654,75.2,5.6,26.0,6
+169187,,DEF,Liverpool,84.987625,75.2,7.2,,5
+51940,,GK,Man United,84.94112,75.2,5.1,,3
+509416,Yasin Ayari,MID,Brighton,84.353264,75.2,4.8,23.0,4
+201666,Harvey Barnes,MID,Newcastle,84.03092,75.2,6.1,29.0,6
+184349,Ryan Sessegnon,MID,Fulham,83.91091,75.2,5.4,26.0,6
+206915,Curtis Jones,MID,Liverpool,83.84191,75.2,5.4,25.0,6
+226182,Jayden Bogle,DEF,Leeds,83.67109,75.2,4.4,26.0,3
+59966,,FWD,Arsenal,83.5363,75.2,8.1,,2
+204716,Ibrahima Konaté,DEF,Liverpool,83.40393,75.2,5.4,,5
+116216,Leandro Trossard,MID,Arsenal,83.40187,75.2,6.6,,6
+493250,Amad Diallo,MID,Man United,82.9584,75.2,6.2,24.0,6
+98980,Emiliano Martínez Romero,GK,Aston Villa,82.89667,75.2,5.0,34.0,6
+232413,Eberechi Eze,MID,Arsenal,82.88128,75.2,7.3,28.0,6
+216051,Diogo Dalot Teixeira,DEF,Man United,82.87085,75.2,4.5,27.0,6
+114243,Jacob Murphy,MID,Newcastle,82.62048,75.2,5.9,31.0,6
+200785,Tyler Adams,MID,Bournemouth,82.10919,75.2,4.9,27.0,4
+444102,Francisco Evanilson de Lima Barbosa,FWD,Bournemouth,82.023766,75.2,6.6,27.0,2
+207189,Sander Berge,MID,Fulham,81.98427,75.2,4.9,28.0,4
+432422,Sandro Tonali,MID,Newcastle,81.946335,75.2,5.3,26.0,3
+465694,Nico González Iglesias,MID,Man City,81.945724,75.2,5.9,24.0,2
+225796,Reece James,DEF,Chelsea,81.760735,75.2,5.6,27.0,6
+172780,James Maddison,MID,Tottenham,81.24019,75.2,6.8,30.0,6
+451340,Mitoma Kaoru,MID,Brighton,80.88422,75.2,6.1,29.0,4
+245719,,DEF,Southampton,80.34495,75.2,3.9,24.0,2
+443661,,MID,Crystal Palace,80.19907,75.2,5.7,,3
+122798,Andrew Robertson,DEF,Liverpool,80.007545,75.2,5.7,32.0,6
+207283,Mathias Jensen,MID,Brentford,79.876945,75.2,4.9,30.0,5
+214225,Joe Rodon,DEF,Leeds,79.85515,75.2,3.9,29.0,5
+84450,Granit Xhaka,MID,Sunderland,79.6614,75.2,5.1,34.0,5
+487838,Lewis Hall,DEF,Newcastle,79.16283,75.2,5.3,22.0,5
+98747,Nick Pope,GK,Newcastle,79.156815,75.2,5.0,34.0,6
+210407,,MID,West Brom,78.96369,75.2,5.4,,1
+78916,Dan Burn,DEF,Newcastle,78.90786,75.2,5.0,34.0,6
+510281,Sávio Moreira de Oliveira,MID,Man City,78.90558,75.2,6.9,22.0,2
+119471,Fabian Schär,DEF,Newcastle,78.63211,75.2,5.2,35.0,6
+535301,Carlos Baleba,MID,Brighton,78.610115,75.2,4.5,22.0,3
+467779,Mats Wieffer,MID,Brighton,78.44659,75.2,4.8,27.0,2
+180974,Joelinton Cássio Apolinário de Lira,MID,Newcastle,78.439705,75.2,5.9,30.0,6
+153133,Alex Iwobi,MID,Fulham,78.40342,75.2,6.1,30.0,6
+60689,Chris Wood,FWD,Nott'm Forest,77.97001,75.2,7.1,35.0,6
+477424,Joško Gvardiol,DEF,Man City,77.92734,75.2,5.8,24.0,3
+222694,Pascal Struijk,DEF,Leeds,77.73404,75.2,4.2,27.0,4
+596777,Patrick Dorgu,DEF,Man United,77.347664,75.2,4.1,22.0,2
+171317,,MID,Wolves,76.97979,75.2,5.2,,3
+578153,Abdukodir Khusanov,DEF,Man City,76.97889,75.2,5.4,22.0,2
+210462,Ibrahim Sangaré,MID,Nott'm Forest,76.84102,75.2,4.9,29.0,3
+232892,Calvin Bassey,DEF,Fulham,76.72695,75.2,4.4,27.0,3
+209400,Daichi Kamada,MID,Crystal Palace,76.696396,75.2,5.0,30.0,2
+107613,,DEF,Wolves,76.34938,75.2,4.8,,2
+174594,,FWD,Leeds,76.26578,75.2,5.0,28.0,1
+159506,Ola Aina,DEF,Nott'm Forest,76.16667,75.2,4.7,30.0,4
+122806,John McGinn,MID,Aston Villa,75.90473,75.2,5.3,32.0,6
+482609,Malo Gusto,DEF,Chelsea,75.6887,75.2,4.8,23.0,3
+232826,Anthony Gordon,MID,Newcastle,75.510445,75.2,7.2,,6
+449871,Amadou Onana,MID,Aston Villa,75.464775,75.2,4.8,25.0,4
+441302,Ian Maatsen,DEF,Aston Villa,75.439835,75.2,4.2,24.0,3
+224117,,FWD,Arsenal,75.30729,75.2,9.1,28.0,1
+95658,Harry Maguire,DEF,Man United,75.15341,75.2,4.4,33.0,6
+102380,,DEF,Chelsea,75.00928,75.2,6.1,,2
+222683,Justin Kluivert,MID,Bournemouth,74.64374,75.2,6.9,27.0,3
+532529,Jack Hinshelwood,MID,Brighton,74.60983,75.2,5.2,21.0,4
+118342,,GK,Brentford,74.20272,75.2,4.5,,2
+101188,Lucas Digne,DEF,Aston Villa,73.89237,75.2,4.5,33.0,6
+204580,Vitaly Janelt,MID,Brentford,73.632645,75.2,4.9,28.0,5
+445044,Dejan Kulusevski,MID,Tottenham,73.25992,75.2,6.4,26.0,5
+458249,Joshua Zirkzee,FWD,Man United,73.17118,75.2,5.8,25.0,2
+45268,,MID,Watford,73.07155,75.2,4.3,,2
+191866,Kristoffer Ajer,DEF,Brentford,72.92667,75.2,4.4,28.0,5
+154566,Dominic Solanke-Mitchell,FWD,Tottenham,72.90087,75.2,7.1,29.0,4
+219168,Alexander Isak,FWD,Liverpool,72.72912,75.2,10.3,27.0,4
+220566,Rodrigo 'Rodri' Hernandez Cascante,MID,Man City,72.62297,75.2,6.3,30.0,6
+75115,Callum Wilson,FWD,West Ham,72.542114,75.2,5.8,34.0,6
+450070,Crysencio Summerville,MID,West Ham,72.49779,75.2,5.4,,5
+199796,Matty Cash,DEF,Aston Villa,72.08465,75.2,4.6,29.0,6
+449434,Anthony Elanga,MID,Newcastle,71.84489,75.2,6.5,24.0,6
+169528,Antonee Robinson,DEF,Fulham,71.58871,75.2,4.9,29.0,5
+444463,Wesley Fofana,DEF,Chelsea,71.38352,75.2,4.4,26.0,6
+114283,Jack Grealish,MID,Everton,71.37503,75.2,6.3,31.0,6
+176420,,DEF,West Brom,71.27358,75.2,4.5,31.0,1
+167074,Kenny Tete,DEF,Fulham,70.99512,75.2,4.5,31.0,5
+232653,Jacob Ramsey,MID,Newcastle,70.939995,75.2,5.3,25.0,6
+215439,Tomáš Souček,MID,West Ham,70.81039,75.2,5.7,,6
+135720,Kevin Danso,DEF,Tottenham,70.67302,75.2,4.2,28.0,2
+154296,João Maria Lobo Alves Palhares Costa Palhinha Gonçalves,MID,Tottenham,70.64934,75.2,5.5,,3
+184029,Martin Ødegaard,MID,Arsenal,69.93592,75.2,7.8,28.0,6
+209365,Matthijs de Ligt,DEF,Man United,69.57681,75.2,4.9,27.0,2
+174310,,FWD,Luton,69.45666,75.2,4.8,,1
+538207,William Osula,FWD,Newcastle,69.10864,75.2,5.5,23.0,4
+166989,Youri Tielemans,MID,Aston Villa,68.72065,75.2,5.9,29.0,6
+232787,Conor Gallagher,MID,Tottenham,68.39965,75.2,5.0,26.0,6
+216646,Yoane Wissa,FWD,Newcastle,67.99019,75.2,7.3,30.0,5
+516895,Kobbie Mainoo,MID,Man United,67.653595,75.2,4.7,21.0,4
+146426,,DEF,West Brom,67.40376,75.2,4.8,33.0,1
+441191,Tino Livramento,DEF,Newcastle,67.27247,75.2,4.9,24.0,6
+492777,Conor Bradley,DEF,Liverpool,67.17025,75.2,4.9,23.0,4
+550839,Wilson Odobert,MID,Tottenham,66.64774,75.2,5.3,22.0,3
+250199,Nicolás Domínguez,MID,Nott'm Forest,66.59041,75.2,5.0,28.0,3
+67089,Martin Dúbravka,GK,Burnley,66.48407,75.2,4.0,37.0,6
+233963,Konstantinos Mavropanos,DEF,West Ham,66.42981,75.2,4.5,,4
+221820,Lisandro Martínez,DEF,Man United,66.228966,75.2,4.8,28.0,4
+433154,Dwight McNeil,MID,Everton,66.131645,75.2,5.5,27.0,6
+230001,Noussair Mazraoui,DEF,Man United,65.86232,75.2,4.9,29.0,2
+102057,Raúl Jiménez Rodríguez,FWD,Fulham,65.47129,75.2,5.9,,6
+212314,Saša Lukić,MID,Fulham,65.08302,75.2,4.9,30.0,4
+490094,Tim Iroegbunam,MID,Everton,65.027374,75.2,4.8,23.0,6
+184341,Mason Mount,MID,Man United,65.0199,75.2,5.9,27.0,6
+108413,Will Hughes,MID,Crystal Palace,64.74325,75.2,4.7,31.0,5
+60307,Pascal Groß,MID,Brighton,64.69295,75.2,5.6,35.0,6
+214590,Aaron Wan-Bissaka,DEF,West Ham,64.59057,75.2,4.1,29.0,6
+166477,Timothy Castagne,DEF,Fulham,64.46927,75.2,4.3,31.0,6
+193204,,MID,Southampton,64.32806,75.2,4.9,,1
+223541,Federico Chiesa,MID,Liverpool,64.27996,75.2,6.3,29.0,2
+448514,Rayan Aït-Nouri,DEF,Man City,63.866993,75.2,5.7,25.0,6
+248857,Noni Madueke,MID,Arsenal,63.549637,75.2,6.8,24.0,4
+550864,Leny Yoro,DEF,Man United,63.15648,75.2,4.1,21.0,2
+461199,Romaine Mundle,MID,Sunderland,63.00608,75.2,4.9,23.0,2
+152551,Jefferson Lerma Solís,MID,Crystal Palace,62.86898,75.2,4.9,32.0,4
+477555,Oscar Bobb,MID,Fulham,62.727425,75.2,5.1,23.0,3
+179268,Marc Cucurella Saseta,DEF,Chelsea,62.556858,75.2,6.1,,5
+201595,,GK,Leeds,62.48374,75.2,4.4,29.0,1
+455084,,DEF,Ipswich,61.876656,75.2,4.2,27.0,2
+244954,Pau Torres,DEF,Aston Villa,61.727177,75.2,4.3,29.0,3
+244042,Rodrigo Muniz Carvalho,FWD,Fulham,61.29948,75.2,5.3,25.0,4
+482442,Pape Matar Sarr,MID,Tottenham,61.158646,75.2,4.5,24.0,4
+195384,Mikel Merino Zazón,MID,Arsenal,61.129192,75.2,5.3,30.0,2
+205533,Eddie Nketiah,FWD,Crystal Palace,61.128216,75.2,5.4,27.0,6
+463034,Liam Delap,FWD,Chelsea,61.106888,75.2,6.2,23.0,5
+511499,Mathys Tel,MID,Tottenham,60.983124,75.2,6.2,21.0,2
+532605,Andrey Nascimento dos Santos,MID,Chelsea,60.96685,75.2,4.4,22.0,4
+216616,,DEF,Ipswich,60.902122,75.2,3.8,27.0,3
+82403,,MID,Crystal Palace,60.162937,75.2,7.2,,3
+60025,,MID,Everton,59.92681,75.2,6.9,,2
+85971,Son Heung-min,MID,Tottenham,59.841103,75.2,8.5,,6
+492859,Wilfried Gnonto,MID,Leeds,59.76333,75.2,5.1,23.0,2
+226944,Boubacar Kamara,MID,Aston Villa,59.752567,75.2,4.9,27.0,4
+221399,Jack Harrison,MID,Leeds,59.42004,75.2,5.1,30.0,6
+232112,Manuel Ugarte Ribeiro,MID,Man United,59.389633,75.2,4.7,25.0,2
+121599,,MID,Everton,59.23374,75.2,5.1,,5
+432720,James Trafford,GK,Man City,58.928005,75.2,4.5,24.0,3
+480455,Jarrad Branthwaite,DEF,Everton,58.714676,75.2,5.3,24.0,6
+55422,,MID,Everton,58.540302,75.2,6.7,,2
+493105,Alejandro Garnacho Ferreyra,MID,Chelsea,58.508026,75.2,6.4,22.0,5
+547701,Archie Gray,MID,Tottenham,58.50409,75.2,4.8,20.0,4
+244731,Luis Díaz Marulanda,MID,Liverpool,58.217304,75.2,8.0,,5
+54738,,GK,Luton,58.070755,75.2,4.5,,1
+472713,Aaron Hickey,DEF,Brentford,57.800037,75.2,4.0,24.0,4
+88894,Ross Barkley,MID,Aston Villa,57.75853,75.2,4.8,33.0,6
+570526,Lucas Bergvall,MID,Tottenham,57.57057,75.2,5.2,20.0,2
+477064,Rico Lewis,DEF,Man City,57.53334,75.2,4.6,22.0,4
+80954,,MID,Leeds,57.365646,75.2,6.3,,3
+41733,,MID,Liverpool,57.185432,75.2,5.3,,1
+444145,Gabriel Martinelli Silva,MID,Arsenal,57.081944,75.2,6.8,25.0,6
+219847,Kai Havertz,FWD,Arsenal,57.02003,75.2,7.3,27.0,6
+171287,Joe Gomez,DEF,Liverpool,56.95022,75.2,4.9,29.0,6
+244262,,DEF,Luton,56.882607,75.2,4.3,,1
+219961,,MID,Leeds,56.842007,75.2,7.0,,3
+481624,,MID,Ipswich,56.609715,75.2,5.3,24.0,5
+514356,Roméo Lavia,MID,Chelsea,56.566326,75.2,4.9,22.0,5
+200089,Joe Willock,MID,Newcastle,56.534718,75.2,5.0,27.0,6
+535818,Simon Adingra,MID,Sunderland,56.487164,75.2,4.9,24.0,3
+222625,,FWD,Ipswich,56.408478,75.2,5.4,27.0,1
+515621,Chadi Riad Dnanou,DEF,Crystal Palace,56.40816,75.2,4.0,23.0,2
+200402,,DEF,Wolves,56.321293,75.2,4.5,,5
+169432,,FWD,Sheffield United,56.090572,75.2,5.4,30.0,2
+517052,Nicolas Jackson,FWD,Chelsea,56.008926,75.2,6.5,25.0,3
+37572,,FWD,Man City,55.800232,75.2,10.3,,1
+111317,David Brooks,MID,Bournemouth,55.555977,75.2,5.0,29.0,4
+577016,Josh Acheampong,DEF,Chelsea,55.53482,75.2,3.7,20.0,3
+220362,Axel Disasi,DEF,West Ham,55.452766,75.2,4.5,28.0,3
+485047,Felipe Rodrigues da Silva,DEF,Nott'm Forest,55.444305,75.2,4.3,25.0,2
+606745,Ayden Heaven,DEF,Man United,54.869614,75.2,3.7,20.0,2
+155408,Lewis Cook,MID,Bournemouth,54.78306,75.2,4.9,29.0,4
+476344,,FWD,Aston Villa,54.779587,75.2,5.7,,3
+27436,,FWD,Sheffield United,54.719616,75.2,5.2,,1
+54469,Adam Smith,DEF,Bournemouth,54.360764,75.2,4.4,35.0,4
+173879,Tammy Abraham,FWD,Aston Villa,54.357433,75.2,5.7,29.0,3
+51090,,DEF,Chelsea,54.325146,75.2,5.0,,4
+502697,Carlos Alcaraz Durán,MID,Everton,54.294765,75.2,5.2,24.0,3
+180135,Sean Longstaff,MID,Leeds,54.16635,75.2,4.8,29.0,6
+128295,Christian Nørgaard,MID,Arsenal,53.917225,75.2,5.1,32.0,5
+171270,,MID,Norwich,53.80378,75.2,5.1,29.0,1
+128389,,FWD,Fulham,53.629837,75.2,7.4,,3
+158499,Ryan Christie,MID,Bournemouth,53.08229,75.2,4.9,31.0,4
+173515,,FWD,Leicester,52.67918,75.2,5.8,,3
+78607,,MID,Norwich,52.57194,75.2,4.9,,1
+547719,Lewis Miley,MID,Newcastle,52.46021,75.2,4.4,20.0,4
+109646,Tosin Adarabioyo,DEF,Chelsea,52.447006,75.2,4.0,29.0,5
+176297,Marcus Rashford,MID,Man United,52.366642,75.2,7.0,29.0,6
+489706,Justin Devenny,MID,Crystal Palace,52.00272,75.2,4.3,23.0,2
+515597,Lamare Bogarde,DEF,Aston Villa,51.97434,75.2,4.0,22.0,4
+59735,Karl Darlow,GK,Leeds,51.655014,75.2,4.0,36.0,5
+205651,Gabriel Fernando de Jesus,FWD,Arsenal,51.165146,75.2,6.4,29.0,6
+210156,Taiwo Awoniyi,FWD,Nott'm Forest,50.87687,75.2,5.2,29.0,4
+76357,Tom Cairney,MID,Fulham,50.554943,75.2,4.8,35.0,5
+194010,Rico Henry,DEF,Brentford,50.454918,75.2,4.3,29.0,5
+219249,Matt O'Riley,MID,Brighton,50.315674,75.2,5.5,26.0,2
+432714,James McAtee,MID,Nott'm Forest,49.94084,75.2,5.0,24.0,5
+461587,,MID,Leicester,49.886227,75.2,4.7,25.0,3
+91651,Mateo Kovačić,MID,Man City,49.68659,75.2,5.8,32.0,6
+77794,Kieran Trippier,DEF,Newcastle,49.460968,75.2,4.9,,5
+56979,Jordan Henderson,MID,Brentford,49.45179,75.2,5.0,36.0,5
+101668,,FWD,Leicester,49.146454,75.2,5.4,,4
+80801,Idrissa Gana Gueye,MID,Everton,49.099796,75.2,5.4,,4
+135363,,DEF,Chelsea,49.04858,75.2,4.6,,2
+144485,,FWD,Brentford,48.72806,75.2,7.3,,4
+487117,Evan Ferguson,FWD,Brighton,48.66352,75.2,5.5,22.0,5
+246301,Jorge Cuenca Barreno,DEF,Fulham,48.50286,75.2,4.3,27.0,2
+496661,Tyler Dibling,MID,Everton,48.160885,75.2,5.3,20.0,3
+577725,Josh King,MID,Fulham,47.92406,75.2,4.4,19.0,3
+451302,Altay Bayındır,GK,Man United,47.88469,75.2,4.7,28.0,3
+219352,,MID,Leicester,47.837635,75.2,5.9,,2
+508479,Filip Jörgensen,GK,Chelsea,47.42134,75.2,4.3,24.0,2
+424001,,MID,Sheffield United,47.352997,75.2,5.0,,1
+215711,Leon Bailey,MID,Aston Villa,47.348774,75.2,5.5,29.0,5
+200617,Daniel James,MID,Leeds,47.297062,75.2,5.2,29.0,4
+485055,Antonín Kinský,GK,Tottenham,47.2166,75.2,3.9,23.0,2
+509291,André Trindade da Costa Neto,MID,Wolves,47.211636,75.2,5.2,,2
+224024,Lucas Tolentino Coelho de Lima,MID,West Ham,47.0613,75.2,5.9,,4
+18892,,DEF,Everton,47.055832,75.2,4.2,,4
+37605,,MID,Arsenal,46.220806,75.2,6.7,,1
+203325,,MID,Fulham,46.20973,75.2,4.4,,1
+105377,,DEF,Leeds,46.185417,75.2,4.4,,1
+198869,Benjamin White,DEF,Arsenal,46.15425,75.2,5.1,29.0,6
+83428,,DEF,Norwich,46.123096,75.2,4.4,,1
+80146,,MID,Leicester,46.100807,75.2,5.1,,5
+147611,,FWD,Southampton,45.993134,75.2,4.9,,2
+474120,Julio Enciso Espínola,MID,Brighton,45.99135,75.2,5.4,22.0,4
+438464,Cheick Doucouré,MID,Crystal Palace,45.277393,75.2,4.9,26.0,4
+242880,Benoît Badiashile Mukinayi,DEF,Chelsea,45.180977,75.2,4.4,25.0,4
+499169,Myles Lewis-Skelly,DEF,Arsenal,45.11456,75.2,5.0,20.0,3
+503714,Lesley Ugochukwu,MID,Burnley,44.81945,75.2,5.0,,3
+487053,Destiny Udogie,DEF,Tottenham,44.658573,75.2,4.3,24.0,3
+460028,Levi Samuels Colwill,DEF,Chelsea,44.502487,75.2,4.7,23.0,4
+149484,Tyrone Mings,DEF,Aston Villa,44.054996,75.2,4.3,33.0,6
+444884,Harvey Elliott,MID,Aston Villa,43.999977,75.2,5.1,23.0,6
+461358,,FWD,Man City,43.969826,75.2,7.0,,3
+158983,Endo Wataru,MID,Liverpool,43.899567,75.2,4.9,33.0,3
+550615,Tyrique George,MID,Everton,43.834576,75.2,4.8,20.0,3
+194634,,MID,Liverpool,43.74846,75.2,7.2,,5
+74230,,DEF,Crystal Palace,43.614353,75.2,5.4,,1
+214285,Konstantinos Tsimikas,DEF,Liverpool,43.465214,75.2,4.8,30.0,6
+149065,José Malheiro de Sá,GK,Wolves,43.06143,75.2,4.2,,5
+463210,,MID,Southampton,42.896492,75.2,4.5,23.0,3
+88484,,MID,Wolves,42.85805,75.2,5.0,,3
+78007,,FWD,Watford,42.815613,75.2,5.6,,2
+609873,Harrison Armstrong,MID,Everton,42.682537,75.2,4.5,19.0,2
+243571,Nathan Patterson,DEF,Everton,42.677834,75.2,4.4,25.0,5
+565297,Mateo Joseph Fernández-Regatillo,FWD,Leeds,42.669594,75.2,5.0,23.0,2
+19624,,MID,Wolves,42.65742,75.2,4.6,,3
+78830,,FWD,Tottenham,42.456745,75.2,12.5,,4
+9089,,GK,Watford,42.42769,75.2,4.2,,1
+18867,,FWD,Sheffield United,42.34297,75.2,5.5,,1
+195480,,FWD,Fulham,42.339066,75.2,5.0,,1
+504783,,MID,Southampton,42.215878,75.2,5.0,,2
+172850,,DEF,Crystal Palace,42.14913,75.2,4.6,30.0,5
+154043,,MID,Southampton,42.09724,75.2,4.8,29.0,3
+74208,,MID,Man United,41.861,75.2,7.4,,2
+224444,,MID,Man City,41.673916,75.2,6.7,,2
+232351,,DEF,Luton,41.612247,75.2,4.2,26.0,2
+219924,Issa Diop,DEF,Fulham,41.535324,75.2,4.3,29.0,6
+220688,,MID,Man United,41.26376,75.2,7.1,,2
+465920,Mykhailo Mudryk,MID,Chelsea,40.77161,75.2,4.9,25.0,4
+171975,,FWD,West Brom,40.761787,75.2,5.2,,1
+172567,Josh Cullen,MID,Burnley,40.320484,75.2,4.9,,2
+184667,Victor Lindelöf,DEF,Aston Villa,39.945103,75.2,4.5,32.0,6
+447203,Darwin Núñez Ribeiro,FWD,Liverpool,39.913883,75.2,6.5,,4
+204968,Ryan Yates,MID,Nott'm Forest,39.864124,75.2,4.7,29.0,4
+200439,,FWD,Southampton,39.489666,75.2,6.0,,3
+228286,,GK,Chelsea,39.19133,75.2,4.8,,3
+469247,Samuel Iling-Junior,MID,Aston Villa,39.04119,75.2,5.5,23.0,2
+60551,,MID,Burnley,39.01881,75.2,5.2,,2
+168636,Enes Ünal,FWD,Bournemouth,38.810486,75.2,5.4,29.0,3
+242058,,FWD,Everton,38.513023,75.2,6.0,,2
+172782,,MID,Burnley,38.491055,75.2,4.7,,3
+536916,Facundo Buonanotte,MID,Leeds,38.459293,75.2,4.6,22.0,4
+59859,İlkay Gündoğan,MID,Man City,38.308838,75.2,6.3,,5
+437495,Illan Meslier,GK,Leeds,38.23409,75.2,4.1,26.0,4
+435973,Lyle Foster,FWD,Burnley,38.13133,75.2,4.9,,2
+59940,,DEF,West Brom,38.05474,75.2,4.4,,1
+606921,Romain Esse,MID,Crystal Palace,38.031666,75.2,4.7,21.0,2
+112520,,GK,Ipswich,37.999985,75.2,4.5,30.0,1
+467189,Mads Hermansen,GK,West Ham,37.95083,75.2,4.2,,2
+182539,,MID,Arsenal,37.854076,75.2,4.7,,1
+50229,,MID,West Brom,37.83773,75.2,5.1,,1
+477717,Maxime Estève,DEF,Burnley,37.813595,75.2,3.8,,2
+231480,Santiago Ignacio Bueno,DEF,Wolves,37.636204,75.2,4.4,,3
+223723,,DEF,Arsenal,37.618946,75.2,4.8,28.0,4
+233821,,DEF,Sheffield United,37.58661,75.2,4.3,,1
+27789,,MID,Man City,37.504196,75.2,4.7,,2
+204814,,MID,Southampton,37.430576,75.2,4.8,,2
+496208,Ben Doak,MID,Bournemouth,37.300335,75.2,4.8,21.0,4
+90152,,DEF,Man United,37.26313,75.2,4.9,,3
+626464,Gustavo Nunes Fernandes Gomes,MID,Brentford,37.20744,75.2,4.9,21.0,2
+63426,,DEF,Sheffield United,37.021023,75.2,5.0,,1
+155569,,DEF,Leicester,36.974323,75.2,3.9,,3
+68983,,DEF,Burnley,36.834167,75.2,4.4,,2
+523700,,FWD,Bournemouth,36.708393,75.2,4.5,23.0,3
+483081,Rodrigo Martins Gomes,DEF,Wolves,36.423748,75.2,4.4,,2
+14937,,FWD,Man United,36.357555,75.2,10.2,,2
+111478,Joël Veltman,DEF,Brighton,35.789013,75.2,4.3,,6
+225321,Aaron Ramsdale,GK,Newcastle,35.699684,75.2,4.8,,6
+43250,,MID,Watford,35.690014,75.2,4.8,,1
+243557,,MID,Aston Villa,35.687237,75.2,6.5,,2
+465607,,MID,Brighton,35.67866,75.2,6.4,,1
+19419,,DEF,Crystal Palace,35.587536,75.2,4.5,,1
+17349,,MID,Burnley,35.55555,75.2,4.6,,1
+244858,Fábio Freitas Gouveia Carvalho,MID,Brentford,35.5228,75.2,4.6,24.0,4
+96787,,MID,Southampton,35.447872,75.2,5.1,,2
+433979,,FWD,Southampton,35.189148,75.2,4.8,,4
+151086,,MID,Wolves,34.689934,75.2,4.8,,4
+47431,,MID,Fulham,34.681713,75.2,5.0,,5
+109745,Kepa Arrizabalaga Revuelta,GK,Arsenal,34.55375,75.2,4.0,32.0,6
+536694,Matheus França de Oliveira,MID,Crystal Palace,34.47776,75.2,4.5,22.0,3
+103025,,MID,Man City,34.450268,75.2,7.5,,4
+121160,Ederson Santana de Moraes,GK,Man City,34.409077,75.2,5.3,,6
+222018,,DEF,Ipswich,34.4083,75.2,3.8,26.0,5
+245414,,MID,Aston Villa,34.388695,75.2,5.4,,1
+203341,,MID,Leicester,34.342903,75.2,4.9,,4
+438098,Fábio Ferreira Vieira,MID,Arsenal,34.331802,75.2,5.4,26.0,4
+158534,Kyle Walker-Peters,DEF,West Ham,34.185974,75.2,4.2,,5
+462635,Joe Gelhardt,MID,Leeds,34.114563,75.2,4.5,24.0,4
+501837,Yerson Mosquera Valdelamar,DEF,Wolves,33.958313,75.2,4.3,,5
+180294,,FWD,West Brom,33.77513,75.2,5.6,,1
+49440,,FWD,West Brom,33.70481,75.2,5.2,,1
+84182,Alphonse Areola,GK,West Ham,33.654995,75.2,4.2,,6
+41270,,DEF,Arsenal,33.597466,75.2,5.4,,1
+54484,,DEF,Watford,33.520023,75.2,4.3,,1
+66749,,FWD,Chelsea,33.508423,75.2,6.3,,3
+245419,,FWD,Leicester,33.46282,75.2,4.8,,3
+514514,,FWD,Liverpool,33.46258,75.2,4.5,21.0,1
+436893,Julián Araujo Zúñiga,DEF,Bournemouth,33.416325,75.2,3.8,25.0,2
+108416,,DEF,Sheffield United,33.371826,75.2,4.2,34.0,2
+200641,Reiss Nelson,MID,Brentford,33.240276,75.2,4.8,27.0,6
+510362,Toti Gomes,DEF,Wolves,33.160862,75.2,4.2,,5
+231065,Ethan Pinnock,DEF,Brentford,33.1201,75.2,4.2,33.0,5
+170137,,MID,Newcastle,32.959682,75.2,6.0,,4
+497894,Rasmus Højlund,FWD,Man United,32.882233,75.2,6.3,,3
+38533,,GK,Wolves,32.721706,75.2,5.0,,2
+477386,,DEF,Southampton,32.708942,75.2,3.9,,2
+66588,,DEF,Leeds,32.673615,75.2,4.5,,3
+428580,Frank Onyeka,MID,Brentford,32.65504,75.2,4.8,28.0,5
+40720,,FWD,Man United,32.623962,75.2,8.4,,2
+229164,,MID,Ipswich,32.568424,75.2,4.8,29.0,2
+126187,,MID,Chelsea,32.54344,75.2,5.0,,3
+90517,,MID,Burnley,32.489597,75.2,5.0,,1
+223434,Igor Julio dos Santos de Paulo,DEF,Brighton,32.45788,75.2,4.5,28.0,3
+499309,Marc Guiu Paz,FWD,Chelsea,32.35312,75.2,4.0,20.0,2
+499724,,MID,Southampton,32.149372,75.2,4.4,,2
+44683,,FWD,Burnley,32.110447,75.2,5.3,,3
+41338,,DEF,Watford,32.10111,75.2,4.2,,1
+57531,,FWD,West Ham,32.06296,75.2,5.2,,5
+17745,,GK,Leicester,31.860315,75.2,5.0,,3
+477547,Leo Fuhr Hjelde,DEF,Sunderland,31.696457,75.2,4.0,23.0,3
+44346,,FWD,Chelsea,31.643133,75.2,6.5,,2
+214048,Maximilian Kilman,DEF,West Ham,31.636663,75.2,4.0,,6
+183656,Josh Dasilva,MID,Brentford,31.585777,75.2,4.9,28.0,5
+441455,,DEF,Burnley,31.473455,75.2,4.4,,1
+218997,,FWD,Everton,31.471651,75.2,4.5,25.0,4
+456350,,GK,Southampton,31.371695,75.2,4.3,,2
+462116,Jean-Clair Todibo,DEF,West Ham,31.358263,75.2,4.3,,2
+179519,,MID,Everton,31.345922,75.2,5.0,,3
+200428,,GK,Southampton,31.237154,75.2,4.0,,2
+103955,,MID,Arsenal,31.234142,75.2,6.7,,5
+155405,Kalvin Phillips,MID,Man City,31.226015,75.2,4.7,31.0,6
+461102,,DEF,Burnley,31.019249,75.2,4.0,25.0,3
+18507,,FWD,Wolves,30.882212,75.2,5.3,,1
+535928,Stefan Bajčetić Maquieira,MID,Liverpool,30.877722,75.2,4.2,22.0,4
+213198,Christopher Nkunku,MID,Chelsea,30.796328,75.2,5.9,,3
+491501,James McConnell,MID,Liverpool,30.762114,75.2,4.4,22.0,3
+218218,,DEF,Leicester,30.754534,75.2,3.8,,2
+94147,,DEF,Leicester,30.729837,75.2,4.0,,4
+62974,,MID,Tottenham,30.69239,75.2,6.0,,2
+164011,,FWD,West Brom,30.653671,75.2,6.0,,1
+202641,André Onana,GK,Man United,30.486248,75.2,4.9,,3
+164555,,DEF,West Ham,30.35814,75.2,4.1,,5
+68312,,MID,Liverpool,30.333582,75.2,5.9,,2
+61810,,DEF,Brentford,30.239603,75.2,4.2,,2
+244560,,DEF,Southampton,30.129152,75.2,4.0,,2
+231057,Jean-Ricner Bellegarde,MID,Wolves,30.033255,75.2,5.1,,3
+534392,,FWD,Chelsea,30.02906,75.2,4.5,23.0,1
+515571,,DEF,Southampton,29.85765,75.2,3.9,,2
+58621,Kyle Walker,DEF,Burnley,29.592367,75.2,4.4,,6
+470294,Darko Gyabi,MID,Leeds,29.525799,75.2,4.5,22.0,2
+164511,,DEF,Everton,29.506056,75.2,4.3,,3
+195899,,FWD,West Ham,29.488646,75.2,6.0,,2
+54694,,FWD,Chelsea,29.482769,75.2,6.5,,4
+61600,,MID,West Brom,29.261866,75.2,4.6,,1
+179830,,MID,West Brom,29.071524,75.2,5.0,,1
+80607,,MID,Man United,29.006298,75.2,5.2,,4
+242453,,FWD,Luton,28.929895,75.2,4.9,,1
+184754,Hwang Hee-chan,MID,Wolves,28.862488,75.2,5.6,,5
+476888,,FWD,Southampton,28.708145,75.2,5.0,,2
+103123,,FWD,West Ham,28.526133,75.2,6.1,,1
+467169,Antony dos Santos,MID,Man United,28.505146,75.2,5.9,,4
+173818,,MID,Ipswich,28.473623,75.2,4.9,,3
+89274,,MID,Aston Villa,28.444277,75.2,5.9,,1
+82263,,DEF,Chelsea,28.264479,75.2,5.3,,3
+209243,Jadon Sancho,MID,Aston Villa,28.140991,75.2,5.8,,5
+490881,Toby Collyer,MID,Man United,28.019611,75.2,4.5,22.0,3
+220585,,MID,Southampton,28.018707,75.2,4.7,,3
+86934,,MID,West Ham,27.88334,75.2,5.0,,3
+83427,,DEF,Sheffield United,27.808685,75.2,4.3,,2
+450542,Jesurun Rak-Sakyi,MID,Crystal Palace,27.794872,75.2,4.4,24.0,6
+169359,Matt Targett,DEF,Newcastle,27.754383,75.2,4.0,31.0,6
+73314,,FWD,Wolves,27.74848,75.2,6.8,,1
+612534,Benjamin Fredrick,DEF,Brentford,27.685987,75.2,4.0,21.0,3
+115556,Ben Davies,DEF,Tottenham,27.676046,75.2,4.3,33.0,6
+108813,,GK,Ipswich,27.67433,75.2,4.3,31.0,2
+81183,,FWD,Burnley,27.60829,75.2,5.2,,2
+111291,,DEF,Wolves,27.541758,75.2,4.2,,2
+79934,,MID,Sheffield United,27.000195,75.2,4.8,,2
+96994,,MID,Leicester,26.942215,75.2,5.2,,4
+172841,,MID,West Ham,26.859726,75.2,5.6,,4
+490721,Hugo Bueno López,DEF,Wolves,26.747215,75.2,4.3,,6
+157775,,MID,Watford,26.630817,75.2,5.2,,1
+229600,Mark Travers,GK,Everton,26.465902,75.2,4.2,27.0,4
+109322,,MID,Nott'm Forest,26.368286,75.2,5.4,,3
+225902,,MID,Leicester,26.319422,75.2,4.4,,3
+55459,,DEF,West Ham,26.269762,75.2,3.9,,5
+548308,Ashley Phillips,DEF,Tottenham,26.268011,75.2,4.0,21.0,3
+230046,Douglas Luiz Soares de Paulo,MID,Aston Villa,26.239794,75.2,4.9,,5
+490145,Dane Scarlett,FWD,Tottenham,26.12433,75.2,4.3,22.0,6
+105717,Arthur Masuaku,DEF,Sunderland,26.07062,75.2,3.9,33.0,4
+105666,,GK,Man United,26.056398,75.2,4.4,33.0,3
+95715,,MID,Tottenham,25.712282,75.2,5.8,,3
+69752,Norberto Murara Neto,GK,Bournemouth,25.682602,75.2,4.5,,4
+204646,Donyell Malen,MID,Aston Villa,25.577707,75.2,5.1,,2
+92259,,MID,Fulham,25.545864,75.2,5.4,,2
+96784,,MID,Luton,25.526304,75.2,4.8,,1
+489580,Calvin Ramsay,DEF,Liverpool,25.367552,75.2,3.7,23.0,2
+184386,,DEF,Southampton,25.276773,75.2,3.9,,3
+126184,Nathan Aké,DEF,Man City,25.207127,75.2,5.2,,6
+101537,,MID,West Ham,25.201956,75.2,6.1,,1
+58498,,FWD,Man United,25.201956,75.2,6.1,,1
+231372,,MID,Tottenham,25.162468,75.2,4.4,,3
+172912,,MID,Man United,25.159271,75.2,5.0,,1
+465390,,DEF,Aston Villa,25.15088,75.2,4.0,24.0,4
+433590,,DEF,Leeds,25.056015,75.2,4.0,25.0,3
+179458,Jacob Bruun Larsen,MID,Burnley,25.051386,75.2,5.2,,2
+176413,,MID,Chelsea,24.870113,75.2,5.5,,4
+91047,,MID,Southampton,24.798023,75.2,4.7,,3
+513433,Brajan Gruda,MID,Brighton,24.789791,75.2,5.4,,2
+543158,,DEF,Brighton,24.76829,75.2,4.0,22.0,2
+622758,Aarón Anselmino,DEF,Chelsea,24.513731,75.2,4.0,21.0,2
+155511,Adam Armstrong,FWD,Wolves,24.344444,75.2,5.1,,4
+148225,,FWD,Man United,24.325146,75.2,6.4,,4
+166640,,DEF,West Ham,24.31343,75.2,4.1,,1
+183751,Manuel Benson Hedilazio,MID,Burnley,24.29314,75.2,5.4,,2
+97299,John Stones,DEF,Man City,24.203287,75.2,5.4,,6
+461188,Bashir Humphreys,DEF,Burnley,24.186708,75.2,3.9,,3
+159533,Adama Traoré Diarra,MID,West Ham,24.177017,75.2,5.1,,6
+91889,Niclas Füllkrug,FWD,West Ham,24.147408,75.2,5.6,,2
+20452,,FWD,Southampton,23.999018,75.2,5.4,,2
+56377,,MID,West Ham,23.859596,75.2,5.0,,2
+499721,Mikey Moore,MID,Tottenham,23.780235,75.2,5.0,19.0,3
+545477,Alex Murphy,DEF,Newcastle,23.72764,75.2,3.8,22.0,3
+465527,Hannibal Mejbri,MID,Burnley,23.697405,75.2,4.7,,5
+81880,,MID,Liverpool,23.634298,75.2,4.9,,3
+193111,,MID,Norwich,23.551033,75.2,5.3,,1
+83312,,DEF,Norwich,23.42708,75.2,4.4,,2
+193488,,MID,Aston Villa,23.375528,75.2,4.8,,3
+15157,James Milner,MID,Brighton,23.358936,75.2,4.9,,6
+195851,,MID,Man United,23.354061,75.2,4.9,,5
+57328,Nathaniel Clyne,DEF,Crystal Palace,23.244188,75.2,3.8,,6
+18987,,MID,West Brom,23.220758,75.2,5.6,,1
+90105,,MID,Southampton,23.217875,75.2,4.8,,5
+433312,Marshall Munetsi,MID,Wolves,23.210655,75.2,5.3,,2
+428399,,MID,Chelsea,23.162859,75.2,5.9,,2
+19188,,DEF,Crystal Palace,23.138762,75.2,4.2,,1
+37339,,DEF,Aston Villa,23.134636,75.2,4.2,,1
+547676,Tyler Fredricson,DEF,Man United,23.068676,75.2,3.7,21.0,2
+155503,Freddie Woodman,GK,Liverpool,22.922901,75.2,3.9,29.0,2
+60914,,DEF,Liverpool,22.866896,75.2,4.8,,4
+232917,,GK,Ipswich,22.832785,75.2,4.4,,2
+204822,Omar Richards,DEF,Nott'm Forest,22.77747,75.2,4.5,28.0,4
+578512,Miodrag Pivaš,DEF,Newcastle,22.705923,75.2,3.8,21.0,2
+153366,Harrison Reed,MID,Fulham,22.66616,75.2,4.3,31.0,5
+440323,Armando Broja,FWD,Burnley,22.629698,75.2,5.2,,5
+79602,Daniel Bentley,GK,Wolves,22.621124,75.2,3.9,33.0,4
+199170,,DEF,Nott'm Forest,22.408413,75.2,4.5,,2
+199056,,DEF,Luton,22.402515,75.2,4.4,,1
+39155,,MID,Southampton,22.369907,75.2,5.0,,5
+200878,,MID,West Brom,22.362366,75.2,4.9,,1
+82738,,MID,Luton,22.35355,75.2,4.6,,1
+40142,,FWD,Newcastle,22.209932,75.2,5.1,,1
+153723,,MID,Sheffield United,22.188637,75.2,4.8,,1
+217593,,MID,West Ham,22.082006,75.2,4.6,,4
+45124,,MID,Nott'm Forest,21.965769,75.2,5.0,,1
+109638,,DEF,Sheffield United,21.869106,75.2,3.9,,1
+101178,James Ward-Prowse,MID,Burnley,21.74275,75.2,5.6,,6
+62398,,MID,Man United,21.665457,75.2,4.3,,2
+232391,,DEF,Watford,21.628149,75.2,4.2,,1
+570241,Kim Ji-soo,DEF,Brentford,21.596912,75.2,3.9,22.0,3
+432656,,DEF,Man City,21.390444,75.2,4.7,,1
+227127,Yves Bissouma,MID,Tottenham,21.38581,75.2,5.2,,6
+197030,,MID,Fulham,21.249895,75.2,4.8,,1
+197937,,MID,Sheffield United,21.168177,75.2,4.1,,1
+220307,,MID,Everton,21.039211,75.2,5.2,,2
+124183,,MID,Chelsea,20.974438,75.2,5.4,,4
+487968,,DEF,Burnley,20.86438,75.2,3.8,,1
+206325,Oleksandr Zinchenko,DEF,Nott'm Forest,20.6341,75.2,4.9,,6
+222677,,MID,Luton,20.631535,75.2,4.4,,2
+85624,,DEF,Watford,20.623423,75.2,4.3,,1
+37402,,DEF,Leicester,20.55127,75.2,4.5,,1
+45034,,DEF,Tottenham,20.525213,75.2,4.7,,2
+195473,,FWD,Sheffield United,20.52099,75.2,4.9,,2
+165153,,MID,Tottenham,20.489092,75.2,6.2,,5
+575204,Claudio Echeverri,MID,Man City,20.462212,75.2,5.4,20.0,2
+647671,Mateus Mané,FWD,Wolves,20.456543,75.2,4.2,,2
+49944,,MID,West Brom,20.42629,75.2,4.7,,1
+183015,,DEF,West Brom,20.407778,75.2,4.3,30.0,1
+193645,,DEF,Leeds,20.383072,75.2,4.5,,3
+494307,Max Alleyne,DEF,Man City,20.340786,75.2,3.9,21.0,2
+575901,Julio Soler Barreto,DEF,Bournemouth,20.311996,75.2,3.9,21.0,2
+60252,,MID,Luton,20.233578,75.2,5.0,,4
+171771,,DEF,Southampton,20.22612,75.2,4.0,,4
+200600,,MID,Wolves,20.216364,75.2,5.5,,5
+194252,,MID,Tottenham,20.202032,75.2,5.5,,3
+82691,,DEF,Sheffield United,20.179348,75.2,3.8,,2
+211975,Manuel Akanji,DEF,Man City,20.11775,75.2,5.4,,4
+156685,,MID,Bournemouth,20.106974,75.2,4.8,,2
+437858,,MID,Wolves,20.078495,75.2,4.7,,1
+7645,,DEF,Sheffield United,20.016165,75.2,3.9,,1
+154506,,GK,Watford,19.998335,75.2,4.0,,1
+155651,,DEF,Watford,19.988543,75.2,4.3,,1
+106837,,MID,Leicester,19.98144,75.2,4.8,,3
+616222,Vitor de Oliveira Nunes dos Reis,DEF,Man City,19.921368,75.2,5.0,20.0,2
+20467,,MID,Southampton,19.914827,75.2,4.8,,3
+104047,,MID,Luton,19.89249,75.2,4.6,,1
+172632,,MID,Everton,19.860514,75.2,5.3,,4
+116643,,MID,Liverpool,19.80448,75.2,5.0,,4
+50472,,MID,Crystal Palace,19.790157,75.2,4.3,,1
+101394,,MID,West Brom,19.787088,75.2,4.5,,1
+441271,Ki-Jana Hoever,DEF,Wolves,19.68243,75.2,3.8,,5
+547686,,DEF,Fulham,19.611368,75.2,3.9,21.0,1
+110504,Bertrand Traoré,MID,Sunderland,19.556244,75.2,5.5,,5
+60586,,MID,Burnley,19.480831,75.2,4.8,,3
+157668,,MID,Leicester,19.389208,75.2,4.3,,4
+60232,,DEF,Wolves,19.283207,75.2,4.2,,5
+38290,,DEF,Watford,19.227272,75.2,4.2,,2
+152760,,FWD,Nott'm Forest,19.110659,75.2,5.0,,3
+66975,,MID,Crystal Palace,19.102715,75.2,4.2,,3
+165659,,DEF,Aston Villa,19.039326,75.2,4.5,,3
+178304,,FWD,Sheffield United,18.979904,75.2,5.8,,1
+40669,,DEF,West Ham,18.977663,75.2,4.2,,4
+87835,Matt Doherty,DEF,Wolves,18.965628,75.2,4.4,,6
+41725,,FWD,Watford,18.881369,75.2,5.4,,1
+73426,,FWD,Watford,18.881369,75.2,5.4,,1
+86881,,MID,Leicester,18.75491,75.2,4.2,,3
+478969,Hjalmar Ekdal,DEF,Burnley,18.737988,75.2,3.8,,2
+84583,,MID,Aston Villa,18.674917,75.2,5.8,,3
+173268,,GK,Sheffield United,18.66224,75.2,4.5,,1
+209042,,MID,Leicester,18.61829,75.2,4.7,,5
+171101,,DEF,Aston Villa,18.554947,75.2,4.5,,2
+499175,Ethan Nwaneri,MID,Arsenal,18.544918,75.2,5.0,19.0,4
+218031,,DEF,Leicester,18.430231,75.2,4.2,,3
+611917,Lucá Williams-Barnett,MID,Tottenham,18.395674,75.2,4.5,18.0,2
+209041,,MID,Wolves,18.381727,75.2,4.6,,1
+205836,,MID,Brentford,18.380774,75.2,4.5,,3
+116594,,MID,Chelsea,18.28471,75.2,4.8,,3
+37642,,DEF,Man United,18.268528,75.2,4.4,,5
+220394,,MID,Wolves,18.262104,75.2,4.7,,4
+228798,,MID,Leicester,18.24687,75.2,5.7,,1
+208912,Joe Worrall,DEF,Burnley,18.200817,75.2,3.8,,4
+432735,,FWD,Norwich,18.065605,75.2,4.8,,1
+151119,,DEF,Newcastle,17.99578,75.2,4.3,,1
+58771,,MID,Nott'm Forest,17.99578,75.2,4.1,,1
+39487,,DEF,Burnley,17.988007,75.2,4.1,,2
+523957,,FWD,Sheffield United,17.98319,75.2,5.1,,1
+240143,,MID,Southampton,17.976109,75.2,4.1,,3
+538210,,MID,Sheffield United,17.954643,75.2,4.4,,1
+168281,,DEF,Nott'm Forest,17.923151,75.2,4.4,,2
+55605,,DEF,Tottenham,17.900837,75.2,5.0,,2
+76306,,MID,Norwich,17.85541,75.2,4.4,,1
+18073,,MID,West Ham,17.643578,75.2,4.3,,2
+441428,,DEF,Liverpool,17.622656,75.2,3.9,,3
+101982,Sam Johnstone,GK,Wolves,17.61868,75.2,4.4,,5
+55914,,DEF,Leeds,17.611534,75.2,4.4,,3
+250735,Darko Churlinov,MID,Burnley,17.561235,75.2,4.9,,2
+119765,,MID,Everton,17.559599,75.2,4.8,,3
+168035,,MID,Luton,17.521797,75.2,5.0,,1
+516939,Emmanuel Agbadou,DEF,Wolves,17.469028,75.2,4.2,,2
+461195,,DEF,Sunderland,17.417553,75.2,4.0,,1
+504198,,MID,Sheffield United,17.41158,75.2,4.7,,1
+156689,Andreas Hoelgebaum Pereira,MID,Fulham,17.35706,75.2,5.3,,6
+477580,Illia Zabarnyi,DEF,Bournemouth,17.277613,75.2,5.0,,4
+218430,,DEF,Nott'm Forest,17.269032,75.2,4.4,,1
+93100,,DEF,Leicester,17.229603,75.2,3.9,,4
+500058,Jayden Danns,FWD,Liverpool,17.219114,75.2,4.3,20.0,3
+102826,,DEF,Man City,17.184317,75.2,5.2,,2
+493125,Radu Drăgușin,DEF,Tottenham,17.182844,75.2,4.5,,3
+41823,,MID,Everton,17.176172,75.2,4.2,,2
+431131,,MID,Southampton,17.16082,75.2,4.9,,3
+481510,,DEF,Leicester,17.146885,75.2,4.4,,2
+240514,Kjell Scherpen,GK,Brighton,17.081625,75.2,4.0,26.0,4
+214466,,MID,Southampton,17.04107,75.2,5.0,,4
+440854,Jakub Kiwior,DEF,Arsenal,17.028988,75.2,5.4,,4
+450527,,DEF,Southampton,17.004723,75.2,4.2,,3
+41135,,DEF,West Brom,16.850683,75.2,4.4,,1
+532372,,MID,Sheffield United,16.763277,75.2,4.5,,1
+167878,,MID,Sheffield United,16.741323,75.2,4.8,,2
+157882,,MID,Liverpool,16.710445,75.2,5.1,,2
+432990,,DEF,Sheffield United,16.7096,75.2,4.3,,1
+85955,,MID,Arsenal,16.674795,75.2,4.6,,5
+116404,,DEF,Nott'm Forest,16.663202,75.2,4.4,,2
+111931,,DEF,Leicester,16.646704,75.2,4.1,,4
+472739,Carl Rushworth,GK,Brighton,16.574545,75.2,4.0,25.0,2
+199670,Odsonne Édouard,FWD,Crystal Palace,16.55873,75.2,5.0,,5
+168580,,MID,Leicester,16.54732,75.2,4.7,,3
+577974,Harry Amass,DEF,Man United,16.513494,75.2,4.0,19.0,3
+591386,Trey Nyoni,MID,Liverpool,16.441288,75.2,4.3,19.0,3
+235530,,DEF,Newcastle,16.433733,75.2,4.2,,3
+49262,Jason Steele,GK,Brighton,16.426638,75.2,4.2,36.0,6
+42427,,DEF,West Brom,16.069395,75.2,4.3,,1
+132015,,MID,Tottenham,15.97902,75.2,5.0,,5
+148508,,MID,Aston Villa,15.900449,75.2,5.4,,2
+72681,,DEF,Fulham,15.809001,75.2,4.2,,1
+84915,,DEF,Fulham,15.809001,75.2,4.1,,1
+438277,,DEF,Norwich,15.773326,75.2,4.3,,2
+61558,,MID,Liverpool,15.6430855,75.2,4.7,,4
+153673,,DEF,Everton,15.603493,75.2,4.3,,2
+120250,,MID,Everton,15.589659,75.2,4.4,,4
+536109,Ollie Scarles,DEF,West Ham,15.583048,75.2,4.3,,3
+28690,,MID,Leeds,15.546924,75.2,5.5,,2
+513046,,MID,Nott'm Forest,15.506544,75.2,4.7,,3
+204214,Pervis Estupiñán Tenorio,DEF,Brighton,15.420402,75.2,4.5,,4
+437626,,DEF,Nott'm Forest,15.38065,75.2,4.0,,3
+167522,,FWD,Norwich,15.363545,75.2,5.4,,2
+80226,,DEF,Nott'm Forest,15.323337,75.2,4.5,,4
+102549,,GK,Sheffield United,15.281669,75.2,4.0,,1
+212721,,DEF,Southampton,15.23801,75.2,4.4,,1
+175592,,MID,Liverpool,15.221136,75.2,4.7,,3
+101582,,MID,Man United,15.206617,75.2,5.0,,4
+88900,,DEF,Southampton,15.184814,75.2,4.0,,4
+88248,Stefan Ortega Moreno,GK,Nott'm Forest,15.149108,75.2,4.7,,4
+499857,Teddy Sharman-Lowe,GK,Chelsea,15.144755,75.2,4.0,23.0,2
+423649,,MID,Brighton,15.071915,75.2,5.3,,2
+165808,,MID,Leeds,15.013877,75.2,5.4,,2
+115382,,FWD,Everton,15.012999,75.2,4.9,,5
+114128,,DEF,Wolves,14.900555,75.2,4.3,,4
+510500,João Pedro Ferreira da Silva,MID,Nott'm Forest,14.820024,75.2,5.4,,2
+244619,,DEF,Leicester,14.819816,75.2,3.9,,5
+241157,,DEF,Tottenham,14.764672,75.2,4.5,,3
+226956,Mads Roerslev Rasmussen,DEF,Brentford,14.764672,75.2,4.5,,5
+181284,Gonçalo Manuel Ganchinho Guedes,MID,Wolves,14.759608,75.2,5.5,,4
+91046,,FWD,Luton,14.722406,75.2,4.3,,1
+84939,,FWD,West Ham,14.666384,75.2,4.8,,5
+503724,,DEF,Burnley,14.631134,75.2,4.0,,1
+51938,,MID,Leicester,14.5951395,75.2,4.7,,3
+518466,,DEF,Man United,14.414906,75.2,3.9,,1
+244856,,DEF,Luton,14.361884,75.2,3.9,,2
+98745,,DEF,Arsenal,14.33175,75.2,4.8,,2
+40386,,DEF,Sheffield United,14.311464,75.2,3.9,,2
+596047,Chido Obi,FWD,Man United,14.252064,75.2,4.2,19.0,2
+195735,,MID,Arsenal,14.226159,75.2,4.9,,4
+89076,,MID,Nott'm Forest,14.208632,75.2,4.9,,2
+248937,Sam Greenwood,MID,Leeds,14.20622,75.2,4.9,,4
+100649,,MID,Everton,14.062992,75.2,5.5,,2
+40784,,DEF,Crystal Palace,13.971011,75.2,4.4,,1
+57134,,FWD,Everton,13.969098,75.2,4.9,,2
+578614,Enock Agyei,MID,Burnley,13.927815,75.2,4.7,,2
+149915,,DEF,Leeds,13.879865,75.2,4.4,,3
+461567,Owen Dodgson,DEF,Burnley,13.859462,75.2,4.0,,3
+41674,,DEF,Burnley,13.839541,75.2,4.0,,2
+428971,Steven Benda,GK,Fulham,13.785431,75.2,4.0,28.0,3
+599303,Sean Neave,FWD,Newcastle,13.7737,75.2,4.3,19.0,2
+616094,,DEF,Sheffield United,13.728483,75.2,4.0,,1
+549344,,DEF,Sheffield United,13.728483,75.2,4.0,,1
+601496,,DEF,Sheffield United,13.728483,75.2,4.0,,1
+154131,,DEF,Bournemouth,13.625033,75.2,4.2,,1
+168991,Philip Billing,MID,Bournemouth,13.563089,75.2,4.9,,4
+156658,,DEF,Luton,13.496269,75.2,4.0,,1
+220598,Michael Obafemi,FWD,Burnley,13.458049,75.2,4.4,,4
+54861,,FWD,Crystal Palace,13.454494,75.2,5.5,,3
+444172,Will Dennis,GK,Bournemouth,13.435433,75.2,4.0,26.0,3
+47247,,MID,Sheffield United,13.41965,75.2,4.9,,2
+37915,,GK,Tottenham,13.370613,75.2,4.7,,4
+552425,,MID,Sheffield United,13.32707,75.2,4.4,,1
+585472,,MID,Sheffield United,13.32707,75.2,4.4,,1
+476938,,MID,Sheffield United,13.32707,75.2,4.4,,1
+538206,,GK,Sheffield United,13.198957,75.2,3.9,,1
+487836,,FWD,Sheffield United,13.141469,75.2,4.4,,2
+591538,,MID,Sheffield United,13.140434,75.2,4.5,,1
+532377,,FWD,Sheffield United,13.140434,75.2,4.5,,1
+591539,,FWD,Sheffield United,13.140434,75.2,4.5,,1
+106617,Patrick Bamford,FWD,Leeds,13.0764475,75.2,4.9,,4
+213999,Edson Álvarez Velázquez,MID,West Ham,12.907981,75.2,4.9,,3
+180804,Axel Tuanzebe,DEF,Burnley,12.85711,75.2,3.9,,4
+547037,Jack Fletcher,MID,Man United,12.747287,75.2,4.3,19.0,2
+103192,,DEF,West Ham,12.678135,75.2,4.4,,5
+200826,,MID,Tottenham,12.60496,75.2,4.9,,4
+214572,Brandon Austin,GK,Tottenham,12.587288,75.2,3.9,27.0,5
+94245,,FWD,Chelsea,12.545834,75.2,5.5,,2
+40383,Fraser Forster,GK,Bournemouth,12.529754,75.2,4.0,38.0,6
+167473,,MID,Brighton,12.484509,75.2,5.5,,1
+507433,Hákon Rafn Valdimarsson,GK,Brentford,12.480376,75.2,3.8,25.0,3
+40836,,GK,Crystal Palace,12.469468,75.2,4.4,,4
+209293,,DEF,Luton,12.442516,75.2,4.0,,1
+499726,Callum Olusesi,MID,Tottenham,12.322771,75.2,4.3,19.0,2
+78315,,GK,Leeds,12.266033,75.2,4.0,,1
+58376,,GK,Southampton,12.264318,75.2,4.2,,4
+109533,Emerson Palmieri dos Santos,DEF,West Ham,12.187662,75.2,4.4,,6
+230127,,MID,Brighton,12.176801,75.2,4.9,,1
+82514,,DEF,Fulham,12.122382,75.2,4.5,,4
+41328,,DEF,Chelsea,12.122382,75.2,4.5,,4
+173514,,FWD,Watford,12.118946,75.2,5.0,,1
+181008,,FWD,West Ham,12.0771675,75.2,5.5,,1
+124165,,MID,Sunderland,12.0771675,75.2,5.4,,1
+481283,James Wright,GK,Aston Villa,12.076945,75.2,3.9,22.0,3
+165210,,MID,Brighton,12.063971,75.2,5.5,,2
+103914,,DEF,Southampton,12.05741,75.2,3.9,,4
+243568,,MID,Brighton,11.976602,75.2,5.0,,5
+520295,,FWD,Chelsea,11.9466915,75.2,5.4,,3
+443211,,DEF,Sheffield United,11.918544,75.2,3.9,,1
+108796,,DEF,Luton,11.887943,75.2,4.2,,1
+179018,,MID,Newcastle,11.85873,75.2,5.4,,5
+641221,Pedro Cardoso de Lima,DEF,Wolves,11.8150835,75.2,4.0,,2
+85242,,MID,Aston Villa,11.765848,75.2,4.9,,2
+121145,,DEF,Man City,11.643301,75.2,5.3,,5
+80179,,MID,Leeds,11.627873,75.2,4.4,,3
+128340,,FWD,Bournemouth,11.624345,75.2,4.6,,2
+43670,,MID,Man United,11.573398,75.2,4.7,,2
+168090,,MID,Brighton,11.571995,75.2,4.9,,2
+203389,,MID,Southampton,11.536379,75.2,5.0,,3
+120202,,FWD,Burnley,11.499226,75.2,5.5,,3
+464353,,GK,Liverpool,11.496981,75.2,4.0,23.0,2
+174932,,MID,Brentford,11.4918375,75.2,5.0,,3
+109345,Solly March,MID,Brighton,11.484421,75.2,5.8,,6
+184704,,MID,Luton,11.470365,75.2,4.3,,4
+180184,,MID,Man United,11.461424,75.2,4.7,,4
+471848,,DEF,Sheffield United,11.460173,75.2,3.9,,2
+247245,Hannes Delcroix,DEF,Burnley,11.460173,75.2,3.8,,2
+128198,,MID,Southampton,11.427306,75.2,5.4,,1
+72222,,MID,Leeds,11.415707,75.2,4.6,,3
+208904,,DEF,Luton,11.406846,75.2,3.8,,1
+57410,,DEF,Man City,11.350229,75.2,4.9,,1
+173807,,MID,Sheffield United,11.288905,75.2,5.0,,4
+155197,,DEF,Sheffield United,11.271829,75.2,4.3,,2
+146941,,DEF,Man City,11.255576,75.2,4.9,,4
+81441,Mark Gillespie,GK,Newcastle,11.175855,75.2,3.9,34.0,5
+577114,Luis Guilherme Lira dos Santos,MID,West Ham,11.081069,75.2,4.9,,2
+108053,,DEF,Ipswich,11.004487,75.2,3.9,,2
+217487,,FWD,Aston Villa,10.978719,75.2,5.5,,2
+87873,,DEF,Leeds,10.97031,75.2,4.9,,3
+487702,Luca Koleosho,MID,Burnley,10.968774,75.2,5.0,,2
+218023,,DEF,Burnley,10.858351,75.2,3.8,,1
+122074,Marcus Bettinelli,GK,Man City,10.830434,75.2,3.8,34.0,6
+86417,,MID,Crystal Palace,10.780617,75.2,4.6,,5
+427420,,MID,Nott'm Forest,10.767735,75.2,4.6,,1
+55909,,DEF,Man United,10.694499,75.2,4.9,,1
+149828,,FWD,Leicester,10.694499,75.2,4.9,,1
+54102,,MID,West Ham,10.694499,75.2,4.9,,1
+235448,Ellery Balcombe,GK,Brentford,10.611463,75.2,3.9,27.0,4
+173904,,DEF,Tottenham,10.509697,75.2,4.4,,4
+42899,,GK,Man United,10.337069,75.2,4.9,,1
+450434,,FWD,Brighton,10.327927,75.2,5.5,,3
+536908,,FWD,Tottenham,10.208153,75.2,5.0,,2
+224995,Luis Sinisterra Lucumí,MID,Bournemouth,10.176032,75.2,5.0,,4
+488404,,MID,Man United,10.176032,75.2,5.0,,4
+55037,,MID,Nott'm Forest,10.140729,75.2,4.8,,4
+169593,Remi Matthews,GK,Crystal Palace,10.137893,75.2,3.9,32.0,5
+232792,Tariq Lamptey,DEF,Brighton,10.035204,75.2,4.4,,6
+443967,,DEF,Leeds,9.956456,75.2,4.5,,1
+69140,,DEF,Arsenal,9.949328,75.2,5.0,,1
+245824,,FWD,Fulham,9.707772,75.2,5.0,,4
+166324,,MID,Fulham,9.670024,75.2,5.0,,3
+51927,,DEF,Brentford,9.648477,75.2,4.2,,5
+441192,Jeremy Sarmiento Morante,MID,Brighton,9.600988,75.2,4.9,,5
+192895,,DEF,Arsenal,9.570826,75.2,4.3,,5
+78356,,FWD,West Brom,9.314624,75.2,5.1,,1
+168172,,MID,Nott'm Forest,9.291805,75.2,4.9,,1
+89470,,MID,Norwich,9.287745,75.2,4.9,,1
+209925,,MID,Nott'm Forest,9.261282,75.2,5.0,,1
+74471,,MID,Brighton,9.261282,75.2,5.0,,1
+71738,,MID,Norwich,9.257222,75.2,5.0,,1
+439485,,MID,Norwich,9.257222,75.2,5.0,,1
+479683,,MID,Arsenal,9.090555,75.2,4.5,,2
+504751,,MID,Arsenal,9.090555,75.2,4.5,,2
+535264,,MID,Arsenal,9.0686455,75.2,4.5,,1
+516874,,MID,Arsenal,9.0686455,75.2,4.5,,1
+549067,Zach Abbott,DEF,Nott'm Forest,9.034877,75.2,3.8,20.0,2
+110735,Adam Webster,DEF,Brighton,9.030479,75.2,4.4,,6
+165183,,DEF,Luton,9.000321,75.2,3.8,,1
+491012,Youssef Ramalho Chermiti,FWD,Everton,8.945258,75.2,4.9,,3
+131897,,GK,Brighton,8.912551,75.2,4.5,,2
+106468,Álex Moreno Lopera,DEF,Aston Villa,8.88505,75.2,4.0,,4
+40387,,MID,Watford,8.839954,75.2,4.7,,1
+550833,,MID,Wolves,8.799997,75.2,5.0,,1
+48760,,DEF,Brentford,8.782585,75.2,4.5,,4
+153256,,MID,Arsenal,8.746469,75.2,4.4,,4
+213482,,DEF,Southampton,8.704963,75.2,4.0,,3
+128309,,MID,Bournemouth,8.635705,75.2,4.9,,2
+66838,,FWD,Everton,8.605184,75.2,5.0,,2
+432160,,MID,Brentford,8.55405,75.2,4.3,,3
+617054,,FWD,Chelsea,8.499859,75.2,4.9,,2
+192290,Connor Roberts,DEF,Burnley,8.464656,75.2,4.3,,3
+491287,Enzo Barrenechea,MID,Aston Villa,8.429086,75.2,5.0,,2
+50471,,MID,Crystal Palace,8.409263,75.2,4.8,,3
+232223,,FWD,Arsenal,8.360965,75.2,4.4,,2
+93284,,FWD,Brighton,8.351408,75.2,5.0,,2
+209353,,FWD,Wolves,8.351408,75.2,5.0,,2
+437757,,MID,Burnley,8.288731,75.2,4.9,,1
+189776,,MID,Burnley,8.288731,75.2,4.9,,1
+226473,,MID,Burnley,8.288731,75.2,4.9,,1
+78056,,MID,Southampton,8.28211,75.2,4.8,,3
+440148,Tyler Morton,MID,Liverpool,8.271159,75.2,4.5,,3
+230251,,FWD,Nott'm Forest,8.23061,75.2,4.9,,4
+235674,Manor Solomon,MID,Tottenham,8.21048,75.2,5.4,,4
+490146,,FWD,Fulham,8.200088,75.2,5.0,,3
+243345,Lewis O'Brien,MID,Nott'm Forest,8.200088,75.2,5.0,,4
+173954,,MID,Crystal Palace,8.190678,75.2,4.3,,4
+55494,,DEF,Crystal Palace,8.152818,75.2,4.3,,5
+535262,,DEF,Arsenal,8.151949,75.2,4.0,,2
+503308,,DEF,Arsenal,8.130039,75.2,4.0,,1
+104953,,MID,Newcastle,8.046726,75.2,5.2,,1
+176296,,FWD,Watford,8.045543,75.2,4.8,,1
+449988,Fábio Soares Silva,FWD,Wolves,7.9010024,75.2,4.9,,6
+429414,Saša Kalajdžić,FWD,Wolves,7.9010024,75.2,4.9,,4
+221239,,FWD,Aston Villa,7.900716,75.2,4.9,,4
+115918,,GK,Arsenal,7.898159,75.2,4.0,,3
+476502,Boubacar Traoré,MID,Wolves,7.870479,75.2,5.0,,4
+197024,Guido Rodríguez,MID,West Ham,7.8429976,75.2,4.8,,2
+232980,,DEF,Bournemouth,7.841697,75.2,4.3,,3
+93264,,DEF,Tottenham,7.8315606,75.2,4.2,,4
+213345,,FWD,Aston Villa,7.829942,75.2,5.0,,3
+461421,Lewis Dobbin,MID,Aston Villa,7.829942,75.2,5.0,,4
+492831,Zeki Amdouni,FWD,Burnley,7.7145057,75.2,4.8,,2
+111782,,GK,Aston Villa,7.688308,75.2,4.5,,5
+83283,,MID,Burnley,7.6687846,75.2,4.7,,4
+114241,,DEF,Nott'm Forest,7.651988,75.2,4.2,,3
+199249,,DEF,Tottenham,7.651988,75.2,4.1,,5
+58822,,DEF,Arsenal,7.5246224,75.2,3.8,,4
+55038,,MID,Fulham,7.4908395,75.2,4.7,,1
+170271,,MID,Fulham,7.4908395,75.2,4.6,,1
+61916,,MID,Fulham,7.4908395,75.2,4.7,,1
+101105,,DEF,Fulham,7.3866496,75.2,4.4,,2
+20480,,GK,Luton,7.373285,75.2,4.4,,2
+149519,Maxwel Cornet,MID,West Ham,7.335051,75.2,4.9,,5
+201057,,DEF,West Ham,7.334615,75.2,4.2,,2
+61739,,DEF,Fulham,7.2273374,75.2,4.1,,1
+173821,,MID,Leeds,7.079821,75.2,5.0,,3
+241289,,DEF,Watford,7.072561,75.2,4.5,,1
+175353,,MID,Watford,7.072561,75.2,4.5,,1
+216058,,MID,Watford,7.072561,75.2,4.5,,1
+38716,,DEF,West Brom,7.056523,75.2,3.9,,1
+44699,Ashley Barnes,FWD,Burnley,6.9734764,75.2,4.2,,3
+49957,,MID,West Brom,6.946173,75.2,5.2,,1
+50232,,MID,Nott'm Forest,6.940934,75.2,4.8,,4
+37096,Lukasz Fabianski,GK,West Ham,6.939417,75.2,4.5,,6
+250604,,MID,Wolves,6.936361,75.2,4.5,,2
+66242,,MID,Brighton,6.936361,75.2,4.5,,2
+597320,Harry Howell,MID,Brighton,6.885939,75.2,4.5,,2
+152590,,DEF,Man United,6.841941,75.2,4.5,,4
+217331,,FWD,Nott'm Forest,6.831194,75.2,4.5,,2
+174593,,MID,West Brom,6.78247,75.2,4.6,,1
+436234,Bryan Gil Salvatierra,MID,Tottenham,6.7630234,75.2,4.9,,5
+40145,,MID,Burnley,6.737471,75.2,4.8,,3
+57145,,DEF,Newcastle,6.69686,75.2,4.4,,3
+21205,Tom Heaton,GK,Man United,6.6185546,75.2,3.8,40.0,6
+39790,,GK,Leeds,6.5813165,75.2,4.5,,2
+611926,Amara Nallo,DEF,Liverpool,6.5763206,75.2,3.7,,3
+219937,Rhys Williams,DEF,Liverpool,6.5763206,75.2,3.7,,5
+223335,,MID,Fulham,6.517858,75.2,4.5,,1
+225897,,DEF,Fulham,6.443084,75.2,4.5,,1
+195774,,MID,Tottenham,6.369881,75.2,4.7,,1
+58893,,DEF,Man United,6.369881,75.2,4.8,,1
+194794,,DEF,Chelsea,6.369881,75.2,4.7,,1
+61933,,DEF,Fulham,6.355962,75.2,4.2,,3
+107265,Angus Gunn,GK,Nott'm Forest,6.3324814,75.2,4.0,,3
+156687,,MID,Bournemouth,6.263879,75.2,4.5,,2
+223175,,MID,Newcastle,6.263879,75.2,4.5,,2
+56917,,DEF,Nott'm Forest,6.263879,75.2,4.5,,2
+478912,,MID,Chelsea,6.13181,75.2,4.7,,5
+58845,,DEF,Newcastle,6.099973,75.2,4.5,,3
+491785,,MID,Chelsea,6.0745397,75.2,4.5,,2
+242166,,MID,Arsenal,6.0745397,75.2,4.5,,2
+550141,Adrian Mazilu,MID,Brighton,6.0745397,75.2,4.5,,2
+439482,,MID,Arsenal,6.0745397,75.2,4.5,,2
+111773,Emil Krafth,DEF,Newcastle,6.0714808,75.2,4.3,,6
+449926,,MID,Man City,6.0526295,75.2,4.5,,1
+592436,,MID,Newcastle,6.0526295,75.2,4.5,,1
+219265,,MID,Man City,6.0526295,75.2,4.5,,1
+248859,,MID,Newcastle,6.0526295,75.2,4.5,,1
+547716,,FWD,Newcastle,6.0526295,75.2,4.5,,1
+217401,,MID,Burnley,6.0484877,75.2,4.5,,2
+219291,,MID,Man City,6.046357,75.2,4.5,,2
+466404,,DEF,Nott'm Forest,6.041129,75.2,4.2,,3
+628204,Yunus Emre Konak,MID,Brentford,6.041129,75.2,4.3,,3
+495542,,DEF,Everton,5.974182,75.2,4.0,,3
+559684,Jack Moorhouse,MID,Man United,5.9226565,75.2,4.5,,2
+50093,,GK,West Brom,5.8838525,75.2,3.9,37.0,1
+40349,,GK,Everton,5.7281013,75.2,4.0,,3
+220037,,GK,Burnley,5.6962814,75.2,4.0,,3
+216054,,DEF,Everton,5.676114,75.2,4.3,,2
+111457,,DEF,Arsenal,5.675093,75.2,4.2,,2
+197469,,MID,Leicester,5.659999,75.2,4.4,,4
+474003,,FWD,Wolves,5.655233,75.2,4.7,,1
+39476,,DEF,Arsenal,5.655233,75.2,4.8,,1
+204642,,MID,Leeds,5.655233,75.2,4.7,,1
+141569,,FWD,Wolves,5.655233,75.2,4.8,,1
+141020,,MID,Crystal Palace,5.6528473,75.2,4.7,,1
+220166,,DEF,Watford,5.652701,75.2,4.0,,1
+33148,,GK,Man City,5.6375356,75.2,4.5,,1
+56983,,MID,Newcastle,5.6287475,75.2,4.3,,4
+491559,,MID,Everton,5.5863094,75.2,4.5,,3
+510363,,MID,Wolves,5.5863094,75.2,4.5,,4
+245923,,MID,Wolves,5.5863094,75.2,4.5,,5
+138001,Tom King,GK,Everton,5.5732417,75.2,3.9,31.0,3
+38588,,DEF,Leeds,5.5694976,75.2,4.0,,1
+81012,,DEF,Bournemouth,5.560115,75.2,4.3,,4
+514280,,DEF,Chelsea,5.5467033,75.2,4.0,,3
+216620,,FWD,Brentford,5.476362,75.2,4.5,,2
+613467,,DEF,Wolves,5.4671,75.2,4.0,,2
+606775,Ben Winterburn,MID,Bournemouth,5.4188094,75.2,4.5,,2
+475480,,MID,Brighton,5.4188094,75.2,4.5,,2
+574402,,FWD,Brighton,5.4188094,75.2,4.5,,2
+209045,,MID,Brighton,5.4188094,75.2,4.5,,2
+458297,Pierre Ekwah Elimby,MID,Sunderland,5.4188094,75.2,4.5,,2
+496279,Isaac Heath,MID,Everton,5.4188094,75.2,4.5,,2
+519324,,MID,Brighton,5.4188094,75.2,4.5,,2
+59949,Séamus Coleman,DEF,Everton,5.41575,75.2,4.2,,6
+559963,,MID,Chelsea,5.396899,75.2,4.5,,1
+517995,,MID,Chelsea,5.396899,75.2,4.5,,1
+513789,,MID,Leicester,5.396899,75.2,4.5,,1
+514277,,MID,Chelsea,5.396899,75.2,4.5,,1
+513840,,MID,Brighton,5.396899,75.2,4.5,,1
+519198,,MID,Chelsea,5.396899,75.2,4.5,,1
+517996,,FWD,Chelsea,5.396899,75.2,4.5,,1
+597983,,MID,Chelsea,5.396899,75.2,4.5,,1
+461533,,FWD,West Ham,5.396899,75.2,4.5,,1
+491011,,MID,Chelsea,5.396899,75.2,4.5,,1
+223332,,MID,Chelsea,5.396899,75.2,4.5,,1
+461585,,MID,Leicester,5.396899,75.2,4.5,,1
+461212,,MID,Tottenham,5.396899,75.2,4.5,,1
+500052,,MID,Brighton,5.396899,75.2,4.5,,1
+447373,,MID,Leicester,5.396899,75.2,4.5,,1
+233489,,MID,Liverpool,5.396899,75.2,4.5,,1
+243343,,MID,Liverpool,5.396899,75.2,4.5,,1
+243505,,MID,Brighton,5.389928,75.2,4.4,,5
+564510,Garang Kuol,MID,Newcastle,5.3707757,75.2,4.4,,4
+83314,,MID,Newcastle,5.3707757,75.2,4.4,,4
+101148,Jamaal Lascelles,DEF,Newcastle,5.3707757,75.2,4.3,,6
+208998,,DEF,Fulham,5.307012,75.2,4.3,,1
+87107,,DEF,Fulham,5.307012,75.2,4.2,,1
+149266,,DEF,Fulham,5.307012,75.2,4.3,,1
+201084,,DEF,Man United,5.2702227,75.2,4.3,,1
+421796,,MID,Leicester,5.2702227,75.2,4.4,,1
+505187,,MID,Chelsea,5.248635,75.2,4.4,,2
+496185,,MID,Liverpool,5.24786,75.2,4.5,,2
+430992,,DEF,Liverpool,5.24786,75.2,4.5,,2
+530318,Kaden Rodney,MID,Crystal Palace,5.2188926,75.2,4.4,,4
+466117,Naouirou Ahamada,MID,Crystal Palace,5.2188926,75.2,4.3,,4
+20529,,FWD,Brighton,5.187876,75.2,4.8,,1
+155513,,MID,Newcastle,5.187876,75.2,4.8,,1
+56872,,MID,Bournemouth,5.187876,75.2,4.8,,1
+196118,,FWD,Newcastle,5.187876,75.2,4.8,,1
+195864,,MID,West Brom,5.1838155,75.2,4.8,,1
+82078,,FWD,West Brom,5.1838155,75.2,4.8,,1
+109528,,DEF,Newcastle,5.1617618,75.2,4.0,,4
+194126,,GK,Sheffield United,5.1575785,75.2,4.0,,1
+437748,Mike Trésor Ndayishimiye,MID,Burnley,5.1544046,75.2,4.3,,2
+201410,,DEF,Sheffield United,5.131877,75.2,3.9,,1
+476369,,DEF,Man City,5.101933,75.2,4.5,,2
+215460,Ian Poveda-Ocampo,MID,Sunderland,5.0911407,75.2,4.7,,3
+15749,,GK,Tottenham,5.0613794,75.2,4.5,,2
+40845,,MID,Burnley,5.048419,75.2,4.4,,2
+40694,,GK,West Ham,5.0394692,75.2,4.5,,1
+156074,Rob Holding,DEF,Crystal Palace,5.0098786,75.2,4.0,,6
+200088,,FWD,Southampton,4.995348,75.2,4.5,,2
+19838,,GK,Watford,4.949493,75.2,4.0,,1
+511783,,MID,Burnley,4.942272,75.2,4.6,,1
+146610,,DEF,Sheffield United,4.942272,75.2,4.7,,1
+241231,Jordan Beyer,DEF,Burnley,4.8982253,75.2,3.9,,2
+113564,Sam Byram,DEF,Leeds,4.8668118,75.2,3.7,,2
+567121,Joe Knight,MID,Brighton,4.8636937,75.2,4.4,,2
+437742,Albert Sambi Lokonga,MID,Arsenal,4.849399,75.2,4.5,,4
+193195,,MID,Luton,4.8478317,75.2,4.9,,1
+490150,,FWD,Newcastle,4.8417835,75.2,4.4,,1
+19236,John Ruddy,GK,Newcastle,4.808616,75.2,4.0,,4
+111452,Odysseas Vlachodimos,GK,Newcastle,4.808616,75.2,4.0,,3
+487828,,MID,Man United,4.793421,75.2,4.4,,1
+513834,Andrew Moran,MID,Brighton,4.773889,75.2,4.5,,3
+153127,Isaac Hayden,MID,Newcastle,4.773889,75.2,4.5,,5
+461484,Joe White,MID,Newcastle,4.773889,75.2,4.5,,4
+104547,,FWD,Newcastle,4.773889,75.2,4.5,,3
+11974,,GK,Everton,4.763892,75.2,4.0,,2
+465299,,MID,Burnley,4.7162075,75.2,4.5,,2
+590760,Daniel Adu-Adjei,FWD,Bournemouth,4.7150455,75.2,4.4,,3
+235382,,MID,Brighton,4.7150455,75.2,4.4,,4
+450539,Myles Peart-Harris,MID,Brentford,4.7150455,75.2,4.4,,4
+491598,,MID,Brighton,4.7150455,75.2,4.4,,3
+204676,,FWD,Brighton,4.7150455,75.2,4.4,,3
+576980,Zach Marsh,FWD,Crystal Palace,4.7118106,75.2,4.4,,2
+579075,Asher Agbinone,MID,Crystal Palace,4.7118106,75.2,4.3,,2
+556639,Jayce Fitzgerald,MID,Man United,4.7118106,75.2,4.3,,2
+618873,Sékou Koné,MID,Man United,4.7118106,75.2,4.3,,2
+245830,,MID,Nott'm Forest,4.704161,75.2,4.5,,2
+201440,,FWD,Nott'm Forest,4.704161,75.2,4.5,,2
+108156,,DEF,Aston Villa,4.704161,75.2,4.5,,2
+569014,Eric da Silva Moreira,MID,Nott'm Forest,4.704161,75.2,4.5,,2
+492374,,MID,Leeds,4.704161,75.2,4.5,,2
+449133,,MID,Wolves,4.7017756,75.2,4.5,,2
+422306,,MID,Southampton,4.682251,75.2,4.5,,1
+456966,,MID,Southampton,4.682251,75.2,4.5,,1
+449781,,MID,Southampton,4.682251,75.2,4.5,,1
+95463,,GK,Leicester,4.681319,75.2,3.9,,4
+483398,,MID,Wolves,4.6798654,75.2,4.5,,1
+432712,,MID,Wolves,4.6798654,75.2,4.5,,1
+602934,,FWD,Wolves,4.6798654,75.2,4.5,,1
+490095,,MID,Wolves,4.6798654,75.2,4.5,,1
+589100,Jacob Slater,DEF,Brighton,4.65468,75.2,4.0,,2
+439135,Eiran Cashin,DEF,Brighton,4.65468,75.2,4.0,,2
+232977,,DEF,Newcastle,4.65468,75.2,4.0,,2
+604988,Freddie Simmonds,DEF,Brighton,4.65468,75.2,4.0,,2
+57513,,GK,Brentford,4.647781,75.2,4.5,,2
+194190,,DEF,Leicester,4.628628,75.2,4.0,,2
+82143,Wes Foderingham,GK,West Ham,4.628548,75.2,4.0,,4
+575034,Ethan Wheatley,FWD,Man United,4.622006,75.2,4.5,,3
+450535,Malcolm Ebiowei,MID,Crystal Palace,4.622006,75.2,4.5,,4
+531989,David Ozoh,MID,Crystal Palace,4.622006,75.2,4.5,,4
+574398,Franco Umeh-Chibueze,MID,Crystal Palace,4.622006,75.2,4.5,,3
+77777,,DEF,West Brom,4.598642,75.2,4.1,,1
+207270,,GK,Leicester,4.584057,75.2,3.9,,2
+531993,,FWD,Crystal Palace,4.5691223,75.2,4.5,,1
+474908,,MID,Crystal Palace,4.5691223,75.2,4.5,,1
+447715,Aaron Ramsey,MID,Burnley,4.5624795,75.2,4.4,,3
+445548,,DEF,Brighton,4.5060315,75.2,4.0,,4
+223911,Chris Mepham,DEF,Bournemouth,4.5060315,75.2,4.0,,4
+442229,,DEF,Brighton,4.5060315,75.2,4.0,,3
+496683,,DEF,Bournemouth,4.5060315,75.2,4.0,,3
+576637,Godwill Kukonki,DEF,Man United,4.5027966,75.2,4.0,,2
+590012,Caleb Kporha,DEF,Crystal Palace,4.5027966,75.2,4.0,,2
+486870,,DEF,West Ham,4.5027966,75.2,4.0,,2
+492779,,MID,Tottenham,4.4318857,75.2,4.5,,2
+168765,,MID,Fulham,4.427654,75.2,4.3,,2
+490503,,MID,Southampton,4.4254937,75.2,4.9,,3
+563934,,MID,Tottenham,4.4099755,75.2,4.5,,1
+513588,,FWD,Tottenham,4.4099755,75.2,4.5,,1
+450541,,FWD,Crystal Palace,4.3835216,75.2,4.5,,2
+552427,Will Lankshear,FWD,Tottenham,4.3835216,75.2,4.5,,2
+461382,,FWD,Crystal Palace,4.3835216,75.2,4.5,,2
+623095,Yang Min-hyeok,MID,Tottenham,4.3835216,75.2,4.5,,2
+232797,,DEF,Southampton,4.346561,75.2,4.0,,1
+40146,,DEF,Leicester,4.325558,75.2,3.9,,3
+462491,,DEF,Liverpool,4.309257,75.2,4.0,,2
+229384,Andy Irving,MID,West Ham,4.2379436,75.2,4.3,,2
+199584,,DEF,Tottenham,4.220619,75.2,4.0,,4
+195064,,MID,Burnley,4.2148943,75.2,4.5,,1
+465572,,MID,Brighton,4.2148943,75.2,4.5,,1
+551232,,FWD,Nott'm Forest,4.2148943,75.2,4.5,,1
+430367,,FWD,Burnley,4.2148943,75.2,4.5,,1
+86153,,DEF,Brighton,4.2148943,75.2,4.5,,1
+461017,,FWD,Bournemouth,4.2148943,75.2,4.5,,1
+244848,,MID,Brighton,4.2148943,75.2,4.5,,1
+461450,,FWD,Burnley,4.2148943,75.2,4.5,,1
+461682,,MID,Nott'm Forest,4.2148943,75.2,4.5,,1
+447261,,MID,Everton,4.2148943,75.2,4.5,,1
+440241,,MID,Brighton,4.2148943,75.2,4.5,,1
+215062,,MID,Brighton,4.2148943,75.2,4.5,,1
+220738,,MID,Brighton,4.2148943,75.2,4.5,,1
+536681,,FWD,Nott'm Forest,4.2148943,75.2,4.5,,1
+524070,,MID,Nott'm Forest,4.2148943,75.2,4.5,,1
+536677,,FWD,Nott'm Forest,4.2148943,75.2,4.5,,1
+505265,,FWD,West Brom,4.210834,75.2,4.5,,1
+439242,,MID,West Brom,4.210834,75.2,4.5,,1
+444575,,MID,West Brom,4.210834,75.2,4.5,,1
+173809,,MID,West Brom,4.210834,75.2,4.5,,1
+536241,Martin Sherif,FWD,Everton,4.2079635,75.2,4.4,,2
+530121,Zain Silcott-Duberry,MID,Bournemouth,4.2079635,75.2,4.4,,2
+533710,Iwan Morgan,FWD,Brentford,4.2079635,75.2,4.4,,2
+606774,Remy Rees-Dottin,MID,Bournemouth,4.2079635,75.2,4.3,,2
+504296,Coby Ebere,MID,Everton,4.2079635,75.2,4.4,,2
+547801,Callum Bates,MID,Everton,4.2079635,75.2,4.3,,2
+49083,,MID,Luton,4.191733,75.2,4.9,,2
+213405,,DEF,Leicester,4.1860533,75.2,4.3,,1
+61604,,MID,Leicester,4.1860533,75.2,4.3,,1
+232881,,MID,Leicester,4.1860533,75.2,4.4,,1
+46483,,MID,Leicester,4.1860533,75.2,4.4,,1
+532528,,MID,Brighton,4.1860533,75.2,4.4,,1
+234908,,DEF,Tottenham,4.1860533,75.2,4.3,,1
+15033,,DEF,Leicester,4.1860533,75.2,4.4,,1
+567119,Shumaira Mheuka,FWD,Chelsea,4.1842885,75.2,4.5,,2
+559962,Jamaldeen Jimoh-Aloba,MID,Aston Villa,4.1842885,75.2,4.5,,2
+518620,,MID,Chelsea,4.1842885,75.2,4.5,,2
+461201,,MID,Tottenham,4.1842885,75.2,4.5,,2
+182436,,MID,Liverpool,4.1842885,75.2,4.5,,2
+537403,Kadan Young,MID,Aston Villa,4.1820354,75.2,4.3,,4
+472464,,FWD,Man United,4.1820354,75.2,4.4,,4
+501284,,MID,Brentford,4.178894,75.2,4.5,,2
+447235,,FWD,Tottenham,4.1623783,75.2,4.5,,1
+515504,,FWD,Man United,4.1623783,75.2,4.5,,1
+504598,,MID,Man United,4.1623783,75.2,4.5,,1
+550596,Dominic Sadi,MID,Bournemouth,4.118159,75.2,4.5,,4
+461446,Tyler Onyango,MID,Everton,4.118159,75.2,4.5,,4
+573062,Martial Godo,MID,Fulham,4.118159,75.2,4.5,,3
+220695,Paris Maghoma,MID,Brentford,4.118159,75.2,4.5,,3
+233425,,FWD,Brighton,4.118159,75.2,4.5,,3
+441240,Romain Faivre,MID,Bournemouth,4.118159,75.2,4.5,,3
+491557,Jenson Metcalfe,MID,Everton,4.118159,75.2,4.5,,3
+496179,,MID,Tottenham,4.118159,75.2,4.5,,4
+484658,,MID,Brighton,4.118159,75.2,4.5,,3
+515024,Luke Harris,MID,Fulham,4.118159,75.2,4.5,,4
+591357,Ryan Trevitt,MID,Brentford,4.118159,75.2,4.5,,4
+437476,,MID,Nott'm Forest,4.0292935,75.2,4.5,,2
+221403,,DEF,Nott'm Forest,4.0292935,75.2,4.5,,2
+185253,,MID,Nott'm Forest,4.0292935,75.2,4.5,,2
+461453,,MID,Everton,4.0292935,75.2,4.5,,2
+244085,,MID,Bournemouth,4.0292935,75.2,4.5,,2
+515023,,MID,Fulham,4.0292935,75.2,4.5,,2
+445896,,MID,Southampton,4.0292935,75.2,4.5,,2
+596572,,MID,Bournemouth,4.0292935,75.2,4.5,,2
+497606,Tawanda Chirewa,MID,Wolves,4.0124435,75.2,4.3,,3
+531363,Nathan Fraser,FWD,Wolves,4.0124435,75.2,4.2,,4
+593001,Enso González Medina,MID,Wolves,4.0124435,75.2,4.3,,3
+589507,Leon Chiwome,FWD,Wolves,4.0124435,75.2,4.4,,3
+222017,,MID,West Ham,4.0003977,75.2,4.3,,4
+220684,Aji Alese,DEF,Sunderland,3.9989495,75.2,4.0,,2
+232229,,DEF,Leicester,3.9989495,75.2,4.0,,2
+499717,Jayden Meghoma,DEF,Brentford,3.9989495,75.2,4.0,,2
+448496,,DEF,Brighton,3.9989495,75.2,4.0,,2
+178173,,DEF,Brighton,3.9989495,75.2,4.0,,2
+447720,,DEF,Brighton,3.9989495,75.2,4.0,,2
+433589,,DEF,Brighton,3.9989495,75.2,4.0,,2
+519321,,DEF,Tottenham,3.9989495,75.2,4.0,,2
+492066,Niall Huggins,DEF,Sunderland,3.9989495,75.2,4.0,,2
+428610,,MID,Wolves,3.9980118,75.2,4.3,,3
+461566,,DEF,Man United,3.9770393,75.2,4.0,,1
+248854,,DEF,Chelsea,3.9770393,75.2,4.0,,1
+513836,,DEF,Brighton,3.9770393,75.2,4.0,,1
+496222,,DEF,Chelsea,3.9770393,75.2,4.0,,1
+480818,,DEF,Liverpool,3.9770393,75.2,4.0,,1
+514154,,DEF,Brighton,3.9770393,75.2,4.0,,1
+549014,,DEF,Brighton,3.9770393,75.2,4.0,,1
+118335,,DEF,Chelsea,3.9770393,75.2,4.0,,1
+422612,,DEF,Everton,3.9770393,75.2,4.0,,1
+197365,,DEF,Man United,3.9730232,75.2,4.0,,4
+232937,,DEF,Man United,3.9730232,75.2,4.0,,4
+536238,,DEF,Chelsea,3.9730232,75.2,4.0,,3
+152898,,DEF,Liverpool,3.9730232,75.2,4.0,,3
+194799,,DEF,Newcastle,3.9730232,75.2,4.0,,5
+210494,Nayef Aguerd,DEF,West Ham,3.9472194,75.2,4.4,,4
+492373,,DEF,Leeds,3.9059906,75.2,4.0,,2
+209035,,DEF,Nott'm Forest,3.7913837,75.2,4.0,,3
+120721,,DEF,Fulham,3.7913837,75.2,4.0,,3
+228044,,DEF,Brentford,3.7913837,75.2,4.0,,3
+194164,,DEF,Everton,3.788998,75.2,4.0,,5
+192303,,DEF,Norwich,3.757459,75.2,4.4,,1
+588555,Elyh Harrison,GK,Man United,3.741927,75.2,4.0,,2
+108823,,MID,Everton,3.7016249,75.2,4.8,,4
+461584,,MID,Leicester,3.6971357,75.2,4.5,,2
+519223,,MID,Leicester,3.6971357,75.2,4.5,,2
+447372,,MID,Southampton,3.6971357,75.2,4.5,,2
+514362,Temple Ojinnaka,MID,Wolves,3.6971357,75.2,4.5,,2
+448791,,MID,Tottenham,3.6749551,75.2,4.4,,2
+549068,,MID,Chelsea,3.6749551,75.2,4.3,,2
+577731,Ben Broggio,MID,Aston Villa,3.6749551,75.2,4.4,,2
+232241,,MID,Arsenal,3.6530452,75.2,4.4,,1
+461026,,MID,Wolves,3.629847,75.2,4.4,,2
+478449,,DEF,Sheffield United,3.604394,75.2,4.0,,1
+483391,,DEF,Burnley,3.604394,75.2,4.0,,1
+235640,,DEF,Sheffield United,3.604394,75.2,4.0,,1
+122775,,MID,Aston Villa,3.585149,75.2,4.5,,4
+92371,,DEF,Arsenal,3.585149,75.2,4.5,,3
+151589,Leander Dendoncker,MID,Aston Villa,3.585149,75.2,4.5,,6
+204727,,DEF,Chelsea,3.585149,75.2,4.5,,4
+198849,,MID,Arsenal,3.585149,75.2,4.5,,3
+515599,,MID,Aston Villa,3.585149,75.2,4.5,,3
+443629,,GK,Liverpool,3.5483868,75.2,4.0,,2
+518199,,GK,Liverpool,3.5264769,75.2,4.0,,1
+461096,,FWD,Burnley,3.505362,75.2,4.4,,2
+20066,,GK,Nott'm Forest,3.4959025,75.2,4.0,,5
+224068,Matt Turner,GK,Nott'm Forest,3.4959025,75.2,4.0,,4
+494041,,MID,Brentford,3.493316,75.2,4.4,,2
+248865,,MID,West Ham,3.493316,75.2,4.4,,2
+225368,,MID,Wolves,3.471406,75.2,4.4,,1
+223349,,FWD,Aston Villa,3.471406,75.2,4.3,,1
+40564,,MID,Aston Villa,3.471406,75.2,4.3,,1
+480216,,MID,Leeds,3.471406,75.2,4.3,,1
+232361,,MID,Wolves,3.471406,75.2,4.4,,1
+434138,,MID,Leeds,3.471406,75.2,4.3,,1
+153379,,MID,Southampton,3.471406,75.2,4.3,,1
+41727,,DEF,Wolves,3.471406,75.2,4.4,,1
+47390,,DEF,Aston Villa,3.471406,75.2,4.2,,1
+443296,,MID,Wolves,3.471406,75.2,4.4,,1
+501468,,DEF,Crystal Palace,3.470744,75.2,4.0,,3
+106757,,FWD,Brighton,3.4690201,75.2,4.4,,1
+466955,,MID,Crystal Palace,3.4690201,75.2,4.3,,1
+59125,,FWD,Crystal Palace,3.4690201,75.2,4.4,,1
+514287,,DEF,Aston Villa,3.4659412,75.2,4.0,,2
+515500,,DEF,Man United,3.4659412,75.2,4.0,,2
+521966,,DEF,Aston Villa,3.4440312,75.2,4.0,,1
+515501,,DEF,Man United,3.4440312,75.2,4.0,,1
+530117,,DEF,Man United,3.4440312,75.2,4.0,,1
+519325,,DEF,Man United,3.4440312,75.2,4.0,,1
+49413,,DEF,Crystal Palace,3.4251578,75.2,3.9,,4
+101184,,DEF,Aston Villa,3.4214647,75.2,3.8,,4
+602903,Ezra Mayers,DEF,West Ham,3.420834,75.2,4.0,,2
+424044,Hamed Traorè,MID,Bournemouth,3.418482,75.2,4.5,,4
+215531,,GK,Bournemouth,3.4040892,75.2,4.3,,1
+180151,,MID,West Ham,3.4035108,75.2,4.5,,3
+244930,,MID,Nott'm Forest,3.4035108,75.2,4.5,,3
+481405,,MID,Brentford,3.4035108,75.2,4.5,,3
+434662,,FWD,Brentford,3.4035108,75.2,4.5,,3
+232829,,DEF,Everton,3.3843887,75.2,3.9,,2
+493121,,MID,Crystal Palace,3.358277,75.2,4.4,,1
+83543,,MID,Fulham,3.3255303,75.2,4.4,,3
+432931,,MID,Fulham,3.3255303,75.2,4.4,,3
+518442,Lewis Orford,MID,West Ham,3.3255303,75.2,4.4,,3
+160987,,MID,Everton,3.3255303,75.2,4.4,,4
+560248,Bastien Meupiyou Menadjou,DEF,Wolves,3.2963486,75.2,4.0,,2
+501770,,DEF,Leicester,3.2963486,75.2,4.0,,2
+495145,Alex Paulsen,GK,Bournemouth,3.2957432,75.2,4.0,,2
+461416,,FWD,Leicester,3.294591,75.2,4.5,,3
+240299,Joe Hodge,MID,Wolves,3.294591,75.2,4.5,,4
+232247,,DEF,Brentford,3.2843025,75.2,4.0,,2
+481626,,DEF,Wolves,3.2819161,75.2,4.0,,2
+209362,,DEF,Brighton,3.2819161,75.2,4.0,,2
+490138,,GK,Liverpool,3.2738333,75.2,4.0,,1
+232398,,GK,West Ham,3.2738333,75.2,4.0,,1
+433019,,GK,Liverpool,3.2738333,75.2,4.0,,1
+474803,,GK,Chelsea,3.2738333,75.2,4.0,,1
+431019,,GK,Chelsea,3.2738333,75.2,4.0,,1
+6744,,GK,Man United,3.2738333,75.2,4.0,,1
+518892,,GK,Chelsea,3.2738333,75.2,4.0,,1
+437688,,DEF,Wolves,3.2623925,75.2,4.0,,1
+516432,,DEF,Brentford,3.2623925,75.2,4.0,,1
+447093,,DEF,Southampton,3.2623925,75.2,4.0,,1
+450550,,DEF,Brentford,3.2623925,75.2,4.0,,1
+504750,,DEF,Wolves,3.2600062,75.2,4.0,,1
+221272,,DEF,Crystal Palace,3.2600062,75.2,4.0,,1
+431960,,DEF,Wolves,3.2600062,75.2,4.0,,1
+114536,,DEF,Crystal Palace,3.2600062,75.2,4.0,,1
+516159,,GK,Aston Villa,3.2121506,75.2,4.0,,3
+462381,Filip Marschall,GK,Aston Villa,3.2121506,75.2,4.0,,5
+462492,Joe Gauci,GK,Aston Villa,3.2121506,75.2,4.0,,3
+248164,,GK,Aston Villa,3.2121506,75.2,4.0,,4
+481371,,MID,Sheffield United,3.2118206,75.2,4.5,,1
+531076,,MID,Sheffield United,3.202982,75.2,4.4,,1
+168399,,GK,Burnley,3.1479325,75.2,4.3,,2
+518438,Kaelan Casey,DEF,West Ham,3.1165164,75.2,4.0,,4
+109434,,DEF,Fulham,3.1165164,75.2,4.0,,3
+216208,,GK,Wolves,3.0857904,75.2,4.0,,3
+106618,,DEF,Newcastle,3.0790515,75.2,3.9,,4
+441024,Harrison Ashby,DEF,Newcastle,3.0790515,75.2,3.9,,4
+493347,,GK,Burnley,3.0748675,75.2,3.9,,1
+133085,,GK,Burnley,3.0748675,75.2,3.9,,1
+530873,,MID,Burnley,3.0262196,75.2,4.5,,2
+185478,,DEF,Crystal Palace,3.0040495,75.2,4.2,,1
+444183,,MID,Bournemouth,3.0040495,75.2,4.3,,1
+77359,,DEF,Newcastle,3.0040495,75.2,4.3,,1
+232427,,MID,West Brom,2.9999893,75.2,4.3,,1
+90585,Willy Boly,DEF,Nott'm Forest,2.9947286,75.2,3.8,,6
+250370,,GK,Man United,2.952666,75.2,4.0,,2
+222690,Tyrell Malacia,DEF,Man United,2.927168,75.2,3.7,,4
+133845,,MID,Bournemouth,2.8184485,75.2,4.3,,2
+565431,Callum Marshall,FWD,West Ham,2.8184485,75.2,4.3,,2
+89085,,MID,Fulham,2.8184485,75.2,4.4,,2
+48615,,MID,Nott'm Forest,2.8184485,75.2,4.3,,2
+511504,,MID,Fulham,2.8184485,75.2,4.4,,2
+487693,,DEF,Fulham,2.7950356,75.2,4.0,,1
+184259,,DEF,Burnley,2.7950356,75.2,4.0,,1
+470255,,DEF,West Brom,2.7909753,75.2,4.0,,1
+490885,George Earthy,MID,West Ham,2.728643,75.2,4.5,,3
+20310,,GK,Southampton,2.711293,75.2,3.8,,3
+646754,,GK,Aston Villa,2.6831594,75.2,4.0,,1
+477733,,GK,Man United,2.6831594,75.2,4.0,,1
+168547,,GK,Nott'm Forest,2.6466196,75.2,4.3,,1
+104542,,GK,Newcastle,2.6224973,75.2,3.9,,2
+474772,,DEF,Bournemouth,2.6094346,75.2,4.0,,2
+242885,,DEF,Nott'm Forest,2.6094346,75.2,4.0,,2
+173399,,DEF,Nott'm Forest,2.6094346,75.2,4.0,,2
+563883,,GK,Brentford,2.581095,75.2,4.0,,2
+475123,Carlos Miguel dos Santos Pereira,GK,Nott'm Forest,2.581095,75.2,4.0,,2
+447879,,GK,West Ham,2.581095,75.2,4.0,,2
+167767,,DEF,Chelsea,2.5719697,75.2,3.9,,2
+547720,Charlie Tasker,DEF,Brighton,2.5719697,75.2,3.8,,2
+98770,,GK,Aston Villa,2.559185,75.2,4.0,,1
+214987,,GK,Leeds,2.559185,75.2,4.0,,1
+463912,,GK,Leeds,2.559185,75.2,4.0,,1
+42525,,GK,Crystal Palace,2.5567987,75.2,4.0,,1
+439510,,DEF,Man City,2.550612,75.2,3.9,,3
+57913,,DEF,Leeds,2.4657373,75.2,3.8,,1
+467114,,DEF,Leeds,2.4657373,75.2,3.8,,1
+474907,Reece Welch,DEF,Everton,2.4233208,75.2,3.8,,5
+622536,Benjamin Arthur,DEF,Brentford,2.4233208,75.2,3.8,,3
+462384,,DEF,West Ham,2.4200866,75.2,3.9,,2
+48717,,DEF,West Ham,2.3981767,75.2,3.9,,1
+596054,Tom Edozie,MID,Wolves,2.3583784,75.2,4.3,,2
+606798,Andrés García,DEF,Aston Villa,2.3315318,75.2,3.9,,2
+209288,Tom McGill,GK,Brighton,2.3181796,75.2,3.9,,5
+40559,,GK,Fulham,2.31208,75.2,3.9,,1
+222627,,GK,Everton,2.2891347,75.2,3.8,,4
+519328,,DEF,Liverpool,2.2046375,75.2,3.9,,1
+461537,Dermot Mee,GK,Man United,2.1662965,75.2,3.9,,3
+76359,,DEF,Man United,2.1379085,75.2,3.8,,3
+438405,,GK,Everton,2.091828,75.2,4.0,,1
+60706,,GK,Liverpool,1.9727578,75.2,3.8,,4
+591385,Samuel Amissah,DEF,Fulham,1.91624,75.2,3.8,,2
+491745,Elijah Campbell,DEF,Everton,1.91624,75.2,3.9,,2
+496178,Roman Dixon,DEF,Everton,1.91624,75.2,3.8,,2
+541462,Matai Akinmboni,DEF,Bournemouth,1.91624,75.2,3.8,,2
+518906,Owen Bevan,DEF,Bournemouth,1.91624,75.2,3.8,,2
+106606,,MID,Ipswich,1.9130166,75.2,4.3,,1
+102884,,GK,Fulham,1.9062272,75.2,4.0,,2
+168763,,DEF,Tottenham,1.8943298,75.2,3.9,,1
+123354,,DEF,Aston Villa,1.8903117,75.2,3.9,,5
+514315,Lino da Cruz Sousa,DEF,Aston Villa,1.8903117,75.2,3.8,,3
+58786,,DEF,Crystal Palace,1.8127795,75.2,3.8,,2
+447325,Harry Tyrer,GK,Everton,1.7201138,75.2,3.9,,3
+503300,Matthew Cox,GK,Brentford,1.7201138,75.2,3.9,,4
+568791,Callan McKenna,GK,Bournemouth,1.7201138,75.2,3.9,,3
+203368,,DEF,Aston Villa,1.7086735,75.2,3.9,,3
+213687,,DEF,Brentford,1.7086735,75.2,3.9,,3
+232423,,DEF,Crystal Palace,1.7062882,75.2,3.9,,3
+140200,,GK,Brentford,1.5277996,75.2,3.9,,2
+432711,,DEF,Burnley,1.5216838,75.2,3.9,,1
+534836,Travis Patterson,DEF,Aston Villa,1.38323,75.2,3.9,,2
+79852,,GK,Aston Villa,1.3097837,75.2,3.9,,2
+437468,,DEF,Man City,1.2755868,75.2,3.8,,2
+517179,Alfie Pond,DEF,Wolves,1.2136387,75.2,3.9,,2
+17997,,DEF,Burnley,1.2136387,75.2,3.9,,2
+74854,Simon Moore,GK,Sunderland,1.213032,75.2,3.9,,2
+535017,Julian Eyestone,GK,Brentford,1.213032,75.2,3.9,,2
+175941,,GK,Tottenham,1.213032,75.2,3.9,,2
+516250,,MID,Man City,1.1946366,75.2,4.5,,2
+19194,,GK,West Ham,1.1911218,75.2,3.9,,1
+465551,,DEF,Wolves,1.179682,75.2,3.9,,1
+179456,,DEF,Wolves,1.179682,75.2,3.9,,1
+214470,,DEF,Southampton,1.179682,75.2,3.9,,1
+462438,,MID,Man City,1.1727264,75.2,4.5,,1
+496283,,MID,Man City,1.1727264,75.2,4.5,,1
+498046,,MID,Arsenal,0.7567728,75.2,4.5,,2
+588796,Ismeal Kabia,MID,Arsenal,0.7567728,75.2,4.5,,2
+461025,,FWD,Arsenal,0.7567728,75.2,4.5,,2
+155529,,GK,Fulham,0.7383237,75.2,3.9,,3
+547659,,DEF,Nott'm Forest,0.7123249,75.2,3.9,,1
+195471,,DEF,Burnley,0.7123249,75.2,3.9,,1
+564505,Sam Proctor,GK,Aston Villa,0.6223581,75.2,3.9,,2
+482158,,GK,Chelsea,0.6223581,75.2,3.9,,2
+471798,Gabriel Słonina,GK,Chelsea,0.6223581,75.2,3.8,,2
+223824,,DEF,Crystal Palace,0.5267241,75.2,3.9,,2
+437753,,DEF,Nott'm Forest,0.5267241,75.2,3.9,,2
+232620,,DEF,Leicester,0.5267241,75.2,3.9,,2
+221610,,MID,Leeds,0.5192581,75.2,4.5,,3
+448487,,GK,Wolves,0.49599782,75.2,3.9,,2
+482769,,MID,Man City,0.46504673,75.2,4.4,,2
+487837,,FWD,Man City,0.37524125,75.2,4.5,,3
+487818,,GK,Crystal Palace,0.3633446,75.2,3.9,,1
+32259,,GK,Bournemouth,0.33059797,75.2,3.9,,4
+11948,,GK,Everton,0.33059797,75.2,3.9,,4
+197464,,DEF,Liverpool,0.32525176,75.2,4.0,,5
+447880,,DEF,Man City,0.25603265,75.2,4.0,,2
+198826,,DEF,Ipswich,0.15960439,75.2,4.0,,5
+432927,,GK,Newcastle,0.009116678,75.2,3.9,,1
+45220,,GK,Leicester,0.009116678,75.2,3.9,,1
+18499,,GK,Norwich,0.00505651,75.2,3.9,,1
+611011,,DEF,Luton,0.0,75.2,4.0,,1
+634640,,DEF,Luton,0.0,75.2,4.0,,1
+608060,,MID,Luton,0.0,75.2,4.5,,1
+589114,,MID,Luton,0.0,75.2,4.5,,1
+647597,,MID,Luton,0.0,75.2,4.5,,1
+491970,,MID,Liverpool,0.0,75.2,4.5,,3
+94926,,FWD,Ipswich,0.0,75.2,4.5,,1
+450529,,MID,Leeds,0.0,75.2,4.5,,2
+499167,Josh Nichols,DEF,Arsenal,0.0,75.2,3.7,,2
+496228,,FWD,Leeds,0.0,75.2,4.5,,2
+174595,,FWD,Luton,0.0,75.2,4.5,,1
+450197,,GK,Nott'm Forest,0.0,75.2,3.9,,2
+242500,,FWD,Luton,0.0,75.2,4.5,,1
+483364,Krisztián Hegyi,GK,West Ham,0.0,75.2,3.9,,2
+434044,,GK,Ipswich,0.0,75.2,3.9,,2
+108411,,DEF,Luton,0.0,75.2,3.9,,1
+490180,,FWD,Luton,0.0,75.2,4.5,,1
+232477,,MID,Luton,0.0,75.2,4.5,,1
+207722,,GK,Luton,0.0,75.2,4.0,,1
+223333,,MID,Luton,0.0,75.2,4.4,,1
+198044,,GK,Southampton,0.0,75.2,3.9,,2
+463748,Karl Hein,GK,Arsenal,0.0,75.2,4.0,,5
+551221,Tommy Setford,GK,Arsenal,0.0,75.2,3.9,,2
+547668,,MID,Luton,0.0,75.2,4.5,,1
+223081,,GK,Leeds,0.0,75.2,3.8,,2
+164484,,GK,Man City,0.0,75.2,3.9,,4
+77818,,GK,Luton,0.0,75.2,4.2,,1
+165152,,MID,Luton,0.0,75.2,4.4,,1
+453537,,MID,Luton,0.0,75.2,4.5,,1
+552030,,DEF,Luton,0.0,75.2,4.0,,1
+551995,,FWD,Luton,0.0,75.2,4.5,,1
+563324,Brayden Clarke,DEF,Arsenal,0.0,75.2,3.7,,2
+422303,,FWD,Luton,0.0,75.2,4.5,,1
+113534,,GK,Luton,0.0,75.2,4.0,,2
+243532,,MID,Luton,0.0,75.2,4.4,,1
+588793,Maldini Kacurri,DEF,Arsenal,0.0,75.2,3.9,,2
+17601,,GK,Man City,0.0,75.2,3.9,,5

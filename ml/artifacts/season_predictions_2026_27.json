@@ -1,0 +1,554 @@
+{
+  "season": "2026-27",
+  "model_version": "xgboost-20261028",
+  "generated_at": "2026-10-28T20:04:39.089049+00:00",
+  "uncertainty_95": 75.2,
+  "has_real_age": true,
+  "young_criterion": "age < 22 (from FPL API)",
+  "best_player": {
+    "top_10": [
+      {
+        "element_code": 141746,
+        "name": "Bruno Borges Fernandes",
+        "position": "MID",
+        "team": "Man United",
+        "predicted_points": 198.4829559326172,
+        "uncertainty": 75.2,
+        "price": 10.4,
+        "age": 32.0,
+        "n_prior_seasons": 6
+      },
+      {
+        "element_code": 118748,
+        "name": "Mohamed Salah",
+        "position": "MID",
+        "team": "Liverpool",
+        "predicted_points": 188.7736358642578,
+        "uncertainty": 75.2,
+        "price": 14.0,
+        "age": null,
+        "n_prior_seasons": 6
+      },
+      {
+        "element_code": 223094,
+        "name": "Erling Haaland",
+        "position": "FWD",
+        "team": "Man City",
+        "predicted_points": 176.1721954345703,
+        "uncertainty": 75.2,
+        "price": 14.7,
+        "age": 26.0,
+        "n_prior_seasons": 4
+      },
+      {
+        "element_code": 244850,
+        "name": "Morgan Rogers",
+        "position": "MID",
+        "team": "Aston Villa",
+        "predicted_points": 171.32774353027344,
+        "uncertainty": 75.2,
+        "price": 7.3,
+        "age": 24.0,
+        "n_prior_seasons": 3
+      },
+      {
+        "element_code": 502500,
+        "name": "Igor Thiago Nascimento Rodrigues",
+        "position": "FWD",
+        "team": "Brentford",
+        "predicted_points": 167.24070739746094,
+        "uncertainty": 75.2,
+        "price": 7.2,
+        "age": 25.0,
+        "n_prior_seasons": 2
+      },
+      {
+        "element_code": 178186,
+        "name": "Jarrod Bowen",
+        "position": "FWD",
+        "team": "West Ham",
+        "predicted_points": 166.6741485595703,
+        "uncertainty": 75.2,
+        "price": 7.8,
+        "age": null,
+        "n_prior_seasons": 6
+      },
+      {
+        "element_code": 110979,
+        "name": null,
+        "position": "MID",
+        "team": "Liverpool",
+        "predicted_points": 162.68617248535156,
+        "uncertainty": 75.2,
+        "price": 11.8,
+        "age": null,
+        "n_prior_seasons": 2
+      },
+      {
+        "element_code": 448047,
+        "name": "Enzo Fernández",
+        "position": "MID",
+        "team": "Chelsea",
+        "predicted_points": 158.4011993408203,
+        "uncertainty": 75.2,
+        "price": 6.5,
+        "age": 25.0,
+        "n_prior_seasons": 4
+      },
+      {
+        "element_code": 178301,
+        "name": "Ollie Watkins",
+        "position": "FWD",
+        "team": "Aston Villa",
+        "predicted_points": 157.00181579589844,
+        "uncertainty": 75.2,
+        "price": 8.7,
+        "age": 31.0,
+        "n_prior_seasons": 6
+      },
+      {
+        "element_code": 209036,
+        "name": "Marc Guéhi",
+        "position": "DEF",
+        "team": "Man City",
+        "predicted_points": 150.76165771484375,
+        "uncertainty": 75.2,
+        "price": 5.1,
+        "age": 26.0,
+        "n_prior_seasons": 5
+      }
+    ],
+    "uncertainty_95": 75.2
+  },
+  "best_young": {
+    "top_10": [
+      {
+        "element_code": 472769,
+        "name": "Nico O'Reilly",
+        "position": "DEF",
+        "team": "Man City",
+        "predicted_points": 123.6140365600586,
+        "uncertainty": 75.2,
+        "price": 5.3,
+        "age": 21.0,
+        "n_prior_seasons": 3
+      },
+      {
+        "element_code": 532529,
+        "name": "Jack Hinshelwood",
+        "position": "MID",
+        "team": "Brighton",
+        "predicted_points": 74.60983276367188,
+        "uncertainty": 75.2,
+        "price": 5.2,
+        "age": 21.0,
+        "n_prior_seasons": 4
+      },
+      {
+        "element_code": 516895,
+        "name": "Kobbie Mainoo",
+        "position": "MID",
+        "team": "Man United",
+        "predicted_points": 67.65359497070312,
+        "uncertainty": 75.2,
+        "price": 4.7,
+        "age": 21.0,
+        "n_prior_seasons": 4
+      },
+      {
+        "element_code": 550864,
+        "name": "Leny Yoro",
+        "position": "DEF",
+        "team": "Man United",
+        "predicted_points": 63.15647888183594,
+        "uncertainty": 75.2,
+        "price": 4.1,
+        "age": 21.0,
+        "n_prior_seasons": 2
+      },
+      {
+        "element_code": 511499,
+        "name": "Mathys Tel",
+        "position": "MID",
+        "team": "Tottenham",
+        "predicted_points": 60.983123779296875,
+        "uncertainty": 75.2,
+        "price": 6.2,
+        "age": 21.0,
+        "n_prior_seasons": 2
+      },
+      {
+        "element_code": 547701,
+        "name": "Archie Gray",
+        "position": "MID",
+        "team": "Tottenham",
+        "predicted_points": 58.50408935546875,
+        "uncertainty": 75.2,
+        "price": 4.8,
+        "age": 20.0,
+        "n_prior_seasons": 4
+      },
+      {
+        "element_code": 570526,
+        "name": "Lucas Bergvall",
+        "position": "MID",
+        "team": "Tottenham",
+        "predicted_points": 57.57057189941406,
+        "uncertainty": 75.2,
+        "price": 5.2,
+        "age": 20.0,
+        "n_prior_seasons": 2
+      },
+      {
+        "element_code": 577016,
+        "name": "Josh Acheampong",
+        "position": "DEF",
+        "team": "Chelsea",
+        "predicted_points": 55.534820556640625,
+        "uncertainty": 75.2,
+        "price": 3.7,
+        "age": 20.0,
+        "n_prior_seasons": 3
+      },
+      {
+        "element_code": 606745,
+        "name": "Ayden Heaven",
+        "position": "DEF",
+        "team": "Man United",
+        "predicted_points": 54.86961364746094,
+        "uncertainty": 75.2,
+        "price": 3.7,
+        "age": 20.0,
+        "n_prior_seasons": 2
+      },
+      {
+        "element_code": 547719,
+        "name": "Lewis Miley",
+        "position": "MID",
+        "team": "Newcastle",
+        "predicted_points": 52.460208892822266,
+        "uncertainty": 75.2,
+        "price": 4.4,
+        "age": 20.0,
+        "n_prior_seasons": 4
+      }
+    ],
+    "criterion": "age < 22 (from FPL API)",
+    "uncertainty_95": 75.2
+  },
+  "best_xi": {
+    "squad": [
+      {
+        "element_code": 141746,
+        "name": "Bruno Borges Fernandes",
+        "position": "MID",
+        "team": "Man United",
+        "predicted_points": 198.5,
+        "price": 10.4,
+        "is_starter": true,
+        "is_captain": true
+      },
+      {
+        "element_code": 244850,
+        "name": "Morgan Rogers",
+        "position": "MID",
+        "team": "Aston Villa",
+        "predicted_points": 171.3,
+        "price": 7.3,
+        "is_starter": true,
+        "is_captain": false
+      },
+      {
+        "element_code": 502500,
+        "name": "Igor Thiago Nascimento Rodrigues",
+        "position": "FWD",
+        "team": "Brentford",
+        "predicted_points": 167.2,
+        "price": 7.2,
+        "is_starter": true,
+        "is_captain": false
+      },
+      {
+        "element_code": 178186,
+        "name": "Jarrod Bowen",
+        "position": "FWD",
+        "team": "West Ham",
+        "predicted_points": 166.7,
+        "price": 7.8,
+        "is_starter": true,
+        "is_captain": false
+      },
+      {
+        "element_code": 448047,
+        "name": "Enzo Fernández",
+        "position": "MID",
+        "team": "Chelsea",
+        "predicted_points": 158.4,
+        "price": 6.5,
+        "is_starter": true,
+        "is_captain": false
+      },
+      {
+        "element_code": 178301,
+        "name": "Ollie Watkins",
+        "position": "FWD",
+        "team": "Aston Villa",
+        "predicted_points": 157.0,
+        "price": 8.7,
+        "is_starter": true,
+        "is_captain": false
+      },
+      {
+        "element_code": 209036,
+        "name": "Marc Guéhi",
+        "position": "DEF",
+        "team": "Man City",
+        "predicted_points": 150.8,
+        "price": 5.1,
+        "is_starter": true,
+        "is_captain": false
+      },
+      {
+        "element_code": 437730,
+        "name": "Antoine Semenyo",
+        "position": "MID",
+        "team": "Man City",
+        "predicted_points": 148.8,
+        "price": 8.0,
+        "is_starter": true,
+        "is_captain": false
+      },
+      {
+        "element_code": 222531,
+        "name": "Morgan Gibbs-White",
+        "position": "MID",
+        "team": "Nott'm Forest",
+        "predicted_points": 145.5,
+        "price": 7.6,
+        "is_starter": false,
+        "is_captain": false
+      },
+      {
+        "element_code": 445122,
+        "name": "Jurriën Timber",
+        "position": "DEF",
+        "team": "Arsenal",
+        "predicted_points": 129.0,
+        "price": 6.0,
+        "is_starter": true,
+        "is_captain": false
+      },
+      {
+        "element_code": 221466,
+        "name": "Marcos Senesi Barón",
+        "position": "DEF",
+        "team": "Bournemouth",
+        "predicted_points": 127.1,
+        "price": 5.2,
+        "is_starter": true,
+        "is_captain": false
+      },
+      {
+        "element_code": 172649,
+        "name": "Dean Henderson",
+        "position": "GK",
+        "team": "Crystal Palace",
+        "predicted_points": 124.1,
+        "price": 5.1,
+        "is_starter": true,
+        "is_captain": false
+      },
+      {
+        "element_code": 489639,
+        "name": "Bart Verbruggen",
+        "position": "GK",
+        "team": "Brighton",
+        "predicted_points": 124.0,
+        "price": 4.6,
+        "is_starter": false,
+        "is_captain": false
+      },
+      {
+        "element_code": 472769,
+        "name": "Nico O'Reilly",
+        "position": "DEF",
+        "team": "Man City",
+        "predicted_points": 123.6,
+        "price": 5.3,
+        "is_starter": false,
+        "is_captain": false
+      },
+      {
+        "element_code": 437499,
+        "name": "Maxence Lacroix",
+        "position": "DEF",
+        "team": "Crystal Palace",
+        "predicted_points": 118.3,
+        "price": 5.2,
+        "is_starter": false,
+        "is_captain": false
+      }
+    ],
+    "starting_xi": [
+      {
+        "element_code": 209036,
+        "name": "Marc Guéhi",
+        "position": "DEF",
+        "team": "Man City",
+        "predicted_points": 150.8,
+        "price": 5.1,
+        "is_captain": false
+      },
+      {
+        "element_code": 445122,
+        "name": "Jurriën Timber",
+        "position": "DEF",
+        "team": "Arsenal",
+        "predicted_points": 129.0,
+        "price": 6.0,
+        "is_captain": false
+      },
+      {
+        "element_code": 221466,
+        "name": "Marcos Senesi Barón",
+        "position": "DEF",
+        "team": "Bournemouth",
+        "predicted_points": 127.1,
+        "price": 5.2,
+        "is_captain": false
+      },
+      {
+        "element_code": 502500,
+        "name": "Igor Thiago Nascimento Rodrigues",
+        "position": "FWD",
+        "team": "Brentford",
+        "predicted_points": 167.2,
+        "price": 7.2,
+        "is_captain": false
+      },
+      {
+        "element_code": 178186,
+        "name": "Jarrod Bowen",
+        "position": "FWD",
+        "team": "West Ham",
+        "predicted_points": 166.7,
+        "price": 7.8,
+        "is_captain": false
+      },
+      {
+        "element_code": 178301,
+        "name": "Ollie Watkins",
+        "position": "FWD",
+        "team": "Aston Villa",
+        "predicted_points": 157.0,
+        "price": 8.7,
+        "is_captain": false
+      },
+      {
+        "element_code": 172649,
+        "name": "Dean Henderson",
+        "position": "GK",
+        "team": "Crystal Palace",
+        "predicted_points": 124.1,
+        "price": 5.1,
+        "is_captain": false
+      },
+      {
+        "element_code": 141746,
+        "name": "Bruno Borges Fernandes",
+        "position": "MID",
+        "team": "Man United",
+        "predicted_points": 198.5,
+        "price": 10.4,
+        "is_captain": true
+      },
+      {
+        "element_code": 244850,
+        "name": "Morgan Rogers",
+        "position": "MID",
+        "team": "Aston Villa",
+        "predicted_points": 171.3,
+        "price": 7.3,
+        "is_captain": false
+      },
+      {
+        "element_code": 448047,
+        "name": "Enzo Fernández",
+        "position": "MID",
+        "team": "Chelsea",
+        "predicted_points": 158.4,
+        "price": 6.5,
+        "is_captain": false
+      },
+      {
+        "element_code": 437730,
+        "name": "Antoine Semenyo",
+        "position": "MID",
+        "team": "Man City",
+        "predicted_points": 148.8,
+        "price": 8.0,
+        "is_captain": false
+      }
+    ],
+    "formation": "3-4-3",
+    "captain": {
+      "element_code": 141746,
+      "name": "Bruno Borges Fernandes",
+      "position": "MID",
+      "team": "Man United",
+      "predicted_points": 198.5,
+      "price": 10.4,
+      "is_starter": true,
+      "is_captain": true
+    },
+    "total_expected": 2210.2,
+    "total_price": 100.0,
+    "n_players": 15
+  },
+  "metrics": {
+    "model": "xgboost",
+    "mean_spearman": 0.689120189924899,
+    "per_fold": [
+      {
+        "mae": 30.32435837840503,
+        "rmse": 41.61651099693538,
+        "spearman": 0.667916754118977,
+        "n": 494,
+        "fold": 1,
+        "test_season": "2022-23",
+        "top10_overlap": 0.2,
+        "train_time_s": 0.2
+      },
+      {
+        "mae": 28.061241457085913,
+        "rmse": 39.369531981919756,
+        "spearman": 0.6460221287596634,
+        "n": 597,
+        "fold": 2,
+        "test_season": "2023-24",
+        "top10_overlap": 0.6,
+        "train_time_s": 0.1
+      },
+      {
+        "mae": 27.96419098273832,
+        "rmse": 38.22087293573991,
+        "spearman": 0.7246797545635,
+        "n": 588,
+        "fold": 3,
+        "test_season": "2024-25",
+        "top10_overlap": 0.3,
+        "train_time_s": 0.1
+      },
+      {
+        "mae": 27.753347623446757,
+        "rmse": 38.3500861184707,
+        "spearman": 0.7178621222574556,
+        "n": 605,
+        "fold": 4,
+        "test_season": "2025-26",
+        "top10_overlap": 0.2,
+        "train_time_s": 0.1
+      }
+    ]
+  }
+}
