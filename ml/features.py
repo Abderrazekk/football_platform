@@ -126,7 +126,7 @@ def load_matches() -> pd.DataFrame:
 
 
 # ---- Main builder ----------------------------------------------------------
-def build_features(matches: pd.DataFrame) -> pd.DataFrame:
+def build_features(matches: pd.DataFrame, return_state: bool = False) -> pd.DataFrame:
     """
     Produce a leak-free feature table.
 
@@ -352,7 +352,16 @@ def build_features(matches: pd.DataFrame) -> pd.DataFrame:
         season_played[(season, home)] += 1
         season_played[(season, away)] += 1
 
-    return pd.DataFrame(records)
+        df = pd.DataFrame(records)
+    if return_state:
+        return df, {
+            "elo": dict(elo),
+            "team_log": dict(team_log),
+            "h2h_log": dict(h2h_log),
+            "season_played": dict(season_played),
+            "squad_by_team": dict(squad_by_team),
+        }
+    return df
 
 
 # ---- Squad quality helper --------------------------------------------------

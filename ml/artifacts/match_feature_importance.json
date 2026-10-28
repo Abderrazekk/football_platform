@@ -1,0 +1,457 @@
+{
+  "method": "permutation_importance (n_repeats=10, scoring=neg_log_loss)",
+  "top_20": [
+    {
+      "feature": "elo_diff",
+      "importance_mean": 0.0327105614015921,
+      "importance_std": 0.0026399144685265905,
+      "rank": 1
+    },
+    {
+      "feature": "elo_home",
+      "importance_mean": 0.023164388252888402,
+      "importance_std": 0.0016393767333915035,
+      "rank": 2
+    },
+    {
+      "feature": "elo_away",
+      "importance_mean": 0.01653639082100463,
+      "importance_std": 0.0013769991686764947,
+      "rank": 3
+    },
+    {
+      "feature": "away_xg_for_5",
+      "importance_mean": 0.01338936500287965,
+      "importance_std": 0.0008543332863909901,
+      "rank": 4
+    },
+    {
+      "feature": "away_xg_against_5",
+      "importance_mean": 0.012003149341458597,
+      "importance_std": 0.0005706867548356166,
+      "rank": 5
+    },
+    {
+      "feature": "home_xg_against_5",
+      "importance_mean": 0.009826926276037883,
+      "importance_std": 0.00041237450420562714,
+      "rank": 6
+    },
+    {
+      "feature": "home_xg_for_5",
+      "importance_mean": 0.009332883384512247,
+      "importance_std": 0.0004946430826990215,
+      "rank": 7
+    },
+    {
+      "feature": "home_matches_played_all",
+      "importance_mean": 0.008749030579073447,
+      "importance_std": 0.000358775895133549,
+      "rank": 8
+    },
+    {
+      "feature": "away_gd_10",
+      "importance_mean": 0.007014090317218269,
+      "importance_std": 0.0005006939395015706,
+      "rank": 9
+    },
+    {
+      "feature": "home_gf_10",
+      "importance_mean": 0.006852254005511827,
+      "importance_std": 0.00017009292887632674,
+      "rank": 10
+    },
+    {
+      "feature": "home_squad_points_5",
+      "importance_mean": 0.006620531151154019,
+      "importance_std": 0.00033363695577580404,
+      "rank": 11
+    },
+    {
+      "feature": "home_points_10",
+      "importance_mean": 0.0064106025105280405,
+      "importance_std": 0.0002841934178263914,
+      "rank": 12
+    },
+    {
+      "feature": "home_gd_10",
+      "importance_mean": 0.006258910387516725,
+      "importance_std": 0.00035560136650392843,
+      "rank": 13
+    },
+    {
+      "feature": "away_squad_points_5",
+      "importance_mean": 0.006034263912702942,
+      "importance_std": 0.0004091484224444434,
+      "rank": 14
+    },
+    {
+      "feature": "home_gd_5",
+      "importance_mean": 0.005668263822319275,
+      "importance_std": 0.00018955728476066882,
+      "rank": 15
+    },
+    {
+      "feature": "away_matches_played_all",
+      "importance_mean": 0.004900794789947538,
+      "importance_std": 0.00014515115074165163,
+      "rank": 16
+    },
+    {
+      "feature": "away_gf_10",
+      "importance_mean": 0.004762629213502545,
+      "importance_std": 0.0003052227877785612,
+      "rank": 17
+    },
+    {
+      "feature": "away_ga_10",
+      "importance_mean": 0.004746339033417091,
+      "importance_std": 0.00019714660266979397,
+      "rank": 18
+    },
+    {
+      "feature": "h2h_avg_gd_home",
+      "importance_mean": 0.004572368221760858,
+      "importance_std": 0.00025894627575469645,
+      "rank": 19
+    },
+    {
+      "feature": "home_points_5",
+      "importance_mean": 0.004319768121925816,
+      "importance_std": 0.00021737887641908458,
+      "rank": 20
+    }
+  ],
+  "all_features_ranked": [
+    {
+      "feature": "elo_diff",
+      "importance_mean": 0.0327105614015921,
+      "importance_std": 0.0026399144685265905,
+      "rank": 1
+    },
+    {
+      "feature": "elo_home",
+      "importance_mean": 0.023164388252888402,
+      "importance_std": 0.0016393767333915035,
+      "rank": 2
+    },
+    {
+      "feature": "elo_away",
+      "importance_mean": 0.01653639082100463,
+      "importance_std": 0.0013769991686764947,
+      "rank": 3
+    },
+    {
+      "feature": "away_xg_for_5",
+      "importance_mean": 0.01338936500287965,
+      "importance_std": 0.0008543332863909901,
+      "rank": 4
+    },
+    {
+      "feature": "away_xg_against_5",
+      "importance_mean": 0.012003149341458597,
+      "importance_std": 0.0005706867548356166,
+      "rank": 5
+    },
+    {
+      "feature": "home_xg_against_5",
+      "importance_mean": 0.009826926276037883,
+      "importance_std": 0.00041237450420562714,
+      "rank": 6
+    },
+    {
+      "feature": "home_xg_for_5",
+      "importance_mean": 0.009332883384512247,
+      "importance_std": 0.0004946430826990215,
+      "rank": 7
+    },
+    {
+      "feature": "home_matches_played_all",
+      "importance_mean": 0.008749030579073447,
+      "importance_std": 0.000358775895133549,
+      "rank": 8
+    },
+    {
+      "feature": "away_gd_10",
+      "importance_mean": 0.007014090317218269,
+      "importance_std": 0.0005006939395015706,
+      "rank": 9
+    },
+    {
+      "feature": "home_gf_10",
+      "importance_mean": 0.006852254005511827,
+      "importance_std": 0.00017009292887632674,
+      "rank": 10
+    },
+    {
+      "feature": "home_squad_points_5",
+      "importance_mean": 0.006620531151154019,
+      "importance_std": 0.00033363695577580404,
+      "rank": 11
+    },
+    {
+      "feature": "home_points_10",
+      "importance_mean": 0.0064106025105280405,
+      "importance_std": 0.0002841934178263914,
+      "rank": 12
+    },
+    {
+      "feature": "home_gd_10",
+      "importance_mean": 0.006258910387516725,
+      "importance_std": 0.00035560136650392843,
+      "rank": 13
+    },
+    {
+      "feature": "away_squad_points_5",
+      "importance_mean": 0.006034263912702942,
+      "importance_std": 0.0004091484224444434,
+      "rank": 14
+    },
+    {
+      "feature": "home_gd_5",
+      "importance_mean": 0.005668263822319275,
+      "importance_std": 0.00018955728476066882,
+      "rank": 15
+    },
+    {
+      "feature": "away_matches_played_all",
+      "importance_mean": 0.004900794789947538,
+      "importance_std": 0.00014515115074165163,
+      "rank": 16
+    },
+    {
+      "feature": "away_gf_10",
+      "importance_mean": 0.004762629213502545,
+      "importance_std": 0.0003052227877785612,
+      "rank": 17
+    },
+    {
+      "feature": "away_ga_10",
+      "importance_mean": 0.004746339033417091,
+      "importance_std": 0.00019714660266979397,
+      "rank": 18
+    },
+    {
+      "feature": "h2h_avg_gd_home",
+      "importance_mean": 0.004572368221760858,
+      "importance_std": 0.00025894627575469645,
+      "rank": 19
+    },
+    {
+      "feature": "home_points_5",
+      "importance_mean": 0.004319768121925816,
+      "importance_std": 0.00021737887641908458,
+      "rank": 20
+    },
+    {
+      "feature": "away_away_ga_5",
+      "importance_mean": 0.003992549521991818,
+      "importance_std": 0.00020689151780713184,
+      "rank": 21
+    },
+    {
+      "feature": "away_matches_played_season",
+      "importance_mean": 0.0037943942753011608,
+      "importance_std": 0.00011701758617659988,
+      "rank": 22
+    },
+    {
+      "feature": "away_points_10",
+      "importance_mean": 0.003691137204355999,
+      "importance_std": 0.00020319756619178645,
+      "rank": 23
+    },
+    {
+      "feature": "away_wins_10",
+      "importance_mean": 0.0036322702002407835,
+      "importance_std": 0.00018849185594785038,
+      "rank": 24
+    },
+    {
+      "feature": "home_gf_5",
+      "importance_mean": 0.0034820727498458214,
+      "importance_std": 9.680386176355715e-05,
+      "rank": 25
+    },
+    {
+      "feature": "home_matches_played_season",
+      "importance_mean": 0.0033772451934494076,
+      "importance_std": 8.265835392358585e-05,
+      "rank": 26
+    },
+    {
+      "feature": "away_gd_5",
+      "importance_mean": 0.0033485909452326988,
+      "importance_std": 0.00020022258339902975,
+      "rank": 27
+    },
+    {
+      "feature": "home_home_gf_5",
+      "importance_mean": 0.0033249003187111993,
+      "importance_std": 0.00014914026238663602,
+      "rank": 28
+    },
+    {
+      "feature": "away_gf_5",
+      "importance_mean": 0.003221041735651109,
+      "importance_std": 0.00015588861766903722,
+      "rank": 29
+    },
+    {
+      "feature": "away_away_gf_5",
+      "importance_mean": 0.0031466019091036636,
+      "importance_std": 0.00012814969588063185,
+      "rank": 30
+    },
+    {
+      "feature": "gameweek_approx",
+      "importance_mean": 0.0031234693679323077,
+      "importance_std": 0.00011807564216730983,
+      "rank": 31
+    },
+    {
+      "feature": "home_home_ga_5",
+      "importance_mean": 0.0030715511236402483,
+      "importance_std": 0.00016068160475553631,
+      "rank": 32
+    },
+    {
+      "feature": "away_away_points_5",
+      "importance_mean": 0.002906166916334563,
+      "importance_std": 0.0001624497949199438,
+      "rank": 33
+    },
+    {
+      "feature": "home_ga_10",
+      "importance_mean": 0.0028740366373258054,
+      "importance_std": 0.00011777335889568591,
+      "rank": 34
+    },
+    {
+      "feature": "days_rest_away",
+      "importance_mean": 0.0025148318108069055,
+      "importance_std": 0.00015686743241964996,
+      "rank": 35
+    },
+    {
+      "feature": "home_home_points_5",
+      "importance_mean": 0.002500760103192312,
+      "importance_std": 0.00012102502803179421,
+      "rank": 36
+    },
+    {
+      "feature": "home_ga_5",
+      "importance_mean": 0.0024872234563747763,
+      "importance_std": 0.0001250662565964848,
+      "rank": 37
+    },
+    {
+      "feature": "away_points_5",
+      "importance_mean": 0.002448409746621727,
+      "importance_std": 0.00016284322994845803,
+      "rank": 38
+    },
+    {
+      "feature": "h2h_n",
+      "importance_mean": 0.0024061590609500195,
+      "importance_std": 0.00010019531377496369,
+      "rank": 39
+    },
+    {
+      "feature": "home_wins_10",
+      "importance_mean": 0.0023744959688041687,
+      "importance_std": 0.0001385079207713059,
+      "rank": 40
+    },
+    {
+      "feature": "away_ga_5",
+      "importance_mean": 0.002325923485560988,
+      "importance_std": 9.805796032811344e-05,
+      "rank": 41
+    },
+    {
+      "feature": "days_rest_home",
+      "importance_mean": 0.0022589778524497394,
+      "importance_std": 6.049525781679183e-05,
+      "rank": 42
+    },
+    {
+      "feature": "h2h_home_wins",
+      "importance_mean": 0.0016209738805280983,
+      "importance_std": 0.00014422331468379412,
+      "rank": 43
+    },
+    {
+      "feature": "home_wins_5",
+      "importance_mean": 0.0015680099611010134,
+      "importance_std": 9.467086385551064e-05,
+      "rank": 44
+    },
+    {
+      "feature": "h2h_away_wins",
+      "importance_mean": 0.0013547821699586792,
+      "importance_std": 7.160020075189722e-05,
+      "rank": 45
+    },
+    {
+      "feature": "home_home_wins_5",
+      "importance_mean": 0.0013543454318588055,
+      "importance_std": 7.984857982080675e-05,
+      "rank": 46
+    },
+    {
+      "feature": "away_wins_5",
+      "importance_mean": 0.001257240441085894,
+      "importance_std": 7.19850702269904e-05,
+      "rank": 47
+    },
+    {
+      "feature": "h2h_draws",
+      "importance_mean": 0.0011741270404635683,
+      "importance_std": 5.750836092200346e-05,
+      "rank": 48
+    },
+    {
+      "feature": "away_away_wins_5",
+      "importance_mean": 0.0011348889858691646,
+      "importance_std": 9.436570654395536e-05,
+      "rank": 49
+    },
+    {
+      "feature": "home_n_10",
+      "importance_mean": 0.00014587302764345055,
+      "importance_std": 3.483226463230493e-05,
+      "rank": 50
+    },
+    {
+      "feature": "away_n_10",
+      "importance_mean": 0.00013478529508872405,
+      "importance_std": 2.2359787212875043e-05,
+      "rank": 51
+    },
+    {
+      "feature": "early_season",
+      "importance_mean": 4.07018716083174e-05,
+      "importance_std": 1.171698713647364e-05,
+      "rank": 52
+    },
+    {
+      "feature": "home_n_5",
+      "importance_mean": 3.3266000224263516e-05,
+      "importance_std": 2.1719335005989996e-05,
+      "rank": 53
+    },
+    {
+      "feature": "away_n_5",
+      "importance_mean": 1.7863120913153006e-05,
+      "importance_std": 8.598529693260574e-06,
+      "rank": 54
+    },
+    {
+      "feature": "cold_start",
+      "importance_mean": 7.910399538257895e-06,
+      "importance_std": 4.520816744840953e-06,
+      "rank": 55
+    }
+  ]
+}
