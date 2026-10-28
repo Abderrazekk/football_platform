@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+{% block title %}Joueur du match — Stars{% endblock %}
+{% block content %}
+
+<h1 class="text-3xl font-bold mb-6">Joueur du match — Stars</h1>
+
+<form method="get" class="bg-white rounded-lg shadow p-4 mb-6">
+    <div class="grid md:grid-cols-3 gap-3 items-end">
+        <div>
+            <label class="block text-sm font-medium mb-1">Équipe à domicile</label>
+            <select name="home" class="w-full border border-slate-300 rounded px-3 py-2">
+                <option value="">— Choisir —</option>
+                {% for t in teams %}
+                    <option value="{{ t.name }}" {% if home == t.name %}selected{% endif %}>{{ t.name }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <div>
+            <label class="block text-sm font-medium mb-1">Équipe à l'extérieur</label>
+            <select name="away" class="w-full border border-slate-300 rounded px-3 py-2">
+                <option value="">— Choisir —</option>
+                {% for t in teams %}
+                    <option value="{{ t.name }}" {% if away == t.name %}selected{% endif %}>{{ t.name }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <div>
+            <button type="submit"
+                    class="w-full bg-emerald-500 hover:bg-emerald-600 text-white py-2 rounded font-medium">
+                Voir les stars
+            </button>
+        </div>
+    </div>
+</form>
+
+{% if ranking %}
+<p class="text-slate-600 mb-4">
+    {{ ranking.home_team }} vs {{ ranking.away_team }} —
+    {{ ranking.top_players|length }} joueurs classés par points attendus.
+</p>
+
+<div class="bg-white rounded-lg shadow overflow-hidden mb-6">
+    <table class="w-full text-sm">
+        <thead class="bg-slate-100 text-slate-600">
+            <tr>
+                <th class="text-center px-3 py-2 w-10">#</th>
+                <th class="text-left px-3 py-2">Joueur</th>
+                <th class="text-left px-3 py-2">Équipe</th>
+                <th class="text-center px-3 py-2">Poste</th>
+                <th class="text-right px-3 py-2">Min. moy.</th>
+                <th class="text-right px-3 py-2 font-bold">Points attendus</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for p in ranking.top_players %}
+                <tr class="border-t">
+                    <td class="text-center py-1.5 text-slate-500">{{ forloop.counter }}</td>
+                    <td class="px-3 py-1.5 font-medium">{{ p.player }}</td>
+                    <td class="px-3 py-1.5 text-slate-600">{{ p.team }}</td>
+                    <td class="px-3 py-1.5 text-center text-xs">{{ p.position }}</td>
+                    <td class="px-3 py-1.5 text-right text-slate-500">{{ p.minutes_roll5|floatformat:0 }}</td>
+                    <td class="px-3 py-1.5 text-right font-bold text-emerald-700">{{ p.expected_points|floatformat:2 }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+<p class="text-xs text-slate-500 italic">
+    Les points attendus sont une estimation statistique. La performance individuelle sur un match est très bruitée et ne garantit aucun résultat.
+</p>
+
+{% elif home and away and home != away %}
+<p class="text-slate-500">Classement indisponible.</p>
+{% endif %}
+
+{% endblock %}

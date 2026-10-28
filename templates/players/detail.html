@@ -1,0 +1,121 @@
+{% extends "base.html" %}
+{% block title %}{{ player.name }}{% endblock %}
+{% block content %}
+
+<div class="flex items-start justify-between mb-4">
+    <div>
+        <h1 class="text-3xl font-bold">{{ player.name }}</h1>
+        <p class="text-slate-600 mt-1">
+            {{ player.position }} · {{ player.current_team.name|default:"—" }}
+        </p>
+    </div>
+    <a href="{% url 'players:list' %}" class="text-slate-500 text-sm hover:underline">← Tous les joueurs</a>
+</div>
+
+{% if season_stats %}
+<div class="bg-white rounded-lg shadow p-4 mb-6">
+    <h2 class="font-semibold mb-3">Statistiques par saison</h2>
+    <table class="w-full text-sm">
+        <thead class="text-slate-500 text-left">
+            <tr>
+                <th class="py-1">Saison</th>
+                <th class="text-center">Min</th>
+                <th class="text-center">Buts</th>
+                <th class="text-center">Passes</th>
+                <th class="text-center">Clean sheets</th>
+                <th class="text-right">Points FPL</th>
+                <th class="text-right">Prix (£m)</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for s in season_stats %}
+            <tr class="border-t">
+                <td class="py-1.5">{{ s.season.label }}</td>
+                <td class="text-center">{{ s.minutes }}</td>
+                <td class="text-center">{{ s.goals_scored }}</td>
+                <td class="text-center">{{ s.assists }}</td>
+                <td class="text-center">{{ s.clean_sheets }}</td>
+                <td class="text-right font-semibold">{{ s.total_points }}</td>
+                <td class="text-right text-slate-500">{{ s.price_end|floatformat:1 }}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endif %}
+
+<div class="grid md:grid-cols-2 gap-6 mb-6">
+
+    <div class="bg-white rounded-lg shadow p-4">
+        <h2 class="font-semibold mb-3">15 dernières journées</h2>
+        {% if recent %}
+        <table class="w-full text-xs">
+            <thead class="text-slate-500 text-left">
+                <tr>
+                    <th class="py-1">Saison</th>
+                    <th class="text-center">GW</th>
+                    <th class="text-center">Min</th>
+                    <th class="text-right">Pts</th>
+                </tr>
+            </thead>
+            <tbody>
+            {% for gw in recent %}
+                <tr class="border-t">
+                    <td class="py-1">{{ gw.season.label }}</td>
+                    <td class="text-center">{{ gw.gameweek }}</td>
+                    <td class="text-center">{{ gw.minutes }}</td>
+                    <td class="text-right {% if gw.total_points >= 6 %}text-emerald-600 font-bold{% endif %}">
+                        {{ gw.total_points }}
+                    </td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+        {% else %}
+        <p class="text-slate-500 text-sm">Aucune donnée.</p>
+        {% endif %}
+    </div>
+
+    <div class="bg-white rounded-lg shadow p-4">
+        <h2 class="font-semibold mb-3">Prédire pour un match</h2>
+        {% if player.element_code %}
+        <form method="get" class="space-y-3">
+            <div>
+                <label class="block text-sm font-medium mb-1">Adversaire</label>
+                <select name="opponent" class="w-full border border-slate-300 rounded px-3 py-2">
+                    <option value="">— Choisir —</option>
+                    {% for t in teams %}
+                        <option value="{{ t.name }}" {% if opponent == t.name %}selected{% endif %}>{{ t.name }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div>
+                <label class="block text-sm font-medium mb-1">Lieu</label>
+                <select name="was_home" class="w-full border border-slate-300 rounded px-3 py-2">
+                    <option value="1" {% if was_home %}selected{% endif %}>Domicile</option>
+                    <option value="0" {% if not was_home %}selected{% endif %}>Extérieur</option>
+                </select>
+            </div>
+            <button type="submit"
+                    class="w-full bg-emerald-500 hover:bg-emerald-600 text-white py-2 rounded font-medium">
+                Prédire les points
+            </button>
+        </form>
+
+        {% if prediction %}
+        <div class="mt-4 p-4 bg-emerald-50 border border-emerald-200 rounded text-center">
+            <div class="text-xs text-slate-600 mb-1">Points attendus</div>
+            <div class="text-4xl font-bold text-emerald-700">{{ prediction.expected_points }}</div>
+            <div class="text-xs text-slate-500 mt-2">
+                Estimation — variance individuelle élevée.
+            </div>
+        </div>
+        {% endif %}
+        {% else %}
+        <p class="text-slate-500 text-sm">Ce joueur n'a pas d'identifiant FPL (impossible de prédire).</p>
+        {% endif %}
+    </div>
+
+</div>
+
+{% endblock %}

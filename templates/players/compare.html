@@ -1,0 +1,118 @@
+{% extends "base.html" %}
+{% block title %}Comparer deux joueurs{% endblock %}
+{% block content %}
+
+<h1 class="text-3xl font-bold mb-6">Comparer deux joueurs</h1>
+
+<form method="get" class="bg-white rounded-lg shadow p-4 mb-6">
+    <div class="grid md:grid-cols-4 gap-3 items-end">
+        <div>
+            <label class="block text-sm font-medium mb-1">Joueur A</label>
+            <select name="a" class="w-full border border-slate-300 rounded px-3 py-2">
+                <option value="">— Choisir —</option>
+                {% for p in players %}
+                    <option value="{{ p.pk }}" {% if player_a and player_a.pk == p.pk %}selected{% endif %}>
+                        {{ p.name }} ({{ p.position }}, {{ p.current_team.name|default:"—" }})
+                    </option>
+                {% endfor %}
+            </select>
+        </div>
+        <div>
+            <label class="block text-sm font-medium mb-1">Joueur B</label>
+            <select name="b" class="w-full border border-slate-300 rounded px-3 py-2">
+                <option value="">— Choisir —</option>
+                {% for p in players %}
+                    <option value="{{ p.pk }}" {% if player_b and player_b.pk == p.pk %}selected{% endif %}>
+                        {{ p.name }} ({{ p.position }}, {{ p.current_team.name|default:"—" }})
+                    </option>
+                {% endfor %}
+            </select>
+        </div>
+        <div>
+            <label class="block text-sm font-medium mb-1">Adversaire (opt.)</label>
+            <select name="opponent" class="w-full border border-slate-300 rounded px-3 py-2">
+                <option value="">— Aucun —</option>
+                {% for t in teams %}
+                    <option value="{{ t.name }}" {% if opponent == t.name %}selected{% endif %}>{{ t.name }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <div>
+            <button type="submit"
+                    class="w-full bg-emerald-500 hover:bg-emerald-600 text-white py-2 rounded font-medium">
+                Comparer
+            </button>
+        </div>
+    </div>
+</form>
+
+{% if data %}
+{% with a=data.a b=data.b %}
+<div class="grid md:grid-cols-2 gap-6">
+    <div class="bg-white rounded-lg shadow p-4">
+        <h2 class="font-semibold text-emerald-700">{{ a.player.name }}</h2>
+        <p class="text-xs text-slate-500 mb-3">
+            {{ a.player.position }} · {{ a.player.current_team.name|default:"—" }}
+        </p>
+        <table class="w-full text-sm">
+            <tbody>
+                <tr class="border-t"><td class="py-1.5 text-slate-500">Saison</td>
+                    <td class="text-right">{{ a.season_agg.season.label|default:"—" }}</td></tr>
+                <tr class="border-t"><td class="py-1.5 text-slate-500">Points (saison)</td>
+                    <td class="text-right font-semibold">{{ a.season_agg.total_points|default:"—" }}</td></tr>
+                <tr class="border-t"><td class="py-1.5 text-slate-500">Moyenne 5 derniers</td>
+                    <td class="text-right">{{ a.recent_avg|default:"—" }}</td></tr>
+                {% if a.prediction %}
+                <tr class="border-t"><td class="py-1.5 text-slate-500 font-semibold">Points attendus vs {{ data.opponent }}</td>
+                    <td class="text-right font-bold text-emerald-600">{{ a.prediction.expected_points }}</td></tr>
+                {% endif %}
+            </tbody>
+        </table>
+    </div>
+
+    <div class="bg-white rounded-lg shadow p-4">
+        <h2 class="font-semibold text-blue-700">{{ b.player.name }}</h2>
+        <p class="text-xs text-slate-500 mb-3">
+            {{ b.player.position }} · {{ b.player.current_team.name|default:"—" }}
+        </p>
+        <table class="w-full text-sm">
+            <tbody>
+                <tr class="border-t"><td class="py-1.5 text-slate-500">Saison</td>
+                    <td class="text-right">{{ b.season_agg.season.label|default:"—" }}</td></tr>
+                <tr class="border-t"><td class="py-1.5 text-slate-500">Points (saison)</td>
+                    <td class="text-right font-semibold">{{ b.season_agg.total_points|default:"—" }}</td></tr>
+                <tr class="border-t"><td class="py-1.5 text-slate-500">Moyenne 5 derniers</td>
+                    <td class="text-right">{{ b.recent_avg|default:"—" }}</td></tr>
+                {% if b.prediction %}
+                <tr class="border-t"><td class="py-1.5 text-slate-500 font-semibold">Points attendus vs {{ data.opponent }}</td>
+                    <td class="text-right font-bold text-blue-600">{{ b.prediction.expected_points }}</td></tr>
+                {% endif %}
+            </tbody>
+        </table>
+    </div>
+</div>
+
+{% if a.prediction and b.prediction %}
+<div class="mt-6 p-4 bg-amber-50 border border-amber-200 rounded text-center">
+    <div class="text-sm text-slate-600">Joueur le plus performant attendu</div>
+    <div class="text-2xl font-bold mt-1">
+        {% if a.prediction.expected_points > b.prediction.expected_points %}
+            {{ a.player.name }}
+        {% elif b.prediction.expected_points > a.prediction.expected_points %}
+            {{ b.player.name }}
+        {% else %}
+            Égalité
+        {% endif %}
+    </div>
+    <div class="text-xs text-slate-500 mt-1">
+        Estimation basée sur les performances récentes et la force de l'adversaire. Variance individuelle élevée.
+    </div>
+</div>
+{% endif %}
+
+{% endwith %}
+{% elif player_a and player_b %}
+<p class="text-slate-500">Sélectionnez deux joueurs différents.</p>
+{% endif %}
+
+{% endblock %}

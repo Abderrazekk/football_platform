@@ -1,0 +1,498 @@
+{
+  "generated_at": "2026-10-28T19:13:33.932195+00:00",
+  "n_features": 26,
+  "folds": [
+    {
+      "train": [
+        "2020-21",
+        "2021-22"
+      ],
+      "test": "2022-23"
+    },
+    {
+      "train": [
+        "2020-21",
+        "2021-22",
+        "2022-23"
+      ],
+      "test": "2023-24"
+    },
+    {
+      "train": [
+        "2020-21",
+        "2021-22",
+        "2022-23",
+        "2023-24"
+      ],
+      "test": "2024-25"
+    },
+    {
+      "train": [
+        "2020-21",
+        "2021-22",
+        "2022-23",
+        "2023-24",
+        "2024-25"
+      ],
+      "test": "2025-26"
+    }
+  ],
+  "baselines": {
+    "last_gw": {
+      "mae": {
+        "mean": 1.1893355499996416,
+        "std": 0.062077750272121146,
+        "n": 4
+      },
+      "rmse": {
+        "mean": 2.6289240884062193,
+        "std": 0.05181832829151647,
+        "n": 4
+      },
+      "spearman": {
+        "mean": 0.6716857312408394,
+        "std": 0.02269102846578236,
+        "n": 4
+      },
+      "ranking": {
+        "top1_mean": 0.09144736842105262,
+        "top3_mean": 0.24144736842105263
+      },
+      "per_fold": [
+        {
+          "mae": 1.2457764782326186,
+          "rmse": 2.677700127480587,
+          "spearman": 0.6589636870094298,
+          "n": 24624,
+          "fold": 1,
+          "test_season": "2022-23",
+          "ranking": {
+            "matches_evaluated": 380,
+            "top1_hit_rate": 0.09210526315789473,
+            "top3_hit_rate": 0.25
+          }
+        },
+        {
+          "mae": 1.1007265073329713,
+          "rmse": 2.5577058165468967,
+          "spearman": 0.6559534543750962,
+          "n": 29456,
+          "fold": 2,
+          "test_season": "2023-24",
+          "ranking": {
+            "matches_evaluated": 380,
+            "top1_hit_rate": 0.07368421052631578,
+            "top3_hit_rate": 0.2131578947368421
+          }
+        },
+        {
+          "mae": 1.2072093867182776,
+          "rmse": 2.6268702980159264,
+          "spearman": 0.6668017801112774,
+          "n": 24801,
+          "fold": 3,
+          "test_season": "2024-25",
+          "ranking": {
+            "matches_evaluated": 380,
+            "top1_hit_rate": 0.10789473684210527,
+            "top3_hit_rate": 0.2631578947368421
+          }
+        },
+        {
+          "mae": 1.203629827714699,
+          "rmse": 2.653420111581466,
+          "spearman": 0.7050240034675542,
+          "n": 22811,
+          "fold": 4,
+          "test_season": "2025-26",
+          "ranking": {
+            "matches_evaluated": 380,
+            "top1_hit_rate": 0.09210526315789473,
+            "top3_hit_rate": 0.2394736842105263
+          }
+        }
+      ]
+    },
+    "rolling5": {
+      "mae": {
+        "mean": 1.0911818257703318,
+        "std": 0.062349034174604745,
+        "n": 4
+      },
+      "rmse": {
+        "mean": 2.1358103279484237,
+        "std": 0.05237602337539837,
+        "n": 4
+      },
+      "spearman": {
+        "mean": 0.68787162749095,
+        "std": 0.015528725586330802,
+        "n": 4
+      },
+      "ranking": {
+        "top1_mean": 0.1256578947368421,
+        "top3_mean": 0.30657894736842106
+      },
+      "per_fold": [
+        {
+          "mae": 1.1533463287849253,
+          "rmse": 2.1829847347557743,
+          "spearman": 0.6748804045641296,
+          "n": 24624,
+          "fold": 1,
+          "test_season": "2022-23",
+          "ranking": {
+            "matches_evaluated": 380,
+            "top1_hit_rate": 0.11578947368421053,
+            "top3_hit_rate": 0.3105263157894737
+          }
+        },
+        {
+          "mae": 1.0048428164041283,
+          "rmse": 2.0674774378569256,
+          "spearman": 0.6787275628066085,
+          "n": 29456,
+          "fold": 2,
+          "test_season": "2023-24",
+          "ranking": {
+            "matches_evaluated": 380,
+            "top1_hit_rate": 0.11842105263157894,
+            "top3_hit_rate": 0.3078947368421053
+          }
+        },
+        {
+          "mae": 1.0982117656546106,
+          "rmse": 2.1228195224910973,
+          "spearman": 0.6883078865300366,
+          "n": 24801,
+          "fold": 3,
+          "test_season": "2024-25",
+          "ranking": {
+            "matches_evaluated": 380,
+            "top1_hit_rate": 0.1631578947368421,
+            "top3_hit_rate": 0.32894736842105265
+          }
+        },
+        {
+          "mae": 1.1083263922376632,
+          "rmse": 2.169959616689898,
+          "spearman": 0.7095706560630254,
+          "n": 22811,
+          "fold": 4,
+          "test_season": "2025-26",
+          "ranking": {
+            "matches_evaluated": 380,
+            "top1_hit_rate": 0.10526315789473684,
+            "top3_hit_rate": 0.2789473684210526
+          }
+        }
+      ]
+    }
+  },
+  "models": {
+    "ridge": {
+      "mae": {
+        "mean": 1.0931943520880387,
+        "std": 0.0346169562355109,
+        "n": 4
+      },
+      "rmse": {
+        "mean": 1.996071867134702,
+        "std": 0.042957255901426725,
+        "n": 4
+      },
+      "spearman": {
+        "mean": 0.6668636521496852,
+        "std": 0.01698431005877638,
+        "n": 4
+      },
+      "ranking": {
+        "top1_mean": 0.17171052631578948,
+        "top3_mean": 0.356578947368421
+      },
+      "per_fold": [
+        {
+          "mae": 1.1266131964532269,
+          "rmse": 2.0363734243911376,
+          "spearman": 0.6664206253649412,
+          "n": 24624,
+          "fold": 1,
+          "test_season": "2022-23",
+          "ranking": {
+            "matches_evaluated": 380,
+            "top1_hit_rate": 0.15526315789473685,
+            "top3_hit_rate": 0.34210526315789475
+          },
+          "best_params": {
+            "reg__alpha": 5.0
+          },
+          "train_time_s": 1.5
+        },
+        {
+          "mae": 1.0451217564035173,
+          "rmse": 1.940679690711186,
+          "spearman": 0.6440564349849434,
+          "n": 29456,
+          "fold": 2,
+          "test_season": "2023-24",
+          "ranking": {
+            "matches_evaluated": 380,
+            "top1_hit_rate": 0.15789473684210525,
+            "top3_hit_rate": 0.3684210526315789
+          },
+          "best_params": {
+            "reg__alpha": 5.0
+          },
+          "train_time_s": 2.0
+        },
+        {
+          "mae": 1.1059911979769328,
+          "rmse": 1.9845173680269044,
+          "spearman": 0.6723753456619793,
+          "n": 24801,
+          "fold": 3,
+          "test_season": "2024-25",
+          "ranking": {
+            "matches_evaluated": 380,
+            "top1_hit_rate": 0.2131578947368421,
+            "top3_hit_rate": 0.38421052631578945
+          },
+          "best_params": {
+            "reg__alpha": 5.0
+          },
+          "train_time_s": 2.6
+        },
+        {
+          "mae": 1.0950512575184776,
+          "rmse": 2.0227169854095797,
+          "spearman": 0.684602202586877,
+          "n": 22811,
+          "fold": 4,
+          "test_season": "2025-26",
+          "ranking": {
+            "matches_evaluated": 380,
+            "top1_hit_rate": 0.16052631578947368,
+            "top3_hit_rate": 0.33157894736842103
+          },
+          "best_params": {
+            "reg__alpha": 5.0
+          },
+          "train_time_s": 3.1
+        }
+      ]
+    },
+    "rf": {
+      "mae": {
+        "mean": 1.044638489032633,
+        "std": 0.04656101732315035,
+        "n": 4
+      },
+      "rmse": {
+        "mean": 1.9881895696622598,
+        "std": 0.046792193390905464,
+        "n": 4
+      },
+      "spearman": {
+        "mean": 0.6911047591401155,
+        "std": 0.013235488700038048,
+        "n": 4
+      },
+      "ranking": {
+        "top1_mean": 0.1710526315789474,
+        "top3_mean": 0.35855263157894735
+      },
+      "per_fold": [
+        {
+          "mae": 1.0960564114356957,
+          "rmse": 2.033412120586722,
+          "spearman": 0.685571169205123,
+          "n": 24624,
+          "fold": 1,
+          "test_season": "2022-23",
+          "ranking": {
+            "matches_evaluated": 380,
+            "top1_hit_rate": 0.15263157894736842,
+            "top3_hit_rate": 0.32105263157894737
+          },
+          "best_params": {
+            "reg__max_depth": 15,
+            "reg__min_samples_leaf": 30
+          },
+          "train_time_s": 18.7
+        },
+        {
+          "mae": 0.9842122510770004,
+          "rmse": 1.9268796301743192,
+          "spearman": 0.6767105503998548,
+          "n": 29456,
+          "fold": 2,
+          "test_season": "2023-24",
+          "ranking": {
+            "matches_evaluated": 380,
+            "top1_hit_rate": 0.16842105263157894,
+            "top3_hit_rate": 0.37894736842105264
+          },
+          "best_params": {
+            "reg__max_depth": 15,
+            "reg__min_samples_leaf": 30
+          },
+          "train_time_s": 35.0
+        },
+        {
+          "mae": 1.0583099024024607,
+          "rmse": 1.978412794541245,
+          "spearman": 0.6943917564813462,
+          "n": 24801,
+          "fold": 3,
+          "test_season": "2024-25",
+          "ranking": {
+            "matches_evaluated": 380,
+            "top1_hit_rate": 0.2,
+            "top3_hit_rate": 0.3684210526315789
+          },
+          "best_params": {
+            "reg__max_depth": null,
+            "reg__min_samples_leaf": 30
+          },
+          "train_time_s": 56.1
+        },
+        {
+          "mae": 1.0399753912153755,
+          "rmse": 2.014053733346753,
+          "spearman": 0.7077455604741378,
+          "n": 22811,
+          "fold": 4,
+          "test_season": "2025-26",
+          "ranking": {
+            "matches_evaluated": 380,
+            "top1_hit_rate": 0.1631578947368421,
+            "top3_hit_rate": 0.36578947368421055
+          },
+          "best_params": {
+            "reg__max_depth": null,
+            "reg__min_samples_leaf": 30
+          },
+          "train_time_s": 77.6
+        }
+      ]
+    },
+    "xgboost": {
+      "mae": {
+        "mean": 1.045522937607098,
+        "std": 0.05487000137790676,
+        "n": 4
+      },
+      "rmse": {
+        "mean": 2.000608409163106,
+        "std": 0.05274700558775216,
+        "n": 4
+      },
+      "spearman": {
+        "mean": 0.6887400832790576,
+        "std": 0.015809319835284042,
+        "n": 4
+      },
+      "ranking": {
+        "top1_mean": 0.15526315789473685,
+        "top3_mean": 0.35197368421052627
+      },
+      "per_fold": [
+        {
+          "mae": 1.1102686461687,
+          "rmse": 2.063374026025822,
+          "spearman": 0.678306786832637,
+          "n": 24624,
+          "fold": 1,
+          "test_season": "2022-23",
+          "ranking": {
+            "matches_evaluated": 380,
+            "top1_hit_rate": 0.12105263157894737,
+            "top3_hit_rate": 0.29473684210526313
+          },
+          "best_params": {
+            "reg__learning_rate": 0.1,
+            "reg__max_depth": 6
+          },
+          "train_time_s": 2.6
+        },
+        {
+          "mae": 0.977448488097146,
+          "rmse": 1.9356755224735616,
+          "spearman": 0.6734440983875026,
+          "n": 29456,
+          "fold": 2,
+          "test_season": "2023-24",
+          "ranking": {
+            "matches_evaluated": 380,
+            "top1_hit_rate": 0.17894736842105263,
+            "top3_hit_rate": 0.36578947368421055
+          },
+          "best_params": {
+            "reg__learning_rate": 0.1,
+            "reg__max_depth": 4
+          },
+          "train_time_s": 3.1
+        },
+        {
+          "mae": 1.057199137141364,
+          "rmse": 1.9919815128815377,
+          "spearman": 0.6954409185756713,
+          "n": 24801,
+          "fold": 3,
+          "test_season": "2024-25",
+          "ranking": {
+            "matches_evaluated": 380,
+            "top1_hit_rate": 0.17105263157894737,
+            "top3_hit_rate": 0.4
+          },
+          "best_params": {
+            "reg__learning_rate": 0.1,
+            "reg__max_depth": 6
+          },
+          "train_time_s": 4.3
+        },
+        {
+          "mae": 1.037175479021182,
+          "rmse": 2.011402575271503,
+          "spearman": 0.707768529320419,
+          "n": 22811,
+          "fold": 4,
+          "test_season": "2025-26",
+          "ranking": {
+            "matches_evaluated": 380,
+            "top1_hit_rate": 0.15,
+            "top3_hit_rate": 0.3473684210526316
+          },
+          "best_params": {
+            "reg__learning_rate": 0.1,
+            "reg__max_depth": 4
+          },
+          "train_time_s": 5.1
+        }
+      ]
+    }
+  },
+  "final_model": {
+    "name": "rf",
+    "best_params": {
+      "reg__max_depth": null,
+      "reg__min_samples_leaf": 30
+    },
+    "training_seasons": [
+      "2020-21",
+      "2021-22",
+      "2022-23",
+      "2023-24",
+      "2024-25",
+      "2025-26"
+    ],
+    "n_train_rows": 148022,
+    "trained_at": "2026-10-28T19:13:33.932195+00:00",
+    "versions": {
+      "sklearn": "1.9.1",
+      "xgboost": "3.4.1",
+      "pandas": "3.1.0",
+      "numpy": "2.5.4"
+    }
+  }
+}

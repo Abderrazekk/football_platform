@@ -275,7 +275,7 @@ def predict_match(home_team: str, away_team: str, date=None) -> dict:
 
     # Resolve date to a tz-aware UTC Timestamp
     if date is None:
-        match_date = pd.Timestamp.utcnow()
+        match_date = pd.Timestamp.now(tz="UTC")
     else:
         match_date = pd.Timestamp(date)
         if match_date.tz is None:

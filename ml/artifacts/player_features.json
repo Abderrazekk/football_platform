@@ -1,0 +1,58 @@
+{
+  "features": [
+    "was_home",
+    "price",
+    "gameweek",
+    "minutes_roll3",
+    "minutes_roll5",
+    "total_points_roll3",
+    "total_points_roll5",
+    "bps_roll3",
+    "bps_roll5",
+    "goals_scored_roll3",
+    "goals_scored_roll5",
+    "assists_roll3",
+    "assists_roll5",
+    "xg_roll3",
+    "xg_roll5",
+    "xa_roll3",
+    "xa_roll5",
+    "has_xg",
+    "team_elo",
+    "opp_elo",
+    "elo_diff",
+    "days_rest",
+    "pos_GK",
+    "pos_DEF",
+    "pos_MID",
+    "pos_FWD"
+  ],
+  "target": "total_points",
+  "final_model": {
+    "name": "rf",
+    "best_params": {
+      "reg__max_depth": null,
+      "reg__min_samples_leaf": 30
+    },
+    "training_seasons": [
+      "2020-21",
+      "2021-22",
+      "2022-23",
+      "2023-24",
+      "2024-25",
+      "2025-26"
+    ],
+    "n_train_rows": 148022,
+    "trained_at": "2026-10-28T19:13:33.932195+00:00",
+    "versions": {
+      "sklearn": "1.9.1",
+      "xgboost": "3.4.1",
+      "pandas": "3.1.0",
+      "numpy": "2.5.4"
+    }
+  },
+  "baselines": {
+    "last_gameweek": "predict total_points_shift1 (fallback 2.0 if NaN)",
+    "rolling_5": "predict total_points_roll5 (fallback 2.0 if NaN)"
+  }
+}
