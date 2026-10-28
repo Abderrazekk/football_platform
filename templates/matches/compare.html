@@ -1,0 +1,114 @@
+{% extends "base.html" %}
+{% block title %}Comparer deux équipes{% endblock %}
+{% block content %}
+
+<h1 class="text-3xl font-bold mb-6">Comparer deux équipes</h1>
+
+<form method="get" class="bg-white rounded-lg shadow p-4 mb-6">
+    <div class="grid md:grid-cols-3 gap-3 items-end">
+        <div>
+            <label class="block text-sm font-medium mb-1">Équipe A</label>
+            <select name="a" class="w-full border border-slate-300 rounded px-3 py-2">
+                <option value="">— Choisir —</option>
+                {% for t in teams %}
+                    <option value="{{ t.name }}" {% if a == t.name %}selected{% endif %}>{{ t.name }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <div>
+            <label class="block text-sm font-medium mb-1">Équipe B</label>
+            <select name="b" class="w-full border border-slate-300 rounded px-3 py-2">
+                <option value="">— Choisir —</option>
+                {% for t in teams %}
+                    <option value="{{ t.name }}" {% if b == t.name %}selected{% endif %}>{{ t.name }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <div>
+            <button type="submit"
+                    class="w-full bg-emerald-500 hover:bg-emerald-600 text-white py-2 rounded font-medium">
+                Comparer
+            </button>
+        </div>
+    </div>
+</form>
+
+{% if data %}
+<div class="grid md:grid-cols-2 gap-6">
+    <div class="bg-white rounded-lg shadow p-4">
+        <h2 class="font-semibold mb-3">Radar comparatif</h2>
+        <canvas id="radar-chart" height="280"></canvas>
+    </div>
+    <div class="bg-white rounded-lg shadow p-4">
+        <h2 class="font-semibold mb-3">Statistiques</h2>
+        <table class="w-full text-sm">
+            <thead class="text-slate-500 text-left">
+                <tr><th>Métrique</th>
+                    <th class="text-right">{{ data.team_a.name }}</th>
+                    <th class="text-right">{{ data.team_b.name }}</th></tr>
+            </thead>
+            <tbody>
+                <tr class="border-t"><td class="py-1.5">Attaque (buts/match)</td>
+                    <td class="text-right">{{ data.team_a.attack }}</td>
+                    <td class="text-right">{{ data.team_b.attack }}</td></tr>
+                <tr class="border-t"><td class="py-1.5">Défense (buts encaissés/match)</td>
+                    <td class="text-right">{{ data.team_a.defense }}</td>
+                    <td class="text-right">{{ data.team_b.defense }}</td></tr>
+                <tr class="border-t"><td class="py-1.5">Forme (pts/match)</td>
+                    <td class="text-right">{{ data.team_a.form }}</td>
+                    <td class="text-right">{{ data.team_b.form }}</td></tr>
+                <tr class="border-t"><td class="py-1.5">Elo</td>
+                    <td class="text-right">{{ data.team_a.elo|floatformat:0 }}</td>
+                    <td class="text-right">{{ data.team_b.elo|floatformat:0 }}</td></tr>
+                <tr class="border-t"><td class="py-1.5">Victoires domicile</td>
+                    <td class="text-right">{{ data.team_a.home_win_rate }}</td>
+                    <td class="text-right">{{ data.team_b.home_win_rate }}</td></tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+{{ radar|json_script:"radar-data" }}
+{{ data|json_script:"compare-meta" }}
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+(() => {
+    const radar = JSON.parse(document.getElementById('radar-data').textContent);
+    const meta = JSON.parse(document.getElementById('compare-meta').textContent);
+    const labels = ['Attaque', 'Défense', 'Forme', 'Elo', 'Victoires dom.'];
+    const toArr = (s) => [s.attack, s.defense, s.form, s.elo, s.home_wins];
+
+    new Chart(document.getElementById('radar-chart'), {
+        type: 'radar',
+        data: {
+            labels: labels,
+            datasets: [
+                {
+                    label: meta.team_a.name,
+                    data: toArr(radar.team_a),
+                    backgroundColor: 'rgba(16,185,129,.2)',
+                    borderColor: '#10b981',
+                    pointBackgroundColor: '#10b981',
+                },
+                {
+                    label: meta.team_b.name,
+                    data: toArr(radar.team_b),
+                    backgroundColor: 'rgba(59,130,246,.2)',
+                    borderColor: '#3b82f6',
+                    pointBackgroundColor: '#3b82f6',
+                },
+            ]
+        },
+        options: {
+            scales: {
+                r: { suggestedMin: 0, suggestedMax: 100, ticks: { display: false } }
+            }
+        }
+    });
+})();
+</script>
+{% elif a and b %}
+<p class="text-slate-500">Équipes introuvables.</p>
+{% endif %}
+
+{% endblock %}

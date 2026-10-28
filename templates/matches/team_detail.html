@@ -1,0 +1,84 @@
+{% extends "base.html" %}
+{% block title %}{{ team.name }}{% endblock %}
+{% block content %}
+
+<h1 class="text-3xl font-bold mb-1">{{ team.name }}</h1>
+<a href="{% url 'matches:teams_list' %}" class="text-slate-500 text-sm hover:underline">← Toutes les équipes</a>
+
+{% if history %}
+<div class="grid md:grid-cols-2 gap-4 mt-6 mb-8">
+    <div class="bg-white rounded-lg shadow p-4">
+        <h2 class="font-semibold mb-2">Historique par saison</h2>
+        <table class="w-full text-sm">
+            <thead class="text-slate-500 text-left">
+                <tr><th>Saison</th><th class="text-center">J</th><th class="text-center">V</th><th class="text-center">N</th><th class="text-center">D</th><th class="text-right">Pts</th></tr>
+            </thead>
+            <tbody>
+                {% for s in history %}
+                <tr class="border-t">
+                    <td class="py-1">{{ s.season }}</td>
+                    <td class="text-center">{{ s.played }}</td>
+                    <td class="text-center">{{ s.wins }}</td>
+                    <td class="text-center">{{ s.draws }}</td>
+                    <td class="text-center">{{ s.losses }}</td>
+                    <td class="text-right font-semibold">{{ s.points }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+    <div class="bg-white rounded-lg shadow p-4">
+        <h2 class="font-semibold mb-2">Forme récente</h2>
+        <div class="flex flex-wrap gap-1 mb-2">
+            {% for m in form %}
+                <span class="w-7 h-7 flex items-center justify-center rounded text-xs font-bold text-white
+                    {% if m.outcome == 'W' %}bg-emerald-500{% elif m.outcome == 'D' %}bg-slate-400{% else %}bg-red-500{% endif %}"
+                    title="{{ m.date|date:'d/m/Y' }} vs {{ m.opponent }} ({{ m.goals_for }}-{{ m.goals_against }})">
+                    {{ m.outcome }}
+                </span>
+            {% empty %}
+                <span class="text-slate-500 text-sm">Aucun match enregistré.</span>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+{% if elo_series %}
+<div class="bg-white rounded-lg shadow p-4 mb-8">
+    <h2 class="font-semibold mb-3">Évolution du classement Elo (20 derniers matchs)</h2>
+    <canvas id="elo-chart" height="80"></canvas>
+</div>
+{{ elo_series|json_script:"elo-data" }}
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+(() => {
+    const data = JSON.parse(document.getElementById('elo-data').textContent);
+    const labels = data.map(d => d.date);
+    const values = data.map(d => d.elo);
+    new Chart(document.getElementById('elo-chart'), {
+        type: 'line',
+        data: {
+            labels: labels,
+            datasets: [{
+                label: 'Elo',
+                data: values,
+                borderColor: '#10b981',
+                backgroundColor: 'rgba(16,185,129,.15)',
+                tension: 0.25,
+                fill: true,
+                pointRadius: 2,
+            }]
+        },
+        options: {
+            plugins: { legend: { display: false } },
+            scales: { y: { suggestedMin: 1300, suggestedMax: 1800 } }
+        }
+    });
+})();
+</script>
+{% endif %}
+
+{% endif %}
+
+{% endblock %}

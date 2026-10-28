@@ -1,0 +1,150 @@
+{% extends "base.html" %}
+{% block title %}Performance du modèle{% endblock %}
+{% block content %}
+
+<h1 class="text-3xl font-bold mb-2">Performance du modèle</h1>
+<p class="text-slate-600 mb-6">
+    Métriques walk-forward — entraînement temporel strict, aucune information future utilisée.
+</p>
+
+{% if not metrics %}
+<div class="bg-yellow-50 border border-yellow-300 text-yellow-900 rounded p-4">
+    Métriques indisponibles. Lancez <code>python -m ml.train_match_model</code>.
+</div>
+{% else %}
+
+{# ---------- Baselines + Models summary ---------- #}
+<div class="grid md:grid-cols-2 gap-6 mb-8">
+    <div class="bg-white rounded-lg shadow p-4">
+        <h2 class="font-semibold mb-3">Baselines (moy. folds 1-4)</h2>
+        <table class="w-full text-sm">
+            <thead class="text-slate-500 text-left">
+                <tr><th>Baseline</th><th class="text-right">Accuracy</th><th class="text-right">Log loss</th></tr>
+            </thead>
+            <tbody>
+                {% for name, b in metrics.baselines.items %}
+                <tr class="border-t">
+                    <td class="py-1.5">{{ name }}</td>
+                    <td class="text-right">
+                        {% if b.folds_1_4.accuracy.mean %}{{ b.folds_1_4.accuracy.mean|floatformat:3 }}{% else %}—{% endif %}
+                    </td>
+                    <td class="text-right">
+                        {% if b.folds_1_4.log_loss.mean %}{{ b.folds_1_4.log_loss.mean|floatformat:4 }}{% else %}—{% endif %}
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+    <div class="bg-white rounded-lg shadow p-4">
+        <h2 class="font-semibold mb-3">Modèles (moy. folds 1-4)</h2>
+        <table class="w-full text-sm">
+            <thead class="text-slate-500 text-left">
+                <tr><th>Modèle</th><th class="text-right">Accuracy</th><th class="text-right">Log loss</th></tr>
+            </thead>
+            <tbody>
+                {% for name, m in metrics.models.items %}
+                <tr class="border-t {% if name == metrics.final_model.name %}bg-emerald-50 font-semibold{% endif %}">
+                    <td class="py-1.5">
+                        {{ name }}
+                        {% if name == metrics.final_model.name %}<span class="text-xs text-emerald-700">(retenu)</span>{% endif %}
+                    </td>
+                    <td class="text-right">{{ m.folds_1_4.accuracy.mean|floatformat:3 }} ± {{ m.folds_1_4.accuracy.std|floatformat:3 }}</td>
+                    <td class="text-right">{{ m.folds_1_4.log_loss.mean|floatformat:4 }} ± {{ m.folds_1_4.log_loss.std|floatformat:4 }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+
+{# ---------- Per-fold table for the final model ---------- #}
+<div class="bg-white rounded-lg shadow p-4 mb-8">
+    <h2 class="font-semibold mb-3">Détail par fold — {{ metrics.final_model.name }}</h2>
+    <table class="w-full text-sm">
+        <thead class="text-slate-500 text-left">
+            <tr>
+                <th>Fold</th><th>Test</th>
+                <th class="text-right">Accuracy</th>
+                <th class="text-right">Log loss</th>
+                <th class="text-right">Brier</th>
+                <th class="text-right">RPS</th>
+                <th class="text-right">Rappel nul</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for fold in metrics.models|dictsortreversed:"fold" %}{% endfor %}
+            {% with model=metrics.models|default_if_none:"" %}{% endwith %}
+            {% with mdata=metrics.models.rf.per_fold %}
+                {% for row in mdata %}
+                <tr class="border-t">
+                    <td class="py-1.5">{{ row.fold }}</td>
+                    <td>{{ row.test_season }}</td>
+                    <td class="text-right">{{ row.accuracy|floatformat:3 }}</td>
+                    <td class="text-right">{{ row.log_loss|floatformat:4 }}</td>
+                    <td class="text-right">{{ row.brier|floatformat:4 }}</td>
+                    <td class="text-right">{{ row.rps|floatformat:4 }}</td>
+                    <td class="text-right">{{ row.recall_draw|floatformat:3 }}</td>
+                </tr>
+                {% endfor %}
+            {% endwith %}
+        </tbody>
+    </table>
+</div>
+
+{# ---------- Feature importance + calibration ---------- #}
+<div class="grid md:grid-cols-2 gap-6 mb-8">
+    <div class="bg-white rounded-lg shadow p-4">
+        <h2 class="font-semibold mb-3">Facteurs clés (top 15)</h2>
+        {% if top_features %}
+        <table class="w-full text-sm">
+            <tbody>
+                {% for f in top_features %}
+                <tr class="border-t">
+                    <td class="py-1 text-slate-500 w-8">{{ f.rank }}</td>
+                    <td class="font-mono text-xs">{{ f.feature }}</td>
+                    <td class="text-right text-emerald-600">+{{ f.importance_mean|floatformat:4 }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        {% else %}
+        <p class="text-slate-500 text-sm">Indisponible. Lancez <code>python -m ml.model_analysis</code>.</p>
+        {% endif %}
+    </div>
+
+    <div class="bg-white rounded-lg shadow p-4">
+        <h2 class="font-semibold mb-3">Courbe de calibration</h2>
+        {% if has_calibration_png %}
+            <img src="{% url 'core:calibration_curve' %}" alt="Calibration curve" class="w-full">
+            {% if calibration %}
+            <p class="text-xs text-slate-500 mt-2">
+                Test out-of-sample {{ calibration.test_season }} —
+                Log loss {{ calibration.log_loss|floatformat:4 }} ·
+                Brier (H/D/A) {{ calibration.brier_home|floatformat:3 }} /
+                {{ calibration.brier_draw|floatformat:3 }} /
+                {{ calibration.brier_away|floatformat:3 }}
+            </p>
+            {% endif %}
+        {% else %}
+        <p class="text-slate-500 text-sm">Courbe non générée.</p>
+        {% endif %}
+    </div>
+</div>
+
+<div class="bg-white rounded-lg shadow p-4 text-sm">
+    <h2 class="font-semibold mb-2">Configuration du modèle final</h2>
+    <dl class="grid grid-cols-2 gap-2">
+        <dt class="text-slate-500">Algorithme</dt><dd>{{ metrics.final_model.name }}</dd>
+        <dt class="text-slate-500">Calibration</dt><dd>{{ metrics.final_model.calibration }}</dd>
+        <dt class="text-slate-500">Saisons d'entraînement</dt><dd>{{ metrics.final_model.training_seasons|join:", " }}</dd>
+        <dt class="text-slate-500">Lignes d'entraînement</dt><dd>{{ metrics.final_model.n_train_rows }}</dd>
+        <dt class="text-slate-500">Version sklearn</dt><dd>{{ metrics.final_model.versions.sklearn }}</dd>
+        <dt class="text-slate-500">Version xgboost</dt><dd>{{ metrics.final_model.versions.xgboost }}</dd>
+    </dl>
+</div>
+
+{% endif %}
+
+{% endblock %}

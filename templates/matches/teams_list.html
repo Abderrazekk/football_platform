@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block title %}Équipes{% endblock %}
+{% block content %}
+
+<h1 class="text-3xl font-bold mb-6">Équipes de Premier League</h1>
+
+{% if season %}
+<p class="text-slate-600 mb-4">Saison {{ season.label }} — classement actuel</p>
+{% endif %}
+
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+    {% for item in team_data %}
+        <a href="{% url 'matches:team_detail' item.team.pk %}"
+           class="bg-white rounded-lg shadow hover:shadow-md p-4 transition">
+            <div class="flex justify-between items-start">
+                <div class="font-semibold">{{ item.team.name }}</div>
+                {% if item.position %}
+                    <span class="text-xs bg-slate-100 text-slate-600 rounded px-2 py-0.5">
+                        #{{ item.position }}
+                    </span>
+                {% endif %}
+            </div>
+            <div class="text-xs text-slate-400 mt-1">Voir la fiche →</div>
+        </a>
+    {% empty %}
+        <div class="text-slate-500">Aucune équipe.</div>
+    {% endfor %}
+</div>
+
+{% endblock %}
